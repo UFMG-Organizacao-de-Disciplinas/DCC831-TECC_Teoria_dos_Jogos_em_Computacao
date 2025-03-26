@@ -135,9 +135,31 @@ Goals
 
 Quem não tem acesso ao moodle: <pedroolmo@gmail.com>
 
-## Aula 2 - 18/03/2025 [JV: Cheguei atrasado]
+## 18/03/2025 - Aula 2 [JV: Cheguei atrasado] - Slide: Aula 2 - Preferences/Modeling Rational Agents
 
-...
+### Modeling Human Behavior
+
+- O que é um modelo (matemático)?
+  - Descrição de sistemas usando conceitos e linguagem matemática
+    - Ex.: Teoria de filas, grafos, etc.
+  - Pode ajudar a explicar:
+    - Sistemas
+    - Efeitos em diferentes componentes
+    - Fazer predições sobre comportamento
+
+---
+
+- O que é teoria dos jogos?
+  - Estudo de modelos matemáticos de conflito e cooperação entre tomadores de decisão racionais inteligentes
+
+---
+
+- Como descrever conflitos entre agentes?
+
+### Game Theory
+
+- Modelo de um agente
+  - 
 
 ...
 
@@ -184,7 +206,7 @@ Não tive acesso ao Moodle, e esqueci de pedir. Logo não respondi uma das quest
 - Is this definition weak?
   - f(y, z) = I [JV: I = indiferente]
 
-#### QUestionnaire R
+#### Questionnaire R
 
 ...
 
@@ -204,7 +226,7 @@ Não tive acesso ao Moodle, e esqueci de pedir. Logo não respondi uma das quest
 
 Questionário Q: $\succ$
 
-- $x \succy = (x \succsim y) and (not y \succsim x)$
+- $x \succ y = (x \succsim y) and (not y \succsim x)$
 - $x ~ y = (x \succsim y) and (y \succsim x)$
 
 ---
@@ -215,4 +237,129 @@ Questionário Q: $\succ$
 
 - Preferência entre loterias
 
-## Aula 3 - 20/03/2025
+## 20/03/2025 - Aula 3 - Não teve e foi avisado
+
+## 25/03/2025 - Aula 4
+
+- Questionário Q e R:
+  - Q: dados $X$ e $Y$
+    - $X \succ Y$ (X é preferível a Y)
+    - $Y \succ X$ (Y é preferível a X)
+    - $X \sim Y$ (X é indiferente a Y)
+  - R: dados $X$ e $Y$
+    - R(x, y): $X \succsim Y?$ (X é pelo menos tão preferível a Y?)
+      - Sim
+      - Não
+
+### Slide 2
+
+#### Reminder: preferences
+
+- DAG (Directed Acyclic Graph)
+  - Há um arco de i a j se j é preferível ao i ($j \succ i$)
+- Qual o mais preferível?
+  - O que não tem arco de saída, ou tem menor quantidade de saída
+- Qual o menos preferível?
+  - O que não tem arco de entrada
+- $k \succ f?$
+  - Sim se houver caminho de k a f
+  - Senão, não há resposta
+- A relação de preferência é transitiva?
+  - Sim
+
+Área da IA: Value allignment: busca entender o que você quer.
+
+#### The concept of Utility Representation
+
+- Se o número de alternativas for pequeno, a relação de preferência pode ser uma lista ordenada de melhor pra pior.
+
+---
+
+...
+
+---
+
+- Prefiro o
+  - carro mais rápido
+  - jogador de basquete mais alto
+  - presente mais caro
+  - professor que dão notas maiores
+
+---
+
+- Então a definição acaba sendo
+  - $x \succsim y$ se $V(x) \geq V(y)$, onde $V: X \to \mathbb{R}$
+- No caso do jogador de basquete:
+  - $X$: o jogador de basquete
+  - $V(X)$: retorna a altura
+- Perceba que $x \succsim y$ se $V(x) \geq V(y)$ é... porque
+  - a relação de igualdade é transitiva e completa.
+
+---
+
+...
+
+---
+
+- Definição
+  - Para dada função **estritamente crescente** $f: \mathbb{R} \to \mathbb{R}$
+  - Considerando que $U(x)$ avalia o nível de preferência, ele representa $\succsim$.
+  - $V(x) = f(U(x))$
+  - Com isso, $V(x)$ também indica o nível de preferência com a mesma ordem
+
+---
+
+#### Existence of a Utility Representation
+
+---
+
+---
+
+- Possiblidade de representações numéricas que carregam significados adicionais
+  - a ser preferível a b mais do que c é preferível a d
+  - $a \succsim b > c \succsim d$
+
+---
+
+- Lemma
+  - Ele pulou por ser trivial
+
+---
+
+- Reminder
+  - X é contável e infinito se há uma relação um-pra-um se há relação de X pros naturais
+- ...
+
+---
+
+- Claim
+  - Se X é contável, então qualquer relação em X pode ser limitado ao intervalo (-1, 1)
+
+#### Preferências Lexicográficas
+
+- São itens descritos e há dada uma preferência para cada um dos itens
+
+---
+
+- k-tupla
+- Notações esquisitas. Não entendi direito
+
+Mas basicamente é a ordenação do Notion. São definidos as categorias e ordens de preferência.
+
+---
+
+- Exemplo:
+  - $X = [0, 1] \times [0, 1]$
+  - Para que a preferência seja X, depois Y. Então...
+  - ...
+
+---
+
+- Teorema: $\mathbb{Q} is dense in \mathbb{R}$
+  - (Para qualquer intervalo em $\mathbb{R} por menor que seja, dá para preencher os itens de $\mathbb{Q}$)
+
+---
+
+A Preferência lexicográfica funciona quanto temos elementos finitos, mas não quando eles são reais.
+
+## 27/03/2025 - Aula 5
