@@ -159,7 +159,6 @@ Quem não tem acesso ao moodle: <pedroolmo@gmail.com>
 ### Game Theory
 
 - Modelo de um agente
-  - 
 
 ...
 
@@ -237,9 +236,9 @@ Questionário Q: $\succ$
 
 - Preferência entre loterias
 
-## 20/03/2025 - Aula 3 - Não teve e foi avisado
+## 20/03/2025 - Aula X - Não teve e foi avisado
 
-## 25/03/2025 - Aula 4
+## 25/03/2025 - Aula 3
 
 - Questionário Q e R:
   - Q: dados $X$ e $Y$
@@ -362,4 +361,230 @@ Mas basicamente é a ordenação do Notion. São definidos as categorias e orden
 
 A Preferência lexicográfica funciona quanto temos elementos finitos, mas não quando eles são reais.
 
-## 27/03/2025 - Aula 5
+## 27/03/2025 - Aula 4 - Choice: LNMT, chapter 3
+
+## 01/04/2025 - Aula 5 - Choice: LNMT, chapter 3
+
+### Slide Aula 3 - Utilidade
+
+---
+
+#### Reminder: continuous functions
+
+---
+
+$\vdots$
+
+---
+
+#### Continuity of Preferences
+
+A ideia de preferências contínuas é de que em pequenas variações dos itens, a relação de preferência não muda. Ou seja, se $x \succsim y$, então $x + \delta \succsim y$ para um $\delta$ usualmente pequeno.
+
+No caso de uma não-continuidade, ocorreria uma troca de preferência por menor que fosse a variação do item.
+
+E isso apenas ocorre quanto consideramos itens contínuos, não os discretos.
+
+
+- In economics, the set X is often an infinite subset of a Euclidean space
+  - In $\mathbb{R}^1$
+    - Ex: gold
+  - In $\mathbb{R}^2$
+    - Ex: Salário, tempo de férias por ano
+  - In $\mathbb{R}^3$
+    - Ex: Café, pão e leite
+
+---
+
+- Which one do you prefer?
+
+---
+
+- The basic intuition...
+
+---
+
+- Definition C1
+  - A preference relation ($\succsim$) on X is continuous if whenever $a \succ b$ **there are** balls (neighborhood in the relevant topology) $B_a$ and $B_b$ around $a$ and $b$, respectively, such that **for all** $x \in B_a$ and $y \in B_b$, $x \succsim y$.
+
+---
+
+Imagem
+
+---
+
+- Definition C2
+  - [JV: é mais abstrato, não precisa se preocupar]
+
+---
+
+---
+
+- Claim:
+  - The preference relation $\succsim$ on X satisfies C1 if and only if it satisfies C2.
+
+---
+
+- $\vdots$
+
+---
+
+- Remark #1
+  - $\succsim$ on X is represented by a continuous function U, then $\succsim$ is continuous.
+  - To see this, note that if $a \succ b$, then $U(a) > U(b)$
+  - Let $\epsilon = (U(a)-U(b))/2$
+  - by the continuity of U, there is a $\delta > 0$ such that for all x distanced less than $\delta$ from a, $U(x) > U(a) - \epsilon$, and for all y distanced less than $\delta$ from b, $U(y) < U(b) + \epsilon$.
+  - Thus, for x and y whitin the balls of radius $\delta$ around a and b, respectively, $x \succ y$
+
+Entendimento: se considerarmos aplicar uma função de utilidade a todos os pontos dentro do raio $\delta$ centrados em **a** e compararmos com todos os pontos dentro do raio $\delta$ centrados em **b**, então todos os valores de utilidade de **a** serão maiores que os de **b**. Logo, a relação de preferência se mantém: $a \succ b$
+
+[JV: falar com ele no final da aula sobre o uso de deltas diferentes que seguiria sendo válido]
+
+Segundo ele, o delta é encontrado entre pares. Aparentemente maximizando o delta em que ainda se mantém a relação de preferência.
+
+---
+
+- Remark #2
+
+#### Debreu's Theorem
+
+- Continuous preferences have a continuous utility representation
+- Proof in the book [Muito chata]
+
+### Slide Aula 4 - Choice
+
+#### Choice Functions
+
+...
+
+---
+
+- Where should I do my PhD in Computer Science?
+
+---
+
+...
+
+---
+
+- A **rational agent** considers only the set of alternatives available to him
+  - If the alternatives appear in a list, he ignores:
+    - The **order** in which they are presented
+    - The **number of times** an alternative appears in the list
+    - An alternative with a **default status**
+- [JV: O agente racional ignorará, mesmo que nós não ignoremos]
+
+---
+
+- **X** = the set of all CS graduate programs in the world
+- **A** = the set containing the items I can choose
+
+---
+
+- A **choice function** C assigns to each set A a unique element of A with...
+
+---
+
+- Ex.: C chooses the most...
+  - Difficult
+  - Close
+  - Fun
+
+---
+
+- Where did you go for lunch today?
+- Is this your favorite restaurant in the world?
+- ...
+
+---
+
+- In some contexts, not all choice problems are relevant
+- Therefore we allow that the agent's behavior be defined only on a set D of subsets of X
+- We will refer to a pair (X, D) as context
+- ...
+
+---
+
+- Agent's behavior as reponse to a questionnaire that contains questions of the following type, one for each $A \in D$:
+
+"A escolha de Sofia"
+
+#### Rational choice functions
+
+- The induced choice function $C_{\succsim}$ assigns to every nonempty set $A \in D$ the $\succsim-best$ element of $A$
+  - [JV Dúvida: por que é $\succsim$ e não $\succ$? Isso não acaba abrindo brecha para a existência de empates de preferência?]
+    - Sim, mas ignore isso por enquanto
+
+...
+
+#### Rationalizing
+
+- Condition $\alpha$:
+  - We say that C satisfies condition $\alpha$ if for any two problems $A, B \in D$, if $A \subset B$ and $C(B) \in A$, then...
+  - $C(A) = C(B)$
+
+---
+
+Exemplo de escolha que não satisfaça a condição $\alpha$:
+
+- Second best
+
+[JV: achei meio esquisito. Tenho que entender melhor o que quebra ou não essa condição]
+
+---
+
+---
+
+- Proposition:
+  - ...
+
+---
+
+### Falar no final da aula
+
+- Correções
+  - Tem um espaço a mais em "The **order** in which they are presented"
+  - $A, B \in D$
+
+[JV: falar com ele no final da aula sobre o uso de deltas diferentes que seguiria sendo válido]
+
+Perguntar sobre as aulas dele e por que praticamente só teoria dos jogos?
+
+SIGBOVIK
+
+## 01/04/2025 - Aula 6
+
+
+Aula	Data (D/M/A)	Assunto	Material
+1	13/03/2025	Course at a glance: what problems are we trying to solve?	
+2	18/03/2025	Preferences	LNMT, chapter 1
+3	25/03/2025	Utility	LNMT, chapter  2
+4	27/03/2025	Choice	LNMT, chapter 3
+5	01/04/2025	Choice	LNMT, chapter 3
+6	03/04/2025	Expected Utility	LNMT, chapter 7
+7	08/04/2025	Risk Aversion	LNMT, chapter 8
+8	10/04/2025	Introduction to Game Theory: global view, applications and examples. Formal definition of a game: payoff, strategies, players, pure strategy nash equilibrium, dominant strategies.	MAS, chapter 3; NCM, chapter 6
+9	15/04/2025	Mixed strategies Nash equilibrium: definition, examples and evidences in the real world.	MAS, chapter 3; NCM, chapter 6
+10	17/04/2025	Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium.	MAS, chapter 3; NCM, chapter 6
+11	22/04/2025	Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium.	MAS, chapter 3; NCM, chapter 6
+12	24/04/2025	Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium.	MAS, chapter 3; NCM, chapter 6
+13	26/04/2025	Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium.	MAS, chapter 3; NCM, chapter 6
+14	29/04/2025	The complexity of finding a Nash Equilibrium: zero sum games and PPAD	MAS, chapter 3; NCM, chapter 6
+	01/05/2025	feriado	
+15	06/05/2025	prova 1	
+16	08/05/2025	The complexity of finding a Nash Equilibrium: Lemke-Howson	MAS, chapter 4
+17	13/05/2025	The complexity of finding a Nash Equilibrium: Lemke-Howson	MAS, chapter 4
+18	15/05/2025	The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria	MAS, chapter 4
+19	20/05/2025	The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria	MAS, chapter 4
+20	22/05/2025	Perfect Information Extensive-form games	MAS, chapter 5
+21	27/05/2025	Perfect Information Extensive-form games	MAS, chapter 5
+22	29/05/2025	Imperfect Information Extensive-form games	MAS, chapter 5
+23	31/05/2025	Imperfect Information Extensive-form games	MAS, chapter 5
+24	03/06/2025	Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games	MAS, chapter 6.1
+25	05/06/2025	Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games	MAS, chapter 6.1
+26	10/06/2025	Bayesian games	MAS, chapter 6.3
+27	12/06/2025	Bayesian games	MAS, chapter 6.3
+28	14/06/2025	Congestion games	MAS, chapter 6.4
+	19/06/2025	feriado	
+29	24/06/2025	Congestion games	MAS, chapter 6.4
+30	26/06/2025	Prova 2	
