@@ -548,6 +548,8 @@ Exemplo de escolha que não satisfaça a condição $\alpha$:
 
 [JV: falar com ele no final da aula sobre o uso de deltas diferentes que seguiria sendo válido]
 
+planilha de materiais com link dos slides
+
 Perguntar sobre as aulas dele e por que praticamente só teoria dos jogos?
 
 SIGBOVIK
