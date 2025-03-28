@@ -363,8 +363,6 @@ A Preferência lexicográfica funciona quanto temos elementos finitos, mas não 
 
 ## 27/03/2025 - Aula 4 - Choice: LNMT, chapter 3
 
-## 01/04/2025 - Aula 5 - Choice: LNMT, chapter 3
-
 ### Slide Aula 3 - Utilidade
 
 ---
@@ -554,8 +552,9 @@ Perguntar sobre as aulas dele e por que praticamente só teoria dos jogos?
 
 SIGBOVIK
 
-## 01/04/2025 - Aula 6
+## 01/04/2025 - Aula 5 - Choice: LNMT, chapter 3
 
+## 01/04/2025 - Aula 6
 
 Aula	Data (D/M/A)	Assunto	Material
 1	13/03/2025	Course at a glance: what problems are we trying to solve?	

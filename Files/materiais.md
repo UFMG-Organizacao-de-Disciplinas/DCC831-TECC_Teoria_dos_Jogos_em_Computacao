@@ -16,4 +16,3 @@
 [slides-aula2-pdf]: <Slides/Aula 2 - Preferences.pdf>
 [slides-aula2-pptx]: <Slides/Aula 2 - Preferences.pptx>
 [slides-aula2-google]: <https://docs.google.com/presentation/d/1tR9aH7YCofI7ftCSvCxaW6x-WhSbq5IT5Cyk_lUzt7E>
-
