@@ -1,6 +1,6 @@
 # Teoria dos Jogos em Computação - Professor: Pedro Olmo Stancioli Vaz de Melo
 
-## 13/03/2025 - Aula 1
+## 13/03/2025 - Aula 01
 
 - "Pode mudar completamente o seu jeito de pensar"
 - "O lado ruim é que você fica um pouco mais cínico sobre o mundo"
@@ -86,7 +86,7 @@ Principais: John Nash e Von Neumann
 
 Chris Moneymaker
 
-Talvez façamos alguns seminários 
+Talvez façamos alguns seminários
 
 - Pre requisitos
   - Inglês
@@ -135,7 +135,7 @@ Goals
 
 Quem não tem acesso ao moodle: <pedroolmo@gmail.com>
 
-## 18/03/2025 - Aula 2 [JV: Cheguei atrasado] - Slide: Aula 2 - Preferences/Modeling Rational Agents
+## 18/03/2025 - Aula 02 [JV: Cheguei atrasado] - Slide: Aula 2 - Preferences/Modeling Rational Agents
 
 ### Modeling Human Behavior
 
@@ -236,9 +236,9 @@ Questionário Q: $\succ$
 
 - Preferência entre loterias
 
-## 20/03/2025 - Aula X - Não teve e foi avisado
+## 20/03/2025 - Aula XX - Não teve e foi avisado
 
-## 25/03/2025 - Aula 3
+## 25/03/2025 - Aula 03
 
 - Questionário Q e R:
   - Q: dados $X$ e $Y$
@@ -361,7 +361,7 @@ Mas basicamente é a ordenação do Notion. São definidos as categorias e orden
 
 A Preferência lexicográfica funciona quanto temos elementos finitos, mas não quando eles são reais.
 
-## 27/03/2025 - Aula 4 - Choice: LNMT, chapter 3
+## 27/03/2025 - Aula 04 - Choice: LNMT, chapter 3
 
 ### Slide Aula 3 - Utilidade
 
@@ -382,7 +382,6 @@ A ideia de preferências contínuas é de que em pequenas variações dos itens,
 No caso de uma não-continuidade, ocorreria uma troca de preferência por menor que fosse a variação do item.
 
 E isso apenas ocorre quanto consideramos itens contínuos, não os discretos.
-
 
 - In economics, the set X is often an infinite subset of a Euclidean space
   - In $\mathbb{R}^1$
@@ -552,40 +551,58 @@ Perguntar sobre as aulas dele e por que praticamente só teoria dos jogos?
 
 SIGBOVIK
 
-## 01/04/2025 - Aula 5 - Choice: LNMT, chapter 3
+## 01/04/2025 - Aula 05 - Choice: LNMT, chapter 3
 
-## 01/04/2025 - Aula 6
+## 03/04/2025 - Aula 06 - Expected Utility | LNMT, chapter 7
 
-Aula	Data (D/M/A)	Assunto	Material
-1	13/03/2025	Course at a glance: what problems are we trying to solve?	
-2	18/03/2025	Preferences	LNMT, chapter 1
-3	25/03/2025	Utility	LNMT, chapter  2
-4	27/03/2025	Choice	LNMT, chapter 3
-5	01/04/2025	Choice	LNMT, chapter 3
-6	03/04/2025	Expected Utility	LNMT, chapter 7
-7	08/04/2025	Risk Aversion	LNMT, chapter 8
-8	10/04/2025	Introduction to Game Theory: global view, applications and examples. Formal definition of a game: payoff, strategies, players, pure strategy nash equilibrium, dominant strategies.	MAS, chapter 3; NCM, chapter 6
-9	15/04/2025	Mixed strategies Nash equilibrium: definition, examples and evidences in the real world.	MAS, chapter 3; NCM, chapter 6
-10	17/04/2025	Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium.	MAS, chapter 3; NCM, chapter 6
-11	22/04/2025	Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium.	MAS, chapter 3; NCM, chapter 6
-12	24/04/2025	Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium.	MAS, chapter 3; NCM, chapter 6
-13	26/04/2025	Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium.	MAS, chapter 3; NCM, chapter 6
-14	29/04/2025	The complexity of finding a Nash Equilibrium: zero sum games and PPAD	MAS, chapter 3; NCM, chapter 6
-	01/05/2025	feriado	
-15	06/05/2025	prova 1	
-16	08/05/2025	The complexity of finding a Nash Equilibrium: Lemke-Howson	MAS, chapter 4
-17	13/05/2025	The complexity of finding a Nash Equilibrium: Lemke-Howson	MAS, chapter 4
-18	15/05/2025	The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria	MAS, chapter 4
-19	20/05/2025	The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria	MAS, chapter 4
-20	22/05/2025	Perfect Information Extensive-form games	MAS, chapter 5
-21	27/05/2025	Perfect Information Extensive-form games	MAS, chapter 5
-22	29/05/2025	Imperfect Information Extensive-form games	MAS, chapter 5
-23	31/05/2025	Imperfect Information Extensive-form games	MAS, chapter 5
-24	03/06/2025	Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games	MAS, chapter 6.1
-25	05/06/2025	Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games	MAS, chapter 6.1
-26	10/06/2025	Bayesian games	MAS, chapter 6.3
-27	12/06/2025	Bayesian games	MAS, chapter 6.3
-28	14/06/2025	Congestion games	MAS, chapter 6.4
-	19/06/2025	feriado	
-29	24/06/2025	Congestion games	MAS, chapter 6.4
-30	26/06/2025	Prova 2	
+## 08/04/2025 - Aula 07 - Risk Aversion | LNMT, chapter 8
+
+## 10/04/2025 - Aula 08 - Introduction to Game Theory: global view, applications and examples. Formal definition of a game: payoff, strategies, players, pure strategy nash equilibrium, dominant strategies. | MAS, chapter 3; NCM, chapter 6
+
+## 15/04/2025 - Aula 09 - Mixed strategies Nash equilibrium: definition, examples and evidences in the real world. | MAS, chapter 3; NCM, chapter 6
+
+## 17/04/2025 - Aula 10 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
+
+## 22/04/2025 - Aula 11 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
+
+## 24/04/2025 - Aula 12 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
+
+## 26/04/2025 - Aula 13 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
+
+## 29/04/2025 - Aula 14 - The complexity of finding a Nash Equilibrium: zero sum games and PPAD | MAS, chapter 3; NCM, chapter 6
+
+## 01/05/2025 - Aula XX - feriado
+
+## 06/05/2025 - Aula 15 - prova 1
+
+## 08/05/2025 - Aula 16 - The complexity of finding a Nash Equilibrium: Lemke-Howson | MAS, chapter 4
+
+## 13/05/2025 - Aula 17 - The complexity of finding a Nash Equilibrium: Lemke-Howson | MAS, chapter 4
+
+## 15/05/2025 - Aula 18 - The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria | MAS, chapter 4
+
+## 20/05/2025 - Aula 19 - The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria | MAS, chapter 4
+
+## 22/05/2025 - Aula 20 - Perfect Information Extensive-form games | MAS, chapter 5
+
+## 27/05/2025 - Aula 21 - Perfect Information Extensive-form games | MAS, chapter 5
+
+## 29/05/2025 - Aula 22 - Imperfect Information Extensive-form games | MAS, chapter 5
+
+## 31/05/2025 - Aula 23 - Imperfect Information Extensive-form games | MAS, chapter 5
+
+## 03/06/2025 - Aula 24 - Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games | MAS, chapter 6.1
+
+## 05/06/2025 - Aula 25 - Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games | MAS, chapter 6.1
+
+## 10/06/2025 - Aula 26 - Bayesian games | MAS, chapter 6.3
+
+## 12/06/2025 - Aula 27 - Bayesian games | MAS, chapter 6.3
+
+## 14/06/2025 - Aula 28 - Congestion games | MAS, chapter 6.4
+
+## 19/06/2025 - Aula XX - feriado
+
+## 24/06/2025 - Aula 29 - Congestion games | MAS, chapter 6.4
+
+## 26/06/2025 - Aula 30 - Prova 2
