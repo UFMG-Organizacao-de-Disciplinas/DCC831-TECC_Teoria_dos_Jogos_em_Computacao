@@ -537,6 +537,10 @@ Exemplo de escolha que não satisfaça a condição $\alpha$:
 
 ---
 
+Second best procedure
+
+---
+
 ### Falar no final da aula
 
 - Correções
@@ -552,6 +556,117 @@ Perguntar sobre as aulas dele e por que praticamente só teoria dos jogos?
 SIGBOVIK
 
 ## 01/04/2025 - Aula 05 - Choice: LNMT, chapter 3
+
+### Rationalizing (Aula 05)
+
+### Dutch Book Arguments
+
+- **Claim**
+  - Um agente econômico que não age de acordo com uma função de escolha por maximização não sobreviverá.
+
+- Example
+  - Macaco:
+    - C({a, c}) = a
+    - C({a, b}) = b
+    - C({b, c}) = c
+
+- "Money pump argument":
+  - Se fulaninho paga uma quantia $\epsilon$ para trocar de A pra B, de B pra C e de C pra A, então ele acaba entrando num loop infinito de pagamentos.
+
+---
+
+...
+
+---
+
+#### What is an alternative
+
+- Assuma o seguinte
+  - C({A, B}) = A; C({steak tartare, chicken}) = chicken
+  - C({A, B, C}) = B; C({steak tartare, chicken, frog legs}) = steak tartare
+- Uma situação em que algo assim faria sentido seriam informações extras sobre o contexto das opções. Exemplo: se um restaurante tem a opção C, então isso torna mais valioso o item A.
+- Então, na prática, a situação prática é:
+  - $C({A_{\neg C}, B}) = A_{\neg C}$
+  - $C({A_{C}, B, C}) = A_{C}$
+- E nesse caso, não há violação. Afinal, as opções são distintas entre si.
+
+#### Choice Functions as Internal Equilibria
+
+- What is your favorite movie?
+
+---
+
+Quando há indiferença relacionado ao item máximo, acaba meio que havendo um bug na hora da escolha do mesmo.
+
+Para solucionar isso, ao invés da função de escolha retornar um item, retornará agora um subconjunto que não seja vazio.
+
+---
+
+- $C_{\succsim}(A) = {x \in A | x \succsim y \forall y \in A}$
+
+A Condição $\alpha$ fala especificamente de um item.
+
+---
+
+- **The Weak Axiom of Revealed Preference (WA):**
+  - We say that $C$ satisfies WA if whenever $x, y \in A \cap B, x \in C(A)$, and $y \in C(B)$, it is also true that X...
+    - $x \in C(B)$
+  - The Weak Axiom Trivially...
+    - Condition $\alpha$
+    - Condition $\beta$
+
+#### The Satisfying Procedure
+
+- How do you proceed when you have yo buy a laptop?
+
+---
+
+- Consider the following "decision scheme"
+  - Define as possibilidades
+  - Define um threshold de satisfação ($v*$)
+  - ...
+
+Foi mencionado sobre esse caso em que ordena-se por valor. Porém, num caso específico, aceita-se um valor maior do que o esperado. Ou seja, não é o primeiro que satisfaz o $v*$ que foi escolhido. Isso se dá porque na verdade o critério de escolha era outro. Era uma outra função de pesos e é isso que causa a ordenação.
+
+#### Choice Functions as Internal Equilibria (Round 2)
+
+- Who would you pick to be your teammate?
+
+O dilema aqui é a falta de contexto que o agente racional poderia ter, assim fazendo com que se torne mais influenciável pelo framing da pergunta.
+
+---
+
+f: frame
+
+Exemplo: a alternativa default ou a ordem das alternativas
+
+---
+
+foi falado sobre uma potencial nova escolha baseada num framing extra colocado às escolhas.
+
+### Psychological Motives Not Included Within the Framework
+
+- ...
+
+...
+
+#### Framing
+
+- An outbreak of diseas is expected to cause 600 deaths in the US
+
+...
+
+---
+
+- Tversky and Kahnemann (1986)
+
+#### Simpliffying the choice problem and the use of similarities
+
+- Which roulette do you prefer, a or b?
+
+---
+
+...
 
 ## 03/04/2025 - Aula 06 - Expected Utility | LNMT, chapter 7
 
