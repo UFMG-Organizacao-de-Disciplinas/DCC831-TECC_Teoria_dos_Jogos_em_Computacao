@@ -979,6 +979,136 @@ Accept the existence of single-dimensional utility functions whose expected valu
 
 ## 10/04/2025 - Aula 08 - Introduction to Game Theory: global view, applications and examples. Formal definition of a game: payoff, strategies, players, pure strategy nash equilibrium, dominant strategies. | MAS, chapter 3; NCM, chapter 6
 
+### Slide: Risk aversion
+
+#### Risk Aversion
+
+---
+
+- $u(Win, Draw) = ok$
+- $u(Lose) = grr$
+
+---
+
+Péssima utilidade caso perca. Ótima caso ganhe.
+
+---
+
+Nessa aula, tentaremos converter os prêmios em dinheiro. Premissa essa que é difícil.
+
+---
+
+Se eu apostar uma determinada quantidade de dinheiro no time oposto, então eu igualo a minha satisfação da vitória com a satisfação de ganhar dinheiro da aposta.
+
+- $u(Win, Draw) - x = u(Lose) + (r-1)x$
+
+Esse equilíbrio só funciona se tu conseguir mensurar adequadamente a alegria da vitória do time em dinheiro.
+
+Exemplo: "Quanto tu tá disposto a pagar para garantir a vitória?"
+
+Outra limitação são as odds. O pior caso é se seu time é o azarão.
+
+---
+
+---
+
+#### Lotteries with monetary prize
+
+Nem sempre mensurar é tão trivial.
+
+A relação de preferências entre as loterias é dada pela equação da Expected Utility: $Eu(p) = \sum_{\mathcal{z} \in Z} p(z) u(z)$
+
+---
+
+Tá sendo feito um experimento por aumento de risco.
+
+E também, o equilíbrio entre o aumento do risco, mas uma relacionado aumento também do Expected Utility.
+
+---
+
+Pro dinheiro, chega um ponto em que o aumento do dinheiro recebido chega num cap de utilidade.
+
+"Há algum valor $X_1" que me faça escolher a loteria p ao invés da q?"
+
+Obs.: a p seria a com chance de não ganhar nada. A q seria a com chance de ganhar $X_1$
+
+- St. Petersburg Paradox
+
+---
+
+Se a utilidade for linear, então num St. Petersburg Paradox, seria esperado que o jogador perdesse tudo. E essas seriam as pessoas neutras à risco.
+
+---
+
+Daniel Bernoulli.
+
+O valor de um item, não necessariamente tem relação ao seu preço, mas sim à sua utilidade.
+
+Nos leilões é exatamente isso. É basicamente checar qual é a pessoa que dá maior valor à determinado item.
+
+---
+
+A utilidade de ganhar dinheiro adicional é menor quando se é rico.
+
+---
+
+##### How to measure?
+
+- Linear: neutra a risco
+- Curva superior: avessa a risco
+- Exponencial: gosta do risco
+
+Primeiro precisamos converter o valor do prêmio em dinheiro. Depois devo fazer uma função de utilidade sobre o dinheiro.
+
+Está meio confuso a diferença entre a utilidade esperada do prêmio, e a utilidade esperada do dinheiro convertido pelo item do prêmio.
+
+---
+
+A conversão do item em dinheiro varia de pessoa pra pessoa.
+
+Valor esperado da loteria é a multiplicação das possibilidades pelos dinheiros convertidos.
+
+- $u(A) \equiv u(\$20)$
+- $u(B) \equiv u(\$80)$
+
+Se a pessoa é neutra a risco $E(p) = Eu(p)$.
+
+A utilidade esperada: $Eu(p) =$ probabilidade vezes $u(\$20)$ somado às outras porbabolidades de valores.
+
+Quem for neutro a risco: $E(p) = CE(p) = \$65$
+
+O averso ao risco: $u(E(p)) > Eu(p)$
+
+Se analisarmos a derivada da loteria no ponto da curva de utilidade, tende-se a preferir...
+
+---
+
+Risk averse: $E(p) > CE(p) < \$65$
+
+---
+
+Risk seeking: O dinheiro cada vez vale mais.
+
+##### Claim
+
+vonNeuman = vNM.
+
+Função estritamente côncava:
+
+$f((1 - \alpha)x + \alpha y) > (1 - \alpha)f(x) + \alpha f(y)$
+
+Consideremos que $f()$ é minha função de utilidade.
+
+Estou buscando um valor intermediário entre f(x) e f(y)
+
+$(1 - \alpha)x + \alpha y$ são valores no eixo x entre $x$ e $y$.
+
+$f((1 - \alpha)x + \alpha y)$ são meus valores na curva entre $x$ e $y$
+
+já $(1 - \alpha)f(x) + \alpha f(y)$ seriam os valores no eixo $y$ entre $f(x)$ e $f(y)$. E com isso eu poderia fazer uma reta que sempre estaria abaixo da curva.
+
+$u(E(p)) > Eu(p)$: Risk aversion definition.
+
 ## 15/04/2025 - Aula 09 - Mixed strategies Nash equilibrium: definition, examples and evidences in the real world. | MAS, chapter 3; NCM, chapter 6
 
 ## 17/04/2025 - Aula 10 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
