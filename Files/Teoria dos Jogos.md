@@ -670,6 +670,125 @@ foi falado sobre uma potencial nova escolha baseada num framing extra colocado �
 
 ## 03/04/2025 - Aula 06 - Expected Utility | LNMT, chapter 7
 
+### Slide: Choice
+
+#### Ainda falando de Choices
+
+#### Psychological Motives Not Included Within the Framework (Aula 06)
+
+##### Simplifying the choice problem and the use of similarities (Aula 06)
+
+#### Reason-Based Choice
+
+- Derp must choose between two universities
+  - C({A, B}) = A
+  - C({A, B, C}) = B
+
+Por que houve essa mudança:
+
+JV: Ele pode ter mudado o critério de escolha. Ao adicionar o C, ele passou a considerar os critérios $C_3$ e $C_4$ além das preferências $C_1$ e $C_2$ pre-existentes.
+
+Outra: Como ele sabe que várias alternativas o aceitaram, então ele pode considerar que ele é um bom candidato. Logo, ele independe da escolha de universidade.
+
+Existe uma razão interna e subjetiva do agente racional que faz com que ele mude de escolha.
+
+---
+
+Paretto dominância: opções que são objetivamente maiores que outras. Ou seja, não há como ser pior em todos os critérios.
+
+No caso das opções:
+
+- $A = (7, 4)$ poderia ser denominada $C+ = (7, 4)$
+- $B = (4, 7)$
+- $C = (6, 3)$
+
+---
+
+Conclusão dele: é difícil de conseguir um resultado consistente.
+
+#### Mental Accounting
+
+Ele diz ser muito parecido com o outro, porém com uma conta.
+
+Explicação 1: Como o rapaz perdeu o ticket e precisa comprar dnv, é como se o valor do ticket dobrasse. No segundo caso, a perda do dinheiro nada tem relação com o dinheiro.
+
+Explicação 2: A pessoa já tinha pre-escolhido ir, então acaba tendendo a querer continuar indo ver o filme.
+
+A tendência é que no primeiro caso menos gente diga sim do que o pessoal do segundo caso.
+
+Conclusão dele: é difícil de conseguir um resultado consistente.
+
+---
+
+- The decision makers may conduct...
+
+#### Modeling Choice Procedures
+
+- There is a large body of evidence...
+
+Aqui todas as escolhas têm uma opção padrão.
+
+---
+
+Ao adicionar mais informações podem ser irrelevantes ao tomador de decisão, mas acabam influenciando a escolha.
+
+---
+
+- $c(A, a) = b; c({a_1, a_2, \dots, a_n}, default=a_k) = b | a, b \in A$
+
+---
+
+---
+
+Define-se que $C(A, a)$ será o $\succ$-melhor item de A, considerando que ele será pelo menos tão bom quanto a.
+
+...
+
+---
+
+- Pareto ótimo: Não há nenhuma opção que a **pareto domine**
+- Pareto dominância: opções que são objetivamente maiores que outras. Ou seja, não há como ser pior em todos os critérios.
+
+---
+
+- **Buridan's donkey** is a paradox about a donkey that is equally hungry and thirsty, and is placed exactly in the middle of two identical bales of hay and two identical buckets of water. The donkey cannot decide which one to go to first, and thus it dies of hunger and thirst.
+
+---
+
+A **Default bias**
+
+---
+
+Weak Axiom + Default Tendency
+
+##### A Default Bias
+
+###### The Weak Axiom (WA)
+
+Meio confuso isso daqui
+
+###### Default Tendency (DT)
+
+Me parece a mesma coisa que o Default Bias. Não captei legal.
+
+### Slide: Expected Utility
+
+#### Games
+
+#### Lotteries
+
+- Escolhas têm consequências.
+- A correspondência entre ações e consequências são estocásticas
+- A escolha da ação é vista como se os prêmios fossem as consequências
+
+---
+
+- Z é o conjunto de prêmios (consqueências)
+- Z é finito.
+- A loteria é uma distribuição de probabilidades sobre os prêmios em que a soma das probabilidades iguala a um.
+
+---
+
 ## 08/04/2025 - Aula 07 - Risk Aversion | LNMT, chapter 8
 
 ## 10/04/2025 - Aula 08 - Introduction to Game Theory: global view, applications and examples. Formal definition of a game: payoff, strategies, players, pure strategy nash equilibrium, dominant strategies. | MAS, chapter 3; NCM, chapter 6
