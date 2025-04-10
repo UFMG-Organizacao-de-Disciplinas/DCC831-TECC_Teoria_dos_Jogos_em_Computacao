@@ -791,6 +791,192 @@ Me parece a mesma coisa que o Default Bias. Não captei legal.
 
 ## 08/04/2025 - Aula 07 - Risk Aversion | LNMT, chapter 8
 
+### Slide: Expected Utility (Aula 07)
+
+#### Lotteries (Aula 07)
+
+Antes os prêmios eram determinísticos. Agora são probabilísticos
+
+| Escolha | Color      | White |  Red | Green | YelloW |
+| :-----: | ---------- | ----: | ---: | ----: | -----: |
+|    A    | Chance (%) |   ... |  ... |   ... |    ... |
+|    A    | Value      |   ... |  ... |   ... |    ... |
+|    B    | Chance (%) |   ... |  ... |   ... |    ... |
+|    B    | Value      |   ... |  ... |   ... |    ... |
+
+---
+
+Mas e quando os prêmios não são tão facilmente comparáveis?
+
+---
+
+- $[z]$ é uma loteria degenerada, quando $p(z) = 1$
+- Loteria com dois prêmios: $\alpha x \oplus (1 - \alpha) y$
+
+---
+
+- Denote $L(Z)$ ...
+
+Uma relação de preferência degenerada é quando os valores dos prêmios são irrelevantes.
+
+##### Preferências sobre loterias
+
+- Pensemos sobre preferências razoáveis no espaço $L(Z)$
+  - O que torna uma loteria maior que outra?
+
+---
+
+- Preference for uniformity
+  - O tomador de decisão prefere loterias menos dispersas, onde a dispersão é medida por:
+    - $\sum_{Z} (p(z) - \frac{1}{|Z|})^2$
+      - Ex.: $Z_1, Z_2, Z_3$ com $p(z) = 1/3$ para cada um deles
+      - $(p(Z_1)-\frac{1}{3})^2 + (p(Z_2)-\frac{1}{3})^2 + (p(Z_3)-\frac{1}{3})^2$
+    - Dúvida: "Por que não tirar a entropia ao invés da distância?"
+      - Resposta: poderia também.
+  - Um caso desse seria se uma pessoa quer que suas músicas sejam tocadas aleatoriamente uniformemente, ao invés de haver uma chance grande de recorrentemente ir para uma mesma música.
+
+Nesse caso de preferência por uniformidade $A \succ B$, onde
+
+| Opção |          X |  Red | Green | Yellow | Blue |
+| :---: | ---------: | ---: | ----: | -----: | ---: |
+|   A   | Chance (%) | 0.25 |  0.25 |   0.25 | 0.25 |
+|   B   | Chance (%) | 0.75 |  0.50 |   0.20 | 0.05 |
+
+---
+
+- Preference for most likelihood
+  - The decision maker prefers $p \succ q$ if $\max_Z p(z) > \max_Z q(z)$
+    - Ou melhor: deseja-se tornar mais previsível o resultado.
+    - Ex.: Weather conditions before going out
+  - Pega a maior das probabilidades de um, a maior das probabilidades do outro, e vê qual é maior.
+
+---
+
+- The size of the support
+  - The decision maker evaluates each lottery by the number of prizes that can be realized with positive probability.
+    - $supp(p) = \{z|p(z)>0 \}$
+    - Exemplo aluno 1: RPG. Preferir um D20 ao invés de um D6
+    - Exemplo aluno 2: Máquina de garra em shopping que tiver maior variedade de prêmios
+    - Exemplo Professor: questões com o menor número de alternativas numa prova de múltipla escolha.
+  - Obs.: A preferência por tamanho do suporte pode tanto ser pelo maior suporte quanto pelo menor suporte.
+
+---
+
+- Increasing the probability of a "good" outcome
+  - The set $Z$ is partitioned into two disjoints sets $G$ and $B$ (Good and Bad), and between two lotteries the decision maker preferes the lottery that yields "good" prizes with higher probability
+    - Example:
+      - Choosing a route from city A to city B
+
+---
+
+- The worst case
+  - The decision maker evaluate lotteries by the worst possible case
+  - He attaches a number ...
+  - Example
+    - Algoritmos de ordenação
+
+---
+
+- Comparing the most likely prize
+  - ...
+  - Ex.: ...
+- Entre o mais provável de um e o mais provável de outro, qual dos prêmios tiver maior valor, é escolhido.
+
+---
+
+- Lexicographic preferences:
+  - Prêmios ordenados de $Z_1, \dots, Z_k$, e a loteria $p$ é preferível à $q$ se
+    - $(p(Z_1)) \dots$
+  - Ex.: Escolha entre cursos próximos
+
+---
+
+- Expected Utility
+  - A number $v(z)$ é agregado a cada prêmio, e a loteria $p$ é avaliado de acordo com ao seu valor esperado $v$, de acordo com $\sum_Z p(Z)v(Z)$
+  - $p \succsim q if \dots$
+
+---
+
+- The richness of examples calls for the classification of preference relations
+- ...
+
+---
+
+- ...
+  - Requisito de consistência
+  - Procedural aspect of decision making
+
+---
+
+- What are...
+
+##### von Neumann and Morgenstern Axiomatization
+
+- Six Axioms are usually presented
+  1. ...
+  2. ...
+  3. ...
+  4. ...
+  5. ...
+  6. ...
+
+###### An Axiomatic treatment of utility
+
+...
+
+---
+
+- Assumption 1: ...
+
+- Compound Lotteries
+
+- $\oplus_{k=1}^{k} \alpha_k p^k$
+
+Loterias de loterias
+
+```mermaid
+flowchart LR
+X(())
+X -->|| P1
+```
+
+- Assumption 2: reduction of compound lotteries
+  - Agrega todas as possibilidades das loterias em um só nível através das multiplicações das probabilidades.
+
+- Assumption 3: Continuity
+  - Each prize $z_i$ is indiferent to some lottery ticket involving $z_1$ (the best prize) and $z_rr$ (the worst)
+  - There exists a number $p$ such that $z_i$ is indifferent to $[pz_1, (1-p)z_r]$
+  - And for $Z = \{$1, $0.01, 💀\}$?
+
+Essa parte pode ser quebrada ser os valores forem muito discrepantes
+
+- Assumption 4: ...
+- Assumption 5: transitivity
+  - Preference and indifference among lotteries (or lottery tickets) are transitive...
+
+---
+
+- From these...
+
+---
+
+- **Assumption 6:** Monotonicity
+  - Uma loteria $[p(z_1), (1-p)z_r]$ is preferred or indifferent to $[p'z_1, (1-p')z_r]$ if and only if $p > p'$
+
+---
+
+...
+
+Accept the existence of single-dimensional utility functions whose expected values...
+
+...
+
+---
+
+- I: Independence
+  - ...
+- C: Continuity  
+
 ## 10/04/2025 - Aula 08 - Introduction to Game Theory: global view, applications and examples. Formal definition of a game: payoff, strategies, players, pure strategy nash equilibrium, dominant strategies. | MAS, chapter 3; NCM, chapter 6
 
 ## 15/04/2025 - Aula 09 - Mixed strategies Nash equilibrium: definition, examples and evidences in the real world. | MAS, chapter 3; NCM, chapter 6
