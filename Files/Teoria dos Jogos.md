@@ -1,4 +1,4 @@
-# Teoria dos Jogos em Computação - Professor: Pedro Olmo Stancioli Vaz de Melo
+# Teoria dos Jogos em Computação - Professor: Pedro Olmo Stancioli Vaz de Melo - PG2 - DCC831
 
 ## 13/03/2025 - Aula 01
 
@@ -660,7 +660,7 @@ foi falado sobre uma potencial nova escolha baseada num framing extra colocado �
 
 - Tversky and Kahnemann (1986)
 
-#### Simpliffying the choice problem and the use of similarities
+#### Simplifying the choice problem and the use of similarities
 
 - Which roulette do you prefer, a or b?
 
