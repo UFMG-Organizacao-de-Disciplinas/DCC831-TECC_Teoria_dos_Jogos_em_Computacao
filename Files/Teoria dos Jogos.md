@@ -771,19 +771,25 @@ Meio confuso isso daqui
 
 Me parece a mesma coisa que o Default Bias. Não captei legal.
 
-### Slide: Expected Utility
+### Slide: aula 5 - Expected Utility
 
-#### Games
+#### Finally, Games
+
+- One-person games :(
 
 #### Lotteries
 
-- Escolhas têm consequências.
-- A correspondência entre ações e consequências são estocásticas
-- A escolha da ação é vista como se os prêmios fossem as consequências
+- To every action there is a consequence...
+
+Escolhas têm consequências.
+
+A correspondência entre ações e consequências são estocásticas
+
+A escolha da ação é vista como se os prêmios fossem as consequências
 
 ---
 
-- Z é o conjunto de prêmios (consqueências)
+- Z é o conjunto de prêmios (consequências)
 - Z é finito.
 - A loteria é uma distribuição de probabilidades sobre os prêmios em que a soma das probabilidades iguala a um.
 
@@ -1111,48 +1117,153 @@ $u(E(p)) > Eu(p)$: Risk aversion definition.
 
 ## 15/04/2025 - Aula 09 - Mixed strategies Nash equilibrium: definition, examples and evidences in the real world. | MAS, chapter 3; NCM, chapter 6
 
+### Slide: Risk aversion - Aula 09
+
+#### Risk Aversion - Aula 09
+
+| **Probabilidade** | **Prêmio** |
+| ---------------: | ---------: |
+| 0.5 | $0 |
+| 0.5 | $100 |
+
+$E(p) = Esperança = 0.5 \* 0 + 0.5 \* 100 = 50$
+
+$Eu(p) = 0.5 \* u(0) + 0.5 \* u(100)$
+
+Onde $u()$ é a função de utilidade.
+
+Se $u()$ for uma função linear, tanto faz utilizar $E(p)$ quanto $Eu(p)$, porém, quando há aversão a risco ou propensão a risco, os valores acabam se alterando.
+
+- Se neutra a risco:
+  - $u(E(p)) = Eu(p)$
+  - $E(p) = CE(p)$
+
+Existem n situações em que pessoas podem se tornar Risk Seeker. Como por exemplo
+
+- Se propensa a risco:
+  - $u(E(p)) > Eu(p)$ <!-- Copilot -->
+  - $E(p) > CE(p)$ <!-- Copilot -->
+
+---
+
+- $u(x) = \ln(x)$
+- $p = 0.5 * \$20 \oplus 0.5 * \$100$
+
+[Imagens muito úteis e ilustrativas]
+
+Risk Premium: Diferença entre o valor esperado e o valor que a pessoa está disposta a pagar para não correr o risco.
+
+---
+
+Derivada primeira: positiva se o valor tá crescendo.
+
+Derivada segunda: negativa se a taxa com que tá crescendo reduz com o tempo.
+
+- $r_i(x) = -u ''_i(x) / u'_i(x)$
+- $r(x)$ is called coefficient...
+
+---
+
+- Relative risk aversion coefficient **rw**
+  - $rw(x) = x r(x)$
+
+---
+
+- Absolute Risk Aversion VS Relative Risk aversion
+
+##### Invariance to Wealth
+
+- u must be exponential or linear
+
+##### First-Order Stochastic Domination
+
+Calcula-se o acumulado de todas as probabilidades de se ganhar um valor maior ou igual a determinado valor. E então, compara-se as loterias.
+
+Caso haja pelo menos um acumulado que não seja maior que o outro, então não daria para definir que uma delas é dominada.
+
+### Slide: Class #7 - Parte 1, Introduction on Non Cooperative [...](<https://example.com>)
+
+#### Motivation
+
+Interferência entre os jogadores.
+
+---
+
+- Internet
+  - Trading Agent: "Loop infinito de aumento de preço"
+
+---
+
+#### Game Theory - Aula 09
+
+#### Self-Interested Agents
+
+- Significado
+  - Causar dano? Não necessariamente
+  - Se preocupa apenas consigo? Não, porque o interesse do agente pode ser ajudar os outros.
+
+---
+
+- Cada agente tem sua própria descrição do mundo que gosta.
+- Ele sempre busca agir para gerar esses estados que gosta.
+
+---
+
+- A função de utilidade dá um nível de felicidade aos agentes.
+- A incerteza é o que gera essa percepção de loterias
+
+##### Example: friends and enemies
+
+- c: 100
+- m: 50
+- h: 50
+
+Na prova ele gosta de colocar alguém avessa ao risco.
+
+Nos exemplos usualmente serão pessoas neutras a risco.
+
 ## 17/04/2025 - Aula 10 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
 
-## 22/04/2025 - Aula 11 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
+### 22/04/2025 - Aula 11 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
 
-## 24/04/2025 - Aula 12 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
+### 24/04/2025 - Aula 12 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
 
-## 26/04/2025 - Aula 13 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
+### 26/04/2025 - Aula 13 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
 
-## 29/04/2025 - Aula 14 - The complexity of finding a Nash Equilibrium: zero sum games and PPAD | MAS, chapter 3; NCM, chapter 6
+### 29/04/2025 - Aula 14 - The complexity of finding a Nash Equilibrium: zero sum games and PPAD | MAS, chapter 3; NCM, chapter 6
 
-## 01/05/2025 - Aula XX - feriado
+### 01/05/2025 - Aula XX - feriado
 
-## 06/05/2025 - Aula 15 - prova 1
+### 06/05/2025 - Aula 15 - prova 1
 
-## 08/05/2025 - Aula 16 - The complexity of finding a Nash Equilibrium: Lemke-Howson | MAS, chapter 4
+### 08/05/2025 - Aula 16 - The complexity of finding a Nash Equilibrium: Lemke-Howson | MAS, chapter 4
 
-## 13/05/2025 - Aula 17 - The complexity of finding a Nash Equilibrium: Lemke-Howson | MAS, chapter 4
+### 13/05/2025 - Aula 17 - The complexity of finding a Nash Equilibrium: Lemke-Howson | MAS, chapter 4
 
-## 15/05/2025 - Aula 18 - The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria | MAS, chapter 4
+### 15/05/2025 - Aula 18 - The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria | MAS, chapter 4
 
-## 20/05/2025 - Aula 19 - The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria | MAS, chapter 4
+### 20/05/2025 - Aula 19 - The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria | MAS, chapter 4
 
-## 22/05/2025 - Aula 20 - Perfect Information Extensive-form games | MAS, chapter 5
+### 22/05/2025 - Aula 20 - Perfect Information Extensive-form games | MAS, chapter 5
 
-## 27/05/2025 - Aula 21 - Perfect Information Extensive-form games | MAS, chapter 5
+### 27/05/2025 - Aula 21 - Perfect Information Extensive-form games | MAS, chapter 5
 
-## 29/05/2025 - Aula 22 - Imperfect Information Extensive-form games | MAS, chapter 5
+### 29/05/2025 - Aula 22 - Imperfect Information Extensive-form games | MAS, chapter 5
 
-## 31/05/2025 - Aula 23 - Imperfect Information Extensive-form games | MAS, chapter 5
+### 31/05/2025 - Aula 23 - Imperfect Information Extensive-form games | MAS, chapter 5
 
-## 03/06/2025 - Aula 24 - Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games | MAS, chapter 6.1
+### 03/06/2025 - Aula 24 - Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games | MAS, chapter 6.1
 
-## 05/06/2025 - Aula 25 - Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games | MAS, chapter 6.1
+### 05/06/2025 - Aula 25 - Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games | MAS, chapter 6.1
 
-## 10/06/2025 - Aula 26 - Bayesian games | MAS, chapter 6.3
+### 10/06/2025 - Aula 26 - Bayesian games | MAS, chapter 6.3
 
-## 12/06/2025 - Aula 27 - Bayesian games | MAS, chapter 6.3
+### 12/06/2025 - Aula 27 - Bayesian games | MAS, chapter 6.3
 
-## 14/06/2025 - Aula 28 - Congestion games | MAS, chapter 6.4
+### 14/06/2025 - Aula 28 - Congestion games | MAS, chapter 6.4
 
-## 19/06/2025 - Aula XX - feriado
+### 19/06/2025 - Aula XX - feriado
 
-## 24/06/2025 - Aula 29 - Congestion games | MAS, chapter 6.4
+### 24/06/2025 - Aula 29 - Congestion games | MAS, chapter 6.4
 
-## 26/06/2025 - Aula 30 - Prova 2
+### 26/06/2025 - Aula 30 - Prova 2
