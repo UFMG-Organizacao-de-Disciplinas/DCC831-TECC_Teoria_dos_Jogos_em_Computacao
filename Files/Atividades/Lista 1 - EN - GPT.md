@@ -84,21 +84,20 @@ Suppose, by continuity: $z_2 \sim z'_2 = (0.6z_1, 0.4z_4)$ and $z_3 \sim z'_3 = 
 
 11. Adam lives in the Garden of Eden and eats only apples. Time in the garden is discrete ($t = 1, 2, \dots$) and apples are eaten only in discrete units. Adam possesses preferences over the set of streams of apple consumption. Assume that:
 
-        1. Adam likes to eat up to 2 apples a day and cannot bear to eat 3 apples a day.
+    1. Adam likes to eat up to 2 apples a day and cannot bear to eat 3 apples a day.
 
-        2. Adam is **impatient**. He would be delighted to increase his consumption on day $t$ from 0 to 1 or from 1 to 2 apples at the expense of an apple he is promised a day later $t+1$.
+    2. Adam is **impatient**. He would be delighted to increase his consumption on day $t$ from 0 to 1 or from 1 to 2 apples at the expense of an apple he is promised a day later $t+1$.
 
-        3. In any day in which he does not have an apple, he prefers to get 1 apple immediately in exchange for 2 apples tomorrow.
+    3. In any day in which he does not have an apple, he prefers to get 1 apple immediately in exchange for 2 apples tomorrow.
 
-        4. Adam expects to live for 120 years.
+    4. Adam expects to live for 120 years.
 
-        > Show that if (poor) Adam is offered a stream of 2 apples starting in day 4 for the rest of his expected life, he would be willing to exchange that offer for 1 apple right away.
+    > Show that if (poor) Adam is offered a stream of 2 apples starting in day 4 for the rest of his expected life, he would be willing to exchange that offer for 1 apple right away.
 
-    _Tips:_
-
-- (b) means that one single apple is promised to Adam on day $t+1$
-- initial stream offered to Adam can be represented by $(0,0,0,2,2,...,2,2)$
-- evolve it due to Adam’s preferences
+    - _Tips:_
+      - (b) means that one single apple is promised to Adam on day $t+1$
+      - initial stream offered to Adam can be represented by $(0,0,0,2,2,...,2,2)$
+      - evolve it due to Adam’s preferences
 
 12. Given the pairs of lotteries in tables 1 and 2, in each case, which one do you prefer? Explain considering the First-Order Stochastic Domination concept.
 
