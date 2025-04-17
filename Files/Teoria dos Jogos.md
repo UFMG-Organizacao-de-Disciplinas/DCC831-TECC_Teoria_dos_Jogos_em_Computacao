@@ -1229,7 +1229,132 @@ Nos exemplos usualmente serão pessoas neutras a risco.
 
 ## 17/04/2025 - Aula 10 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
 
-### 22/04/2025 - Aula 11 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
+### Slide: Não sei qual
+
+...
+
+#### What is a game?
+
+##### Example 1
+
+- Possible outcomes
+  - Exam
+    - Study: 92
+    - Don't study: 80
+  - Presentation
+    - Both work: 100
+    - Only one works: 90
+    - No one works: 84
+
+---
+
+Nada fora da matriz é importante pra tomada de decisão.
+
+Curiosamente, existem vários nomes diferentes para os payoffs
+
+---
+
+- A set of Players
+- A set of possible strategies
+  - [JV] Tudo o que o agente pode fazer.
+- A set of payoffs
+  - Todos os resultados possíveis para as escolhas possíveis.
+
+#### Games in Normal Form
+
+- Tupla: $(N, A, u)$
+  - N: conjunto finito com n jogadores indexados por i
+  - A: conjunto de todas as possíveis ações finitas
+  - Cada vetor $a = (a_1, \dots, a_n) \in A$ é uma action profile
+  - $u = u_1, \dots, u$ são os resultados obtidos por cada um dos jogadores
+
+---
+
+- Programa do 7 e meio do Silvio Santos
+  - Participantes acumulam dinheiro ao longo da trivia
+  - No final dois líderes dos grupos jogam o dilema do prisioneiro:
+    - dois meios: todos os 10 jogadores ganham 1/10 do acumulado
+    - dois 7's: Ninguém ganha
+    - um meio, um 7: Quem escolheu 7, ganha tudo
+
+#### Reasoning about Behavior in a Game
+
+- ...
+
+---
+
+- Todos os jogadores conhecem toda a estrutura do jogo.
+- Muitos estudos sobre informações incompletas.
+
+---
+
+- Racionalidade
+  - cada jogador deve maximizar seu próprio payoff
+  - Para todo jogador escolher a estratégia ótima, às vezes é necessário muito tempo e/ou muito raciocínio
+
+##### Reasoning about Behavior in the Exam-or-Presentation Game
+
+Em todo caso, é melhor escolher exame.
+
+#### Strictly dominating strategy
+
+É aquela que dá o melhor resultado pros dois jogadores.
+
+No caso do jogo anterior, o problema é que, embora em todos os casos aparentemente escolher Exame seja melhor, ainda assim, esse estado é paretto dominado por outro (onde ambos escolhem presentation)
+
+#### The Prisoner's Dilemma
+
+- Nash Bargaining Solution
+  - Viram o valor de venda e compra de um carro na concessionária
+  - Ao invés de fazer o negócio com a concessionária, eles pegaram metade da diferença, então cada uma ganha/deixa de perder metade desse delta.
+
+---
+
+- Honor among thieves
+
+| X      |  Sticks |  Cheats |
+| ------ | ------: | ------: |
+| Sticks |  (B, A) | (0, AB) |
+| Cheat  | (AB, 0) |  (A, B) |
+
+Estratégia dominante: cheat.
+
+---
+
+- **Flood Dresher's Experiment**
+  - Armen Alchian VS John D. Williams
+
+| X              | JW (Cooperate) | JW (Defect) |
+| -------------- | -------------: | ----------: |
+| AA (Cooperate) |     (..., ...) |     (-1, 2) |
+| AA (Defect)    |     (..., ...) |    (0, 1/2) |
+
+---
+
+Nem sempre é fácil sincronizar as escolhas
+
+---
+
+Uma grande dificuldade é balancear a cooperação com os interesses individuais.
+
+---
+
+Dilema dos Prisioneiros Iterado: estratégia: tit for tat
+
+Rock of dove
+
+- Exemplos:
+
+  - Jogadores: EUA vs URSS
+  - Ações: Criar ou não Bomba Atômica
+  - Payoffs: guerra fria, etc.
+
+- Real-world situations
+  - Performance enhancing drugs in sports
+  - Armed race
+  - Lixo na rua
+
+## 22/04/2025 - Aula 11 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
 
 ### 24/04/2025 - Aula 12 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
 
