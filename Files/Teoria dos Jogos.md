@@ -7,6 +7,7 @@
 - "Não existe altruísmo. E se existe, é porque ele te fará bem"
 
 - Esse curso é sobre modelagem, porém não necessariamente sobre teoria dos jogos.
+
   - Conseguir traduzir para conceitos formais problemas reais
 
 - Um competidor deve abrir sua loja ao lado de uma loja franquiada?
@@ -72,7 +73,6 @@ Principais: John Nash e Von Neumann
     - Information Retrieval
     - Distributed Computing
     - Machine Learning
-  
 - Lei seca: gato e rato
 
 - Types of games:
@@ -89,6 +89,7 @@ Chris Moneymaker
 Talvez façamos alguns seminários
 
 - Pre requisitos
+
   - Inglês
   - Matemática discreta
   - Teoria dos conjuntos básica
@@ -96,6 +97,7 @@ Talvez façamos alguns seminários
   - Noções de algoritmos
 
 - Notas
+
   - 2 provas
     - Em sua maioria são questões de modelagem
   - Projeto de turma | Listas de exercício | Paticipação | Seminário
@@ -562,9 +564,11 @@ SIGBOVIK
 ### Dutch Book Arguments
 
 - **Claim**
+
   - Um agente econômico que não age de acordo com uma função de escolha por maximização não sobreviverá.
 
 - Example
+
   - Macaco:
     - C({a, c}) = a
     - C({a, b}) = b
@@ -803,12 +807,12 @@ A escolha da ação é vista como se os prêmios fossem as consequências
 
 Antes os prêmios eram determinísticos. Agora são probabilísticos
 
-| Escolha | Color      | White |  Red | Green | YelloW |
-| :-----: | ---------- | ----: | ---: | ----: | -----: |
-|    A    | Chance (%) |   ... |  ... |   ... |    ... |
-|    A    | Value      |   ... |  ... |   ... |    ... |
-|    B    | Chance (%) |   ... |  ... |   ... |    ... |
-|    B    | Value      |   ... |  ... |   ... |    ... |
+| Escolha | Color      | White | Red | Green | YelloW |
+| :-----: | ---------- | ----: | --: | ----: | -----: |
+|    A    | Chance (%) |   ... | ... |   ... |    ... |
+|    A    | Value      |   ... | ... |   ... |    ... |
+|    B    | Chance (%) |   ... | ... |   ... |    ... |
+|    B    | Value      |   ... | ... |   ... |    ... |
 
 ---
 
@@ -947,6 +951,7 @@ X -->|| P1
 ```
 
 - Assumption 2: reduction of compound lotteries
+
   - Agrega todas as possibilidades das loterias em um só nível através das multiplicações das probabilidades.
 
 - Assumption 3: Continuity
@@ -981,7 +986,7 @@ Accept the existence of single-dimensional utility functions whose expected valu
 
 - I: Independence
   - ...
-- C: Continuity  
+- C: Continuity
 
 ## 10/04/2025 - Aula 08 - Introduction to Game Theory: global view, applications and examples. Formal definition of a game: payoff, strategies, players, pure strategy nash equilibrium, dominant strategies. | MAS, chapter 3; NCM, chapter 6
 
@@ -1122,9 +1127,9 @@ $u(E(p)) > Eu(p)$: Risk aversion definition.
 #### Risk Aversion - Aula 09
 
 | **Probabilidade** | **Prêmio** |
-| ---------------: | ---------: |
-| 0.5 | $0 |
-| 0.5 | $100 |
+| ----------------: | ---------: |
+|               0.5 |         $0 |
+|               0.5 |       $100 |
 
 $E(p) = Esperança = 0.5 \* 0 + 0.5 \* 100 = 50$
 
@@ -1181,7 +1186,7 @@ Calcula-se o acumulado de todas as probabilidades de se ganhar um valor maior ou
 
 Caso haja pelo menos um acumulado que não seja maior que o outro, então não daria para definir que uma delas é dominada.
 
-### Slide: Class #7 - Parte 1, Introduction on Non Cooperative [...](<https://example.com>)
+### Slide: Class #7 - Parte 1, Introduction on Non Cooperative [...](https://example.com)
 
 #### Motivation
 
