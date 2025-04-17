@@ -8,13 +8,17 @@ Teoria dos Jogos em Computação
 
 1. Give an example of preferences over a countable set in which the preferences cannot be represented by a utility function that returns only integers as values.
 
+   > **Resposta:** Considerando o conjunto dos números racionais $\mathbb{Q}$, que são contáveis. Se formos tentar comparar dois números racionais $q_1$ e $q_2$, podemos ter $q_1 \succ q_2$ se $q_1 > q_2$. E se, tentarmos usar uma função de utilidade $u: \mathbb{Q} \rightarrow \mathbb{Z}$, teríamos que $u(q_1) > u(q_2)$, o que não é possível, isso porque como $\mathbb{Z} \subset \mathbb{Q}$, logo não existe uma função de utilidade que possa mapear todos os números racionais em números inteiros, já que existem infinitos números racionais entre dois números inteiros. Portanto, não é possível representar as preferências sobre um conjunto contável com uma função de utilidade que retorna apenas valores inteiros.
+
 2. A farmer wants to dig a well in a square field. The preferences of the farmer on the possible locations are lexicographic, i.e:
 
    - If $x_1 < x_2$ then $(x_1, y_1) \succ (x_2, y_2)$ for all $y_1, y_2$.
 
    - If $x_1 = x_2 = x$, then $(x, y_1) \succ (x, y_2)$ iff $y_1 < y_2$.
 
-   > First, assume that the field has dimensions $[0, 1000] \times [0, 1000]$ and construct a linear utility function that represents this relation. Second, construct a utility function assuming that the field has dimensions $[0,\infty) \times [0,\infty)$. For both cases, assume that the well location must have integer coordinates.
+   - First, assume that the field has dimensions $[0, 1000] \times [0, 1000]$ and construct a linear utility function that represents this relation. Second, construct a utility function assuming that the field has dimensions $[0,\infty) \times [0,\infty)$. For both cases, assume that the well location must have integer coordinates.
+
+   > **Resposta:** Para o caso das dimensões $[0, 1000] \times [0, 1000]$, podemos definir a função de utilidade: $u: \mathbb{N} \to \mathbb{N}$, onde $u(x, y) = -10000 x - y$;
 
 3. Is the statement "if both $U$ and $V$ represent $\succsim$, then there is a strictly monotonic function $f : \mathbb{R} \rightarrow \mathbb{R}$ such that $V(x) = f(U(x))$" correct?
 
