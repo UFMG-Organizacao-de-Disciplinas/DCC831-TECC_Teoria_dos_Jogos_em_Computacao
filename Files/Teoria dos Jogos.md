@@ -1,4 +1,4 @@
-# Teoria dos Jogos em Computação - Professor: Pedro Olmo Stancioli Vaz de Melo - PG2 - DCC831
+# Teoria dos Jogos em Computação - Professor: Pedro Olmo Stancioli Vaz de Melo - PG2 - DCC831 - Falar sobre SIGKDD
 
 ## 13/03/2025 - Aula 01
 
@@ -1356,9 +1356,109 @@ Rock of dove
 
 ## 22/04/2025 - Aula 11 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
 
-### 24/04/2025 - Aula 12 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
+Faltei
 
-### 26/04/2025 - Aula 13 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
+## 24/04/2025 - Aula 12 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
+
+### Best Response
+
+- Definindo as estratégias dos outros jogadores, será a melhor resposta para um determinado conjunto de estratégias dos outros jogadores.
+- $s_i*$: é a melhor estratégia a ser feita
+- $s_{-i}$: As estratégias de todos os outros tirando o indivíduo em questão
+- $s_i$ é a estratégia do jogador $i$
+- $S_i$: é o conjunto de estratégias disponíveis para o jogador $i$
+
+---
+
+- Strategy Profile: são estratégias tomadas pelos jogadores.
+- Action Profile: Um action profile é um strategy profile; Uma ação é uma ação única tomada, ou então, um conjunto de ações tomadas.
+
+---
+
+A melhor resposta é a que me gera maior payoff.
+
+---
+
+- Best Responses are unique?
+
+---
+
+- Best Response is **not** a solution concept
+
+#### Nash Equilibrium
+
+- O Equilíbrio de Nash ocorre quando todos os jogadores estão jogando as melhores escolhas dadas as outras estratégias escolhidas pelos jogadore.s
+
+##### Jogo dos 3 clientes
+
+|  X  |  A  |  B  |  C  |
+| :-: | :-: | :-: | :-: |
+|  A  | 4,4 | 0,2 | 0,2 |
+|  B  | 0,0 | 1,1 | 0,2 |
+|  A  | 0,0 | 0,2 | 1,1 |
+
+Esse jogo acaba sendo uma loteria, mas cujas probabilidades são definidas pelas estratégias dos jogadores.
+
+Equilíbrio de Nash: (A, A)
+
+##### Defining Nash Equilibrium
+
+- Se uma escolha pareto domina todas as outras, ela é um Equilíbrio de Nash
+
+##### Pure Strategy Nash Equilibrium
+
+|  X  |   C    |     D      |
+| :-: | :----: | :--------: |
+|  C  | -1, -1 |   -4, 0    |
+|  D  | 0, -4  | **-3, -3** |
+
+|   X   | Left | Right |
+| :---: | :--: | :---: |
+| Left  |  1   |   0   |
+| Right |  0   |   1   |
+
+|  X  |  B   |  F   |
+| :-: | :--: | :--: |
+|  B  | 1, 2 | 0, 0 |
+|  F  | 0, 0 | 2, 1 |
+
+Jogos de soma zero não tem equilíbrio de nash em estratégias puras?
+
+|   X   | Heads | Tails |
+| :---: | :---: | :---: |
+| Heads |   1   |  -1   |
+| Tails |  -1   |   1   |
+
+A soma dos payoffs é zero no jogo de soma zerlo
+
+---
+
+- How to find
+
+---
+
+Pergunta de prova: Equilíbrio de Nash Estrito
+
+Equilíbrio de Nash Fraco: existe ao menos uma resposta equivalentes de equilíbrio.
+
+##### Fun Game
+
+|  X  |   L    |   R    |
+| :-: | :----: | :----: |
+|  T  | 80, 40 | 40, 80 |
+|  B  | 40, 80 | 80, 40 |
+
+|  X  |      L      |   R    |
+| :-: | :---------: | :----: |
+|  T  | **320, 40** | 40, 80 |
+|  B  |   40, 80    | 80, 40 |
+
+|  X  |     L      |   R    |
+| :-: | :--------: | :----: |
+|  T  | **44, 40** | 40, 80 |
+|  B  |   40, 80   | 80, 40 |
+
+## 26/04/2025 - Aula 13 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
 
 ### 29/04/2025 - Aula 14 - The complexity of finding a Nash Equilibrium: zero sum games and PPAD | MAS, chapter 3; NCM, chapter 6
 
