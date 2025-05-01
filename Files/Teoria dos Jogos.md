@@ -1360,6 +1360,8 @@ Faltei
 
 ## 24/04/2025 - Aula 12 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
 
+## 29/04/2025
+
 ### Best Response
 
 - Definindo as estratégias dos outros jogadores, será a melhor resposta para um determinado conjunto de estratégias dos outros jogadores.
@@ -1459,6 +1461,88 @@ Equilíbrio de Nash Fraco: existe ao menos uma resposta equivalentes de equilíb
 |  B  |   40, 80   | 80, 40 |
 
 ## 26/04/2025 - Aula 13 - Alternative solutions: iterated removal of strictly dominated strategies, minimax strategies, minimax theorem of zero sum games, best reponses, correlated equilibrium. | MAS, chapter 3; NCM, chapter 6
+
+### Mixed Strategies
+
+- Análise de chutes de penalti: Esquerda, Direita, Centro
+  - $u_i (s) =$ empirical probability of winning
+
+| Kicker/Goalie | Left (p) | Right (1-p) |
+| ------------: | -------: | ----------: |
+|      Left (q) | .58, .42 |    .95, .05 |
+|   Right (1-q) | .93, .07 |    .70, .30 |
+
+O equilíbrio de Nash na estratégia mista é encontrado ao se igualar os payoffs de esquerda e direita para determinada probabilidade:
+
+$$
+\begin{cases}
+  u_1(l) = p \cdot 0.58 + (1 - p) \cdot 0.95 \\
+  u_1(r) = p \cdot 0.93 + (1 - p) \cdot 0.70
+\end{cases}
+$$
+
+- Então, para $p=0.38$, conseguimos $q=0.42$
+
+|      X       | Goalie Left | Goalie Right | Kicker Left | Kicker Right |
+| :----------: | :---------: | :----------: | :---------: | :----------: |
+|  Nash Freq.  |     .42     |     .58      |     .38     |     .62      |
+| Actual Freq. |     .42     |     .58      |     .40     |     .60      |
+
+---
+
+- Do people randomize well over time?
+- And under pressure?
+- Minimax é uma estratégia pra jogos de soma zero.
+
+---
+
+- Equilíbrio de Nash em pedra papel tesoura:
+  - $R = 1/3$
+  - $P = 1/3$
+  - $S = 1/3$
+- No experimento chinês, os jogadores que perceberam a maior tendência a manter, ganhavam.
+
+---
+
+- Nas estratégias mistas:
+  - Os jogadores recebem combinações lineares entre seus valores de utilidade
+  - E no geral são sempre por preferência de loterias
+
+### Slide: Mixed Strategies Part 2
+
+#### Maxmin and minmax
+
+##### Maxmin
+
+- Maxmin: o jogador tenta maximizar o seu payoff mínimo
+
+  - $arg max_{s_i} \min_{s_i} u_i(s_i, s_{-i})$
+  - $max_{s_i} \min_{s_i} u_i(s_i, s_{-i})$
+
+Obs.: esse Arg serve pra retornar o $s_i$, nesse caso a estratégia. Enquanto que o max retorna o valor.
+
+- Wife x Husband: Pro caso da esposa,...
+
+- Jogo de soma zero com dois jogadores, dá pra encontrar o melhor caso. Já de soma geral, Progração Linear resolve.
+
+- O maxmin é uma das estratégias da pras pessoas muito aversas ao risco.
+  - Porém ao não se considerar o payoff do adversário, pode-se acabar que a escolha do maxmin não geraria bons resultados.
+
+O Maxmin só se importa com os payoffs do jogador
+
+##### Minmax
+
+- Minmax: o jogador tenta minimizar o payoff máximo do adversário
+
+No minmax aí já deve-se considerar os outros jogadores.
+
+##### In 2 players zero sum games
+
+##### Theorem (Julia Robinson)
+
+- Se houver uma estratégia pura que tenta sempre ser melhor que a estratégia mista observada, no final acaba-se tendo duas estratégias mistas
+
+Não necessariamente um maxmin para ambos não é um equilíbrio de Nash
 
 ### 29/04/2025 - Aula 14 - The complexity of finding a Nash Equilibrium: zero sum games and PPAD | MAS, chapter 3; NCM, chapter 6
 
