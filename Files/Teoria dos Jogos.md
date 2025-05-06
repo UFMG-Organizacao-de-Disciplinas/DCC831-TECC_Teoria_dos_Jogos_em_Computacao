@@ -1544,13 +1544,121 @@ No minmax aí já deve-se considerar os outros jogadores.
 
 Não necessariamente um maxmin para ambos não é um equilíbrio de Nash
 
-### 29/04/2025 - Aula 14 - The complexity of finding a Nash Equilibrium: zero sum games and PPAD | MAS, chapter 3; NCM, chapter 6
+## 29/04/2025 - Aula 14 - The complexity of finding a Nash Equilibrium: zero sum games and PPAD | MAS, chapter 3; NCM, chapter 6
 
-### 01/05/2025 - Aula XX - feriado
+## 01/05/2025 - Aula XX - feriado
 
-### 06/05/2025 - Aula 15 - prova 1
+## 06/05/2025 - Aula 15 - prova 1 - Acabou não sendo prova
 
-### 08/05/2025 - Aula 16 - The complexity of finding a Nash Equilibrium: Lemke-Howson | MAS, chapter 4
+### Slide: Mixed Strategies
+
+#### Maxmin and minmax strategies
+
+- Let's play another game
+
+| X   | L      | R      |
+| --- | ------ | ------ |
+| T   | 100, 2 | 0.9, 5 |
+| B   | 2, 1   | 1, 0   |
+
+Esquerda: priorizar ganhar 100 do T, enquanto que o B não tem muitos valore; A diferença entre TR e RB
+Direita: priorizar ganhar 5 do R, enquanto que o L não tem muito valor
+
+- Maxmin
+  - esquerda: B, pois maximza o menor valor;
+  - direita: L, pois maximiza o mínimo.
+
+Qual foi o atrator do T? O grande valor do 100, em comparativo com o 2, 1 e 0.9;
+
+Qual o nome desse fenômeno: fear of missing out. Arrependimento de ter escolhido um lado que não deu tanto payoff caso tivesse sido escolhido. (Expliquei meio mal mas é por aí)
+
+#### Regret
+
+- É o nível de arrependimento de um jogador por tomar uma ação $a_i$
+
+Aqui ele considera que o arrependimento é o máximo que poderia ser ganho menos o que pode ganhar pela escolha da $a_i$
+
+Já o arrependimento máximo é o maior dentre todos os possíveis arrependimentos para todas as ações possíveis.
+
+Dúvida: mas se alguém foi averso ou propenso ao risco, essa avaliação absoluta desses valores já não faria sentido. O que seria feito nesse caso?
+
+Resposta: pra isso, consideraríamos que a matriz de payoff é modificada para refletir a utilidade de quem é propenso ou averso ao risco.
+
+- arg min max (max regret)
+  - max regret: para cada célula da matriz, calcula a diferença pro maior ganho possível que o jogador poderia ter ganho
+  - Max (max regret):
+
+Dúvida: Por que não pode existir regret negativo?
+
+Resposta: porque quando ele calcula $\max_{a_{i}' \in A_i}$ ele não considera que será uma ação diferente da já escolhida, então o escolhido estará na conta.
+
+Quem não joga minimax regret: esportes radicais.
+
+Falha estratégica: não considera a tomada de ação do outro jogador.
+
+#### Removal of dominated strategies
+
+Outro jogo: no jogo um jogador tem uma escolha estritamente dominante.
+
+F1 e F2: low-priced e upscale
+
+A ideia é que podemos remover estratégias estritamente dominadas para facilitar a decisão
+
+- Dominância estrita: é quando todos os payoffs de um jogador são maiores
+- Dominância fraca: quando existe pelo menos uma decisão em que os payoffs são iguais
+- Dominante: quando uma estratégia domina todas as outras.
+- Estritamente dominada: uma que é pior que todas as outras.
+- Uma estratégia que é dominante em relação a todas as outras, quer dizer que ela é um equilíbrio de Nash?
+  - Sim
+- E uma estritamente dominante também gera equilíbrio de Nash?
+  - Sim.
+- E ela é pareto ótima?
+  - Não.
+
+---
+
+Mais jogo
+
+Estratégia (U, B) domina estratégia M
+
+|  X  |   L    |  C   |   R   |
+| :-: | :----: | :--: | :---: |
+|  U  |  3, 1  | 0, 3 | 0, 0  |
+|  M  |  1, 5  | 1, 1 | 10, 0 |
+|  B  | 0, 1/2 | 4, 2 | 5, 0  |
+
+R é estritamente dominada por L e C;
+
+Construção da estratégia mista:
+
+- $U_1^p (L) = 3p$
+- $U_1^p (C) = 4-4p$
+- ...
+
+Remoções
+
+- R; M; L; U
+
+[Embora eu e o Leonardo não concordemos que faria sentido usar estratégia mista, logo não deveria ser removida a opção M]
+
+---
+
+A ordem de remoção de estratégias estritamente dominantes
+
+- Propriedade XYZ
+
+Porcos jogam...
+
+| Small / Large | Press | Wait  |
+| ------------- | ----- | ----- |
+| Press         | 1, 5  | -1, 9 |
+| Wait          | 4, 4  | 0, 0  |
+
+Small Wait: domina; Remove Small Press.
+
+Entre o grande esperar e pressionar, o grande apertaria.
+
+## 08/05/2025 - Aula 16 - The complexity of finding a Nash Equilibrium: Lemke-Howson | MAS, chapter 4
 
 ### 13/05/2025 - Aula 17 - The complexity of finding a Nash Equilibrium: Lemke-Howson | MAS, chapter 4
 
