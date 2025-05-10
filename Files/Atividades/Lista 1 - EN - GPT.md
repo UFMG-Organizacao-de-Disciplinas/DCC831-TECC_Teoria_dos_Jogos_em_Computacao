@@ -60,11 +60,17 @@ Teoria dos Jogos em Computação
      > $U(x) = \begin{cases} x, & \text{se } x \leq 0 \\ x + 1, & \text{se } x > 0 \end{cases}$
      >
      > $V(x) = x$
+     >
      > Poderíamos então alterar a função $U$ para representar a função $V$:
+     >
      > $U(x) = \begin{cases} V(x), & \text{se } x \leq 0 \\ V(x) + 1, & \text{se } x > 0 \end{cases}$
+     >
      > Então, os únicos casos em que $U$ se diferencia de $V$ são quando $x > 0$. Para esses casos, podemos definir a função $f$ como:
+     >
      > $f(x) = \begin{cases} x, & \text{se } x \leq 0 \\ x - 1, & \text{se } x > 0 \end{cases}$
+     >
      > Então, aplicando a função $f$ em $U'$, temos:
+     >
      > $f(U(x)) = \begin{cases} f(V(x)), & \text{se } x \leq 0 \\ f(V(x) + 1), & \text{se } x > 0 \end{cases}$
      >
      > $f(U(x)) = \begin{cases} V(x), & \text{se } x \leq 0 \\ (V(x) + 1) - 1, & \text{se } x > 0 \end{cases}$
@@ -72,7 +78,9 @@ Teoria dos Jogos em Computação
      > $f(U(x)) = \begin{cases} V(x), & \text{se } x \leq 0 \\ V(x), & \text{se } x > 0 \end{cases}$
      >
      > $f(U(x)) = V(x)$
+     >
      > Porém, percebe-se que, $f(x)$ não é uma função estritamente monótona, isso no intervalo $[0, 1]$, visto que $f(0) = f(1) = 0$.
+     >
      > Concluimos então que, a afirmação não é verdadeira, visto que para que a $f(U(x))$ conseguisse se igualar a $V(x)$, a função $f$ precisaria ser não estritamente monótona.
 
 4. Can a continuous preference relation be represented by a discontinuous utility function?
