@@ -57,25 +57,26 @@ Teoria dos Jogos em Computação
      > Consideramos então que temos $U$ e $V$ como funções de utilidade que representam a mesma relação de preferência $\succsim$. Para confirmar a afirmação, precisamos mostrar que existe uma função estritamente monótona (ou seja, que sempre cresça ou decresça) $f$ que converta os valores de $U$ em valores de $V$.
      >
      > Seguindo a sugestão dada, consideremos as funções $U$ e $V$ que têm a mesma relação de preferência $\succsim$:
-     > $U(x) = \begin{cases} x, & \text{se } x \leq 0 \\ x + 1, & \text{se } x > 0 \end{cases}$
+     >
+     > $U(x) = \begin{cases} x, & \text{se } x \leq 0 \\\\ x + 1, & \text{se } x > 0 \end{cases}$
      >
      > $V(x) = x$
      >
      > Poderíamos então alterar a função $U$ para representar a função $V$:
      >
-     > $U(x) = \begin{cases} V(x), & \text{se } x \leq 0 \\ V(x) + 1, & \text{se } x > 0 \end{cases}$
+     > $U(x) = \begin{cases} V(x), & \text{se } x \leq 0 \\\\ V(x) + 1, & \text{se } x > 0 \end{cases}$
      >
      > Então, os únicos casos em que $U$ se diferencia de $V$ são quando $x > 0$. Para esses casos, podemos definir a função $f$ como:
      >
-     > $f(x) = \begin{cases} x, & \text{se } x \leq 0 \\ x - 1, & \text{se } x > 0 \end{cases}$
+     > $f(x) = \begin{cases} x, & \text{se } x \leq 0 \\\\ x - 1, & \text{se } x > 0 \end{cases}$
      >
      > Então, aplicando a função $f$ em $U'$, temos:
      >
-     > $f(U(x)) = \begin{cases} f(V(x)), & \text{se } x \leq 0 \\ f(V(x) + 1), & \text{se } x > 0 \end{cases}$
+     > $f(U(x)) = \begin{cases} f(V(x)), & \text{se } x \leq 0 \\\\ f(V(x) + 1), & \text{se } x > 0 \end{cases}$
      >
-     > $f(U(x)) = \begin{cases} V(x), & \text{se } x \leq 0 \\ (V(x) + 1) - 1, & \text{se } x > 0 \end{cases}$
+     > $f(U(x)) = \begin{cases} V(x), & \text{se } x \leq 0 \\\\ (V(x) + 1) - 1, & \text{se } x > 0 \end{cases}$
      >
-     > $f(U(x)) = \begin{cases} V(x), & \text{se } x \leq 0 \\ V(x), & \text{se } x > 0 \end{cases}$
+     > $f(U(x)) = \begin{cases} V(x), & \text{se } x \leq 0 \\\\ V(x), & \text{se } x > 0 \end{cases}$
      >
      > $f(U(x)) = V(x)$
      >
