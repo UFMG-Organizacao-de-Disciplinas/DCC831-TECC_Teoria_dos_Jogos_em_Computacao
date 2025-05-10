@@ -10,25 +10,53 @@ Teoria dos Jogos em Computação
 
    > **Resposta:** Considerando o conjunto dos números racionais $\mathbb{Q}$, que são contáveis. Se formos tentar comparar dois números racionais $q_1$ e $q_2$, podemos ter $q_1 \succ q_2$ se $q_1 > q_2$. E se, tentarmos usar uma função de utilidade $u: \mathbb{Q} \rightarrow \mathbb{Z}$, teríamos que $u(q_1) > u(q_2)$, o que não é possível, isso porque como $\mathbb{Z} \subset \mathbb{Q}$, logo não existe uma função de utilidade que possa mapear todos os números racionais em números inteiros, já que existem infinitos números racionais entre dois números inteiros. Portanto, não é possível representar as preferências sobre um conjunto contável com uma função de utilidade que retorna apenas valores inteiros.
 
+---
+
 2. A farmer wants to dig a well in a square field. The preferences of the farmer on the possible locations are lexicographic, i.e:
 
    - If $x_1 < x_2$ then $(x_1, y_1) \succ (x_2, y_2)$ for all $y_1, y_2$.
-
    - If $x_1 = x_2 = x$, then $(x, y_1) \succ (x, y_2)$ iff $y_1 < y_2$.
 
    - First, assume that the field has dimensions $[0, 1000] \times [0, 1000]$ and construct a linear utility function that represents this relation. Second, construct a utility function assuming that the field has dimensions $[0,\infty) \times [0,\infty)$. For both cases, assume that the well location must have integer coordinates.
 
-   > **Resposta:** Para o caso das dimensões $[0, 1000] \times [0, 1000]$, podemos definir a função de utilidade: $u: \mathbb{N} \to \mathbb{N}$, onde $u(x, y) = -10000 x - y$;
+   > **Resposta:** Queremos uma função de utilidade que represente que, quanto menor os valores de $X$ e $Y$, melhor a localização do poço. Além disso, tem-se por primeira ordem de desempate o valor de $X$ e, por segunda ordem de desempate, o valor de $Y$.
+   >
+   > Intuitivamente, podemos considerar que para determinado $X$, mesmo com o maior valor de $Y$, sua função de utilidade será sempre menor que a de um $X + 1$ e $Y$ mínimo. Matematicamente: $u(X, \max{(Y)}) < u(X + 1, \min{(Y)})$.
+   >
+   > Precisamos então que $X$ seja multiplicado por um valor tal que garanta a veracidade de nossa intuição, para tanto, consideremos que: $u(X, Y) = -\alpha X - Y$, onde $\alpha > \max{(Y)}$.
+   >
+   > **Parte 1:** Para o caso das dimensões $[0, 1000] \times [0, 1000]$, podemos consideramos então que $\max{(Y)} = 1000$ e, portanto, se $\alpha > 1000$, podemos considerar o menor valor natural de $\alpha = 1001$. Sendo assim, temos que a função de utilidade é dada por: $u(X, Y) = -1001X - Y$.
+   >
+   > |    $X$ |    $Y$ |  $u(X, Y)$ |
+   > | -----: | -----: | ---------: |
+   > |    $0$ |    $0$ |        $0$ |
+   > |    $0$ |    $1$ |       $-1$ |
+   > |    $0$ | $1000$ |    $-1000$ |
+   > |    $1$ |    $0$ |    $-1001$ |
+   > |    $1$ | $1000$ |    $-2001$ |
+   > |    $2$ |    $0$ |    $-2002$ |
+   > |  $999$ | $1000$ | $-1000999$ |
+   > | $1000$ |    $0$ | $-1001000$ |
+   > | $1000$ | $1000$ | $-1002000$ |
+   >
+   > Essa equação poderia ser modificada de duas formas:
+   >
+   > 1. Poderia-se limitar o valor de retorno aos números naturais.
+   > 2. Poderia-se definir uma função de utilidade que retornasse valores entre 0 e 1.
+   >
+   > Mas deixemos assim mesmo.
+   >
+   > **Parte 2:** Agora, para o caso das dimensões $[0, \infty) \times [0, \infty)$, podemos considerar que $\max{(Y)} = \infty$ e, portanto, se $\alpha > \infty$... Bom, $\infty + 1 = \infty$, e uma função de utilidade $u(X, Y) = -\infty X - Y$ acaba não sendo condizente. Sendo assim, não é possível definir uma função de utilidade que represente essa relação.
+   >
+   > Outra análise mais conceitual a se fazer é que essa função de utilidade é chamada de função de utilidade lexicográfica, e ela apenas é válida para conjuntos finitos.
 
 3. Is the statement "if both $U$ and $V$ represent $\succsim$, then there is a strictly monotonic function $f : \mathbb{R} \rightarrow \mathbb{R}$ such that $V(x) = f(U(x))$" correct?
 
-   > Tip: consider $V(x) = x$ and $
-U(x) =
-\begin{cases}
-x, & \text{if } x \leq 0 \\
-x + 1, & \text{if } x > 0
-\end{cases}
-$
+   - **Tip:** consider $V(x) = x$ and $U(x) = \begin{cases} x, & \text{if } x \leq 0 \\ x + 1, & \text{if } x > 0 \end{cases}$
+     > **Resposta:** A afirmação é verdadeira. Se $U$ e $V$ representam a mesma relação de preferência $\succsim$, então existe uma função estritamente monótona $f$ tal que $V(x) = f(U(x))$. Isso ocorre porque ambas as funções preservam a ordem das preferências, e a função $f$ pode ser escolhida como uma função crescente que transforma os valores de $U$ em valores de $V$. [Copilot] > **Resposta:**
+     >
+     > - $V(x) = f(U(x))$
+     > - $x = f(x \textbf{ if } x \leq 0 \textbf{ else } x + 1)$
 
 4. Can a continuous preference relation be represented by a discontinuous utility function?
 
