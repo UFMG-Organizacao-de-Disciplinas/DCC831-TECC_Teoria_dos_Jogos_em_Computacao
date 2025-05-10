@@ -1,4 +1,4 @@
-# Lista 1
+# Lista 1 - Revisar Q5
 
 Teoria dos Jogos em Computação
 
@@ -50,10 +50,12 @@ Teoria dos Jogos em Computação
    >
    > Outra análise mais conceitual a se fazer é que essa função de utilidade é chamada de função de utilidade lexicográfica, e ela apenas é válida para conjuntos finitos.
 
+---
+
 3. Is the statement "if both $U$ and $V$ represent $\succsim$, then there is a strictly monotonic function $f : \mathbb{R} \rightarrow \mathbb{R}$ such that $V(x) = f(U(x))$" correct?
 
    - **Tip:** consider $V(x) = x$ and $U(x) = \begin{cases} x, & \text{if } x \leq 0 \\
-     > **Resposta JV:**
+     > **Resposta:**
      > Consideramos então que temos $U$ e $V$ como funções de utilidade que representam a mesma relação de preferência $\succsim$. Para confirmar a afirmação, precisamos mostrar que existe uma função estritamente monótona (ou seja, que sempre cresça ou decresça) $f$ que converta os valores de $U$ em valores de $V$.
      >
      > Seguindo a sugestão dada, consideremos as funções $U$ e $V$ que têm a mesma relação de preferência $\succsim$:
@@ -84,32 +86,63 @@ Teoria dos Jogos em Computação
      >
      > Concluimos então que, a afirmação não é verdadeira, visto que para que a $f(U(x))$ conseguisse se igualar a $V(x)$, a função $f$ precisaria ser não estritamente monótona.
 
+---
+
 4. Can a continuous preference relation be represented by a discontinuous utility function?
+
+   > **Resposta:** Sim. A função de utilidade $U$ apresentada na questão anterior exemplifica exatamente esse fato. Embora ela seja descontínua em $x = 0$, ela ainda representa uma relação de preferência contínua.
+
+---
 
 5. Show that in the case of $X = \mathbb{R}$, the preference relation that is represented by the discontinuous utility function $u(x) = floor(x)$ is not a continuous relation.  
    $floor(x)$: the largest integer $n$ such that $x \geq n$
+   > **Resposta:** Não consegui entender e dizer com convicção que isso é verdade. Trocando uma ideia com o GPT, entendi que pode ter relação com limites e conjuntos fechados, mas ainda assim as explicações me soaram esquisitas.
 
 ---
 
 ## Choice
 
-6. The following are descriptions of decision–making procedures. Discuss whether the procedures can be described in the framework of the choice model discussed in this course and whether they are compatible with the "rational man" paradigm. In other words, can I construct a utility function $u(x)$ based solely on the set of alternatives $x \in X$ according with these procedures? Explain why (e.g. with an example).
+6. The following are descriptions of decision-making procedures. Discuss whether the procedures can be described in the framework of the choice model discussed in this course and whether they are compatible with the "rational man" paradigm. In other words, can I construct a utility function $u(x)$ based solely on the set of alternatives $x \in X$ according with these procedures? Explain why (e.g. with an example).
+
+   > Para essa questão, consideremos que $C_{\succsim}(A)$ representa a função que encontra o melhor dos elementos possíveis pertencentes ao conjunto $A = \{u(x) | x \in X\}$.
 
    1. The decision maker chooses an alternative in order to maximize another person’s suffering.
 
+      > **Resposta:** Sim, é compatível. Isso pois sua função de utilidade pode ser representada como $u(x) = -v(x)$, onde $v(x)$ é a função de utilidade do outro indivíduo, ou seja, quanto menor for $v(x)$, maior seria o sofrimento. Assim, o agente racional irá escolher a alternativa que maximiza a função de utilidade negativa do outro indivíduo.
+
    2. The decision maker asks his two children to rank the alternatives and then chooses the alternative that is the best on average (you can use your own definition of "best on average").
+
+      > **Resposta:** Sim, é compatível. Isso pois visa maximizar a média das funções de utilidade dos filhos. A função de utilidade do agente racional pode ser representada como $u(x) = \frac{f_1(x) + f_2(x)}{2}$, onde $v_1(x)$ e $v_2(x)$ são as funções de utilidade dos filhos.
 
    3. The decision maker has an ideal point in mind and chooses the alternative that is closest to it.
 
+      > **Resposta:** Sim, é compatível. Isso porque a função de utilidade do agente racional pode ser representada como $u(x) = -d(x, x')$, onde $d(x, x')$ é a distância entre o ponto ideal $x'$ e o ponto $x$. Assim, o agente racional irá escolher a alternativa que minimiza a distância entre o ponto ideal e o ponto escolhido.
+
    4. The decision maker looks for the alternative that appears most often in a list of alternatives.
+
+      > **Resposta:** Não é compatível. Isso porque a função de utilidade do agente depende de outra variável, sendo esse o conjunto de alternativas.
 
    5. The decision maker has an ordering in mind and always chooses the median element.
 
+      > **Resposta:** Não é compatível. Isso porque a função de utilidade do agente depende de outra variável, sendo esse o conjunto dos valores ordenados.
+
 7. Consider the following choice procedure: a decision maker has a strict ordering $\succsim$ over the set $X$ and assigns to each $x \in X$ a natural number $class(x)$ to be interpreted as the "class" of $x$. Given a choice problem $A$, he chooses the best element in $A$ from those belonging to the most common class in $A$ (i.e., the class that appears in $A$ most often). If there is more than one most common class, he picks the best element from the members of $A$ that belong to a most common class...
+
+   > **Entendendo o enunciado:** temos um conjunto ordenado por preferência onde cada um dos elementos está arbitrariamente definido como pertencente a uma classe. Considera-se que a classe de menor número é a preferível. O seu critério para escolha de "melhor" elemento é pegar o melhor elemento da classe preferível, e em caso de empate, pegar o melhor elemento dentre as classes empatadas.
 
    1. Is this procedure consistent with the "rational man" paradigm?
 
+      > **Resposta:** Não. Isso porque a escolha do agente racional não depende apenas da classe, mas sim de que forma o conjunto de escolhas está definido. Então se tivermos $A = \{x_1, x_2, x_3, x_4\}$ e $class(x_1) = class(x_2) = 1, class(x_3) = class(x_4) = 2$, então $C({x_1, x_2, x_3, x_4}) = x_1$, mas se $C({x_1, x_3, x_4}) = x_3$. Assim violando a condição $\alpha$ que afirma que para dos conjuntos $A, B \in D$, se $A \subset B$ e $C(B) = A$, então $C(A) = C(B)$.
+
    2. Define the relation: $xPy$ if $x$ is chosen from $\{x, y\}$. Show that the relation $P$ is a strict ordering (complete, asymmetric, and transitive).
+
+      > **Resposta:**
+      >
+      > - **Completo:** Para todo $x, y \in X$, temos que $xPy$ ou $yPx$.
+      > - **Assimétrico:** Para todo $x, y \in X$, temos que se $xPy$ então não é verdade que $yPx$.
+      > - **Transitivo:** Para todo $x, y, z \in X$, temos que se $xPy$ e $yPz$, então $xPz$.
+      >
+      > Se todos os três critérios forem satisfeitos, então a relação $P$ é uma ordem estrita.
 
 ---
 
@@ -117,10 +150,31 @@ Teoria dos Jogos em Computação
 
 8. Which lottery do you prefer?
 
-- $L = (0.25z_1, 0.25z_2, 0.25z_3, 0.25z_4)$ OR
-- $L' = (0.15z_1, 0.50z_2, 0.15z_3, 0.20z_4)$
+   - $L = (0.25z_1, 0.25z_2, 0.25z_3, 0.25z_4)$ OR
+   - $L' = (0.15z_1, 0.50z_2, 0.15z_3, 0.20z_4)$
 
-Suppose, by continuity: $z_2 \sim z'_2 = (0.6z_1, 0.4z_4)$ and $z_3 \sim z'_3 = (0.2z_1, 0.8z_4)$
+   Suppose, by continuity: $z_2 \sim z'_2 = (0.6z_1, 0.4z_4)$ and $z_3 \sim z'_3 = (0.2z_1, 0.8z_4)$
+
+   > **Resposta:** Nessa questão de continuidade, seria o mesmo que considerarmos que o prêmio de $z_2$ e $z'_2$ têm o mesmo valor esperado que uma loteria $(0.6z_1, 0.4z_4)$ e $z_3$ e $z'_3$ têm o mesmo valor esperado que uma loteria $(0.2z_1, 0.8z_4)$. Então, para simplificar, podemos substituir esses dois pares por suas respectivas loterias equivalentes com o intuito de reduzir o número de variáveis.
+   > Assim, temos que:
+   >
+   > - $L =$
+   >   - $(0.25z_1, 0.25(0.6z_1 + 0.4z_4), 0.25(0.2z_1 + 0.8z_4), 0.25z_4)$
+   >   - $(0.25z_1, 0.15z_1 + 0.10z_4, 0.05z_1 + 0.20z_4, 0.25z_4)$
+   >   - $(0.25z_1 + 0.15z_1 + 0.05z_1, 0.10z_4 + 0.20z_4 + 0.25z_4)$
+   >   - $(0.45z_1, 0.55z_4)$
+   > - $L' =$
+   >   - $(0.15z_1, 0.50(0.6z_1 + 0.4z_4), 0.15(0.2z_1 + 0.8z_4), 0.20z_4)$
+   >   - $(0.15z_1, 0.30z_1 + 0.20z_4, 0.03z_1 + 0.12z_4, 0.20z_4)$
+   >   - $(0.15z_1 + 0.30z_1 + 0.03z_1, 0.20z_4 + 0.20z_4 + 0.12z_4)$
+   >   - $(0.48z_1, 0.52z_4)$
+   >     Assim, resta comparar as duas loterias:
+   > - $L = (0.45z_1, 0.55z_4)$
+   > - $L' = (0.48z_1, 0.52z_4)$
+   >
+   > Por fim, se considerarmos que $z_1 \succ z_4$, então como $p(z'_1) > p(z_1)$, então $L' \succ L$.
+
+<!-- Isso pra mim não fez muito sentido. Por que posso considerar que a L' ganha se não sei a utilidade de z_1 e z_2? Ora, se z_1 é ganhar um real e z_4 é morrer... 💀 -->
 
 9. T or F. Justify or give a counterexample.
 
