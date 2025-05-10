@@ -52,11 +52,28 @@ Teoria dos Jogos em Computação
 
 3. Is the statement "if both $U$ and $V$ represent $\succsim$, then there is a strictly monotonic function $f : \mathbb{R} \rightarrow \mathbb{R}$ such that $V(x) = f(U(x))$" correct?
 
-   - **Tip:** consider $V(x) = x$ and $U(x) = \begin{cases} x, & \text{if } x \leq 0 \\ x + 1, & \text{if } x > 0 \end{cases}$
-     > **Resposta:** A afirmação é verdadeira. Se $U$ e $V$ representam a mesma relação de preferência $\succsim$, então existe uma função estritamente monótona $f$ tal que $V(x) = f(U(x))$. Isso ocorre porque ambas as funções preservam a ordem das preferências, e a função $f$ pode ser escolhida como uma função crescente que transforma os valores de $U$ em valores de $V$. [Copilot] > **Resposta:**
+   - **Tip:** consider $V(x) = x$ and $U(x) = \begin{cases} x, & \text{if } x \leq 0 \\
+     > **Resposta JV:**
+     > Consideramos então que temos $U$ e $V$ como funções de utilidade que representam a mesma relação de preferência $\succsim$. Para confirmar a afirmação, precisamos mostrar que existe uma função estritamente monótona (ou seja, que sempre cresça ou decresça) $f$ que converta os valores de $U$ em valores de $V$.
      >
-     > - $V(x) = f(U(x))$
-     > - $x = f(x \textbf{ if } x \leq 0 \textbf{ else } x + 1)$
+     > Seguindo a sugestão dada, consideremos as funções $U$ e $V$ que têm a mesma relação de preferência $\succsim$:
+     > $U(x) = \begin{cases} x, & \text{se } x \leq 0 \\ x + 1, & \text{se } x > 0 \end{cases}$
+     >
+     > $V(x) = x$
+     > Poderíamos então alterar a função $U$ para representar a função $V$:
+     > $U(x) = \begin{cases} V(x), & \text{se } x \leq 0 \\ V(x) + 1, & \text{se } x > 0 \end{cases}$
+     > Então, os únicos casos em que $U$ se diferencia de $V$ são quando $x > 0$. Para esses casos, podemos definir a função $f$ como:
+     > $f(x) = \begin{cases} x, & \text{se } x \leq 0 \\ x - 1, & \text{se } x > 0 \end{cases}$
+     > Então, aplicando a função $f$ em $U'$, temos:
+     > $f(U(x)) = \begin{cases} f(V(x)), & \text{se } x \leq 0 \\ f(V(x) + 1), & \text{se } x > 0 \end{cases}$
+     >
+     > $f(U(x)) = \begin{cases} V(x), & \text{se } x \leq 0 \\ (V(x) + 1) - 1, & \text{se } x > 0 \end{cases}$
+     >
+     > $f(U(x)) = \begin{cases} V(x), & \text{se } x \leq 0 \\ V(x), & \text{se } x > 0 \end{cases}$
+     >
+     > $f(U(x)) = V(x)$
+     > Porém, percebe-se que, $f(x)$ não é uma função estritamente monótona, isso no intervalo $[0, 1]$, visto que $f(0) = f(1) = 0$.
+     > Concluimos então que, a afirmação não é verdadeira, visto que para que a $f(U(x))$ conseguisse se igualar a $V(x)$, a função $f$ precisaria ser não estritamente monótona.
 
 4. Can a continuous preference relation be represented by a discontinuous utility function?
 
