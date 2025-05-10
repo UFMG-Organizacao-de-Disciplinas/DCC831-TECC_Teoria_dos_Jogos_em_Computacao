@@ -1,5 +1,6 @@
 {
   "theme": "obsidian",
   "accentColor": "#4f3b7d",
-  "cssTheme": "GitHub Theme"
+  "cssTheme": "GitHub Theme",
+  "interfaceFontFamily": "Cascadia Mono"
 }
