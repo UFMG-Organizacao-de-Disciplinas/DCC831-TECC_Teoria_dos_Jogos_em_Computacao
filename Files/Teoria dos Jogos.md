@@ -1660,7 +1660,113 @@ Entre o grande esperar e pressionar, o grande apertaria.
 
 ## 08/05/2025 - Aula 16 - The complexity of finding a Nash Equilibrium: Lemke-Howson | MAS, chapter 4
 
-### 13/05/2025 - Aula 17 - The complexity of finding a Nash Equilibrium: Lemke-Howson | MAS, chapter 4
+### Battle of Sexes: replay
+
+Questão clássica de prova: "Qual o p e q que tornam a escolha equilibrada?"
+
+- s = (2/3, 1/3); u(s) = (2/3, 2/3)
+- s = (p, q); u(s) = (u(p), u(q)) # Eu acho
+
+| Wife x Husband | Opera | Football |
+| -------------- | ----- | -------- |
+| Opera          | 2, 1  | 0, 0     |
+| Football       | 0, 0  | 1, 2     |
+
+Coroa: os dois vão ópera; Futebol: os dois vão futebol. Não parece ter algum outro motivo para eles fazerem diferente.
+
+Ele considera que o único objetivo do agente racional é maximizar o seu próprio payoff.
+
+"Não há incentivo pra não cooperar"
+
+O uso da moeda é um mecanismo externo ao jogo para que opções possam ser removidas. "To ensure fairness".
+
+"A ideia da estratégia mista é para que o outro se torne indiferente ao que fazer"
+
+### Correlated Equilibrium (Equilíbrio Correlacionado)
+
+História: Animais competindo por comida; Estratégia Hawk é agressiva, Estratégia Dove é pacífica; Se ambos passivos, igualmente; Se um agressivo, um passivo, o agressivo pega mais que o passivo; Se ambos agressivos, destroem a comida.
+
+- P1 (Linhas) x P2 (Colunas)
+
+| X   | H    | D                |
+| --- | ---- | ---------------- |
+| H   | d, d | b, a             |
+| D   | a, b | (a+b)/2, (a+b)/2 |
+
+- $a > b$
+- $a + b = c$
+- $d \leq 0$
+- Onde:
+  - $a$: Valor de comida maior
+  - $b$: Valor de comida menor
+  - $C$: Valor da comida completa
+  - $d$: Valor do dano por se machucarem
+
+Perguntei se faz sentido parametrizar.
+
+Equilibrio de nash: para cada um, o preferível é escolher o H.
+
+Hawk e Dove é tipo o dilema dos prisioneiros, porém:
+
+Hawk e Dove também é chamado de Game of Chicken, Ou Snowdrift. Exemplo: Carro vs Carro no trânsito.
+
+- Prisioneiros: T > R > S > P
+- Hawk e Dove: T > R > P > S
+
+A intuição é que se forem jogar, não faz sentido confrontar a agressividade com agressividade.
+
+Uma coisa interessante a se observar é que para estratégia pura, o equilibrio de nash não vai variar independente de quais os valores pra esse jogo, dado que as regras do enunciado sejam respeitadas. Mas mudaria para as estratégias mistas.
+
+Outro caso:
+
+| X   | H    | D      |
+| --- | ---- | ------ |
+| H   | 3, 3 | 1, 5   |
+| D   | 5, 1 | -2, -2 |
+
+Existiam 3 cartas: DD, DH e HD
+
+A carta foi D, D; Eu só sabia que cairia D pra mim. Eu escolhi D, ele escolheu H.
+
+Com isso eu ganhei 1 e ele 5.
+
+O que eu deveria ter feito era deixar ele falar primeiro. Eu me mostrei passivo demais logo de primeira, com isso o confortei a ser agressivo.
+
+---
+
+Equilíbrio correlacionado não é ter um controle central que indique o que fazer. Mas sim, considerar que existe uma distribuição de aleatoriedade que trará algum grau de equilíbrio ao jogo.
+
+Um clássico exemplo de equilíbrio correlacionado é o Sinal de Trânsito. O agressivo até pode ultrapassar o sinal e ter o benefício de não parar.
+
+---
+
+#### Formalizando o Equilíbrio correlacionado (CERTAMENTE QUESTÃO DE PROVA)
+
+- Dado um n-agente $G = (N, A, u)$ e um equilíbrio correlacionado é uma tupla $(v, \pi, \sigma)$
+  - Onde:
+    - $v$ é uma tupla com variáveis aleatórias com domínios D
+    - $\pi$ é a distribuição conjunta sobre $v$
+    - $\sigma$ é um vetor de mapeamento. $\sigma_i : D_i \to A_i$
+
+Queremos mostrar que a utilidade esperada de acordo com todos os mapeamentos seguindo o mapeamento, vai ser maior ou igual da sua utilizddade perada usando o $\sigma'$
+
+Ou seja, há equilíbrio correlacionado se a utilidade esperada de seguir o que é indicado é maior do que não seguir o que for indicado.
+
+Ex.: mostrar que receber D e trocar pra H tende a dar menor utilidade esperada
+
+- $D_1 = \{d, h\}, D_2 = \{d, h\}$
+- $v_1 = [2/3, 1/3], v_2 = [2/3, 1/3]$
+- $\pi = Matriz:$
+
+- $\sigma_1 = Matriz:$
+
+- $\sigma' = Matriz:$
+
+Nesses casos aqui, se alguém com D mudar pra H, corre o risco de perder valor. Se tem H e mudar pra D, também.
+
+"Calcular equilíbrio correlacionado é mais fácil do que calcular equilíbrio de Nash"
+
+## 13/05/2025 - Aula 17 - The complexity of finding a Nash Equilibrium: Lemke-Howson | MAS, chapter 4
 
 ### 15/05/2025 - Aula 18 - The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria | MAS, chapter 4
 
