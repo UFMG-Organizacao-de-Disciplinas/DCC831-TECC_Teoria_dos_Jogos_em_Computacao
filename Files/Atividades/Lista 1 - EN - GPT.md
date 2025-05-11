@@ -200,16 +200,16 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
       - $(0.15z_1 + 0.30z_1 + 0.03z_1, 0.20z_4 + 0.20z_4 + 0.12z_4)$
       - $(0.48z_1, 0.52z_4)$
 
-- **Critério:** Utilidade esperada: $E(L) = \sum_{i=1}^n p_i u(z_i)$
+- **Critério:** Utilidade esperada: $U(L) = \sum_{i=1}^n p_i u(z_i)$
 
   - **Cálculos:**
-    - $E(L^{ \sim }) = 0.45 u(z_1) + 0.55 u(z_4)$
-    - $E(L'^{ \sim }) = 0.48 u(z_1) + 0.52 u(z_4)$
+    - $U(L^{ \sim }) = 0.45 u(z_1) + 0.55 u(z_4)$
+    - $U(L'^{ \sim }) = 0.48 u(z_1) + 0.52 u(z_4)$
   - **Resultado:**
     - $\begin{cases}
-      L^{ \sim } \succ L'^{ \sim } & \text{if } E(L^{ \sim }) > E(L'^{ \sim }) \\
-      L'^{ \sim } \succ L^{ \sim } & \text{if } E(L^{ \sim }) < E(L'^{ \sim }) \\
-      L^{ \sim } \sim L'^{ \sim } & \text{if } E(L^{ \sim }) = E(L'^{ \sim }) \\
+      L^{ \sim } \succ L'^{ \sim } & \text{if } U(L^{ \sim }) > U(L'^{ \sim }) \\
+      L'^{ \sim } \succ L^{ \sim } & \text{if } U(L^{ \sim }) < U(L'^{ \sim }) \\
+      L^{ \sim } \sim L'^{ \sim } & \text{if } U(L^{ \sim }) = U(L'^{ \sim }) \\
       \end{cases}$
 
 - **Critério:** preferência pelo mais provável: $L \succ L' \rightarrow \max_z L(z) > \max_z L'(z)$
@@ -245,6 +245,8 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
 
 ##### Resposta 9.3
 
+---
+
 ### 10. Verify whether each of the following preference relations over lotteries satisfy (or not) von Neumann and Morgenstern axioms (I and C). Consult the book "Lecture Notes in Microeconomic Theory" by Ariel Rubinstein, Pages 95 and 96, for more details
 
 #### 10.1. The worst case (the decision maker evaluates lotteries by the worst possible case)
@@ -256,6 +258,8 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
 ##### Resposta 10.2
 
 ## Risk Aversion (11, 12, 13)
+
+---
 
 ### 11. Adam lives in the Garden of Eden and eats only apples. Time in the garden is discrete ($t = 1, 2, \dots$) and apples are eaten only in discrete units. Adam possesses preferences over the set of streams of apple consumption. Assume that
 
@@ -274,6 +278,8 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
 
 #### Resposta 11
 
+---
+
 ### 12. Given the pairs of lotteries in tables 1 and 2, in each case, which one do you prefer? Explain considering the First-Order Stochastic Domination concept
 
 #### 12.1 **Table 1:** (a) or (b)?
@@ -283,7 +289,7 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
 | (a)      | $0$ | $45$ | $30$  | $-15$ |
 | (b)      | $0$ | $45$ | $-10$ | $-15$ |
 
-###### Resposta 12.1
+##### Resposta 12.1
 
 #### 12.2 **Table 2:** (c) or (d)?
 
@@ -292,7 +298,9 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
 | (c)      | $0$ | $10$ | $50$ | $200$ |
 | (d)      | $0$ | $25$ | $40$ | $180$ |
 
-###### Resposta 12.2
+##### Resposta 12.2
+
+---
 
 ### 13. A gambling house charges $15 for the lottery below
 
