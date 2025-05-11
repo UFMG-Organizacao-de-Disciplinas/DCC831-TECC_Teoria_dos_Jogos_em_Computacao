@@ -177,6 +177,62 @@ Teoria dos Jogos em Computação
 <!-- Isso pra mim não fez muito sentido. Por que posso considerar que a L' ganha se não sei a utilidade de z_1 e z_2? Ora, se z_1 é ganhar um real e z_4 é morrer... 💀 -->
 
 9. T or F. Justify or give a counterexample.
+### 8. Which lottery do you prefer?
+
+> - $L = (0.25z_1, 0.25z_2, 0.25z_3, 0.25z_4)$ OR
+> - $L' = (0.15z_1, 0.50z_2, 0.15z_3, 0.20z_4)$
+>
+> Suppose, by continuity: $z_2 \sim z'_2 = (0.6z_1, 0.4z_4)$ and $z_3 \sim z'_3 = (0.2z_1, 0.8z_4)$
+
+#### Resposta 8
+
+Nessa questão de continuidade, seria o mesmo que considerarmos que o prêmio de $z_2$ e $z'_2$ têm o mesmo valor esperado que uma loteria $(0.6z_1, 0.4z_4)$ e $z_3$ e $z'_3$ têm o mesmo valor esperado que uma loteria $(0.2z_1, 0.8z_4)$. Então, para simplificar, podemos substituir esses dois pares por suas respectivas loterias equivalentes com o intuito de reduzir o número de variáveis.
+
+Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de preferência: $z_1 \succ z_2 \succ z_3 \succ z_4$.
+
+- Equivalência de loterias $L \sim L^{ \sim }$.
+
+  - **Cálculos:**
+
+    - $L^{ \sim } =$
+      - $(0.25z_1, 0.25(0.6z_1 + 0.4z_4), 0.25(0.2z_1 + 0.8z_4), 0.25z_4)$
+      - $(0.25z_1, 0.15z_1 + 0.10z_4, 0.05z_1 + 0.20z_4, 0.25z_4)$
+      - $(0.25z_1 + 0.15z_1 + 0.05z_1, 0.10z_4 + 0.20z_4 + 0.25z_4)$
+      - $(0.45z_1, 0.55z_4)$
+    - $L'^{ \sim } =$
+      - $(0.15z_1, 0.50(0.6z_1 + 0.4z_4), 0.15(0.2z_1 + 0.8z_4), 0.20z_4)$
+      - $(0.15z_1, 0.30z_1 + 0.20z_4, 0.03z_1 + 0.12z_4, 0.20z_4)$
+      - $(0.15z_1 + 0.30z_1 + 0.03z_1, 0.20z_4 + 0.20z_4 + 0.12z_4)$
+      - $(0.48z_1, 0.52z_4)$
+
+- **Critério:** Utilidade esperada: $E(L) = \sum_{i=1}^n p_i u(z_i)$
+
+  - **Cálculos:**
+    - $E(L^{ \sim }) = 0.45 u(z_1) + 0.55 u(z_4)$
+    - $E(L'^{ \sim }) = 0.48 u(z_1) + 0.52 u(z_4)$
+  - **Resultado:**
+    - $\begin{cases}
+      L^{ \sim } \succ L'^{ \sim } & \text{if } E(L^{ \sim }) > E(L'^{ \sim }) \\
+      L'^{ \sim } \succ L^{ \sim } & \text{if } E(L^{ \sim }) < E(L'^{ \sim }) \\
+      L^{ \sim } \sim L'^{ \sim } & \text{if } E(L^{ \sim }) = E(L'^{ \sim }) \\
+      \end{cases}$
+
+- **Critério:** preferência pelo mais provável: $L \succ L' \rightarrow \max_z L(z) > \max_z L'(z)$
+
+  - **Cálculos:**
+    - $\begin{cases}
+      L \succ L' & \text{if } \max_z L(z) > \max_z L'(z) \\
+      L' \succ L & \text{if } \max_z L(z) < \max_z L'(z) \\
+      L \sim L' & \text{if } \max_z L(z) = \max_z L'(z) \\
+      \end{cases}$
+    - $\max_z L(z) > \max_z L'(z)$
+      - $z_1 > z_2: verdadeiro$
+      - **Explicação:** o mais provável de $L$ é preferível ao mais provável de $L'$.
+      - **Resultado:** $L \succ L'$.
+    - $\max_z L^{\sim}(z) > \max_z L'^{\sim}(z)$
+      - $z_4 > z_4: falso$
+      - **Explicação:** o mais provável de $L^{\sim}$ é tão preferível quanto o mais provável de $L'^{\sim}$.
+      - **Resultado:** Como os mais prováveis de $L^{\sim}$ e $L'^{\sim}$ são equivalentes, podemos considerar que $L^{\sim} \sim L'^{\sim}$. Ou, se considerarmos que $p(L^{\sim}(\max_z L^{\sim}(z))) > p(L'^{\sim}(\max_z L'^{\sim}(z)))$, podemos considerar que $L^{\sim} \succ L'^{\sim}$.
 
    1. A lottery $p$ is preferred to $q$ because the expected utility $U(p)$ is greater than the expected utility $U(q)$.
 
