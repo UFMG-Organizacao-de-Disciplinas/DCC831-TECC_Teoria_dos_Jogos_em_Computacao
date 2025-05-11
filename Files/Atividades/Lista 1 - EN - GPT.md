@@ -237,13 +237,36 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
 
 ##### Resposta 9.1
 
+**Verdadeiro.** A utilidade esperada é uma das medidas de preferências que pode ser utilizada para comparar loterias. Então, nesse contexto, considerando que deseja-se obter a loteria de maior utilidade esperada, podemos afirmar que $U(p) > U(q)$ implica que $p \succ q$.
+
 #### 9.2 Suppose that $A \succ B \succ C \succ D$ and that the vNM utilities of these prizes satisfy $v(A) + v(D) = v(B) + v(C)$, then $(\frac{1}{2}B, \frac{1}{2}C)$ should be preferred to $(\frac{1}{2}A, \frac{1}{2}D)$ because, although they have the same expected utility, the former has the smaller utility variance
 
 ##### Resposta 9.2
 
+**Falso.** Isso porque, partindo da premissa que o somatório dos valores apresentado se mantém o mesmo, podemos o que deve ser considerado são seus valores de utilidade dados pela função $v$. Logo, não devendo haver alteração na relação de preferência em caso de se alterar os valores iniciais.
+
+**Contraexemplo:** $A = 1, B = 2, C = 3, D = 4$, $v(X) = 3x+1$
+
+| Valor | $v(X)$               | $v(X/2)$               |
+| ----- | -------------------- | ---------------------- |
+| $A=8$ | $3 \cdot 8 + 1 = 25$ | $3 \cdot 8/2 + 1 = 13$ |
+| $B=6$ | $3 \cdot 6 + 1 = 19$ | $3 \cdot 6/2 + 1 = 10$ |
+| $C=4$ | $3 \cdot 4 + 1 = 13$ | $3 \cdot 4/2 + 1 = 7$  |
+| $D=2$ | $3 \cdot 2 + 1 = 7$  | $3 \cdot 2/2 + 1 = 4$  |
+
+- Confirmando a soma: $v(A) + v(D) = 25 + 7 = 32$ e $v(B) + v(C) = 19 + 13 = 32$
+- Confirmando a preferência: $A \succ B \succ C \succ D: 25 > 19 > 13 > 7$
+
+Agora confirmemos para $X/2$:
+
+- Confirmando a soma: $v(\frac{1}{2}A) + v(\frac{1}{2}D) = 13 + 4 = 17$ e $v(\frac{1}{2}B) + v(\frac{1}{2}C) = 10 + 7 = 17$
+- Confirmando a preferência: $A \succ B \succ C \succ D: 13 > 10 > 7 > 4$
+
 #### 9.3 Suppose that $A \succ B \succ C \succ D$ and that the vNM utility function has the property that $v(A) - v(B) \succ v(C) - v(D)$, then the change from $B$ to $A$ is more preferred than the change from $D$ to $C$
 
 ##### Resposta 9.3
+
+**Verdadeiro.** Isso porque, se considerarmos uma relação de preferência tal que $A \succ B$ se $v(A) > v(B)$. E então consideramos que $v(A) - v(B) \succ v(C) - v(D)$, então, entende-se que a variação de utilidade de $B$ para $A$ é maior do que a variação de utilidade de $D$ para $C$, assim, sendo preferível a mudança de $B$ para $A$ do que a mudança de $D$ para $C$.
 
 ---
 
@@ -273,7 +296,7 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
 > _Tips:_
 >
 > - (2) means that one single apple is promised to Adam on day $t+1$
-> - initial stream offered to Adam can be represented by $(0,0,0,2,2,...,2,2)$
+> - initial stream offered to Adam can be represented by $(0, 0, 0, 2, 2, \dots, 2, 2)$
 > - evolve it due to Adam’s preferences
 
 #### Resposta 11
