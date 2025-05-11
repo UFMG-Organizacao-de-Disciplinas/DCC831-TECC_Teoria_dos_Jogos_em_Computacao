@@ -4,7 +4,7 @@ Teoria dos Jogos em Computação
 
 **Professor:** Pedro Olmo Stancioli Vaz de Melo
 
-## Utility
+## Utility (1, 2, 3, 4, 5)
 
 ### 1. Give an example of preferences over a countable set in which the preferences cannot be represented by a utility function that returns only integers as values
 
@@ -114,7 +114,7 @@ Não consegui entender e dizer com convicção que isso é verdade. Trocando uma
 
 ---
 
-## Choice
+## Choice (6, 7)
 
 ### 6. The following are descriptions of decision-making procedures. Discuss whether the procedures can be described in the framework of the choice model discussed in this course and whether they are compatible with the "rational man" paradigm. In other words, can I construct a utility function $u(x)$ based solely on the set of alternatives $x \in X$ according with these procedures? Explain why (e.g. with an example)
 
@@ -170,7 +170,7 @@ Se todos os três critérios forem satisfeitos, então a relação $P$ é uma or
 
 ---
 
-## Expected Utility
+## Expected Utility (8, 9, 10)
 
 ### 8. Which lottery do you prefer?
 
@@ -255,7 +255,7 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
 
 ##### Resposta 10.2
 
-## Risk Aversion
+## Risk Aversion (11, 12, 13)
 
 ### 11. Adam lives in the Garden of Eden and eats only apples. Time in the garden is discrete ($t = 1, 2, \dots$) and apples are eaten only in discrete units. Adam possesses preferences over the set of streams of apple consumption. Assume that
 
