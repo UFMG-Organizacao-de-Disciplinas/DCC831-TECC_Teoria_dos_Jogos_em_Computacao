@@ -274,15 +274,40 @@ Agora confirmemos para $X/2$:
 
 #### 10.1. The worst case (the decision maker evaluates lotteries by the worst possible case)
 
+- Definindo os axiomas:
+  - **Independência:** Para quaiquer 3 loterias $L_1, L_2, L_3$, se $L_1 \succ L_2$ e $\alpha \in (0, 1)$. Temos que $L_1 \succsim L_2 \iff \alpha L_1 \oplus (1 - \alpha) L_3 \succsim \alpha L_2 \oplus (1 - \alpha) L_3$
+    - **Intuição:** Se $L_1$ é preferível a $L_2$, então, se adicionarmos uma loteria $L_3$ a ambas, a relação de preferência se mantém.
+  - **Continuidade:** Para quaisquer prêmios $z_1, z_2, z_3$, existe $\alpha \in (0, 1)$ tal que $z_2 \sim \alpha z_1 \oplus (1 - \alpha) z_3$
+    - **Intuição:** Se $z_1$ é preferível a $z_2$, e $z_2$ é preferível a $z_3$, então existe uma probabilidade tal que o prêmio se tornará independente à probabilidade de $z_1$ e $z_3$.
+
 ##### Resposta 10.1
+
+- **Livro**
+  - > The preference relation does not satisfy $C$. In the two-prize case where $v(z_1) > v(z_2)$, $[z_1] \succ 1/2[z_1] \oplus 1/2[z_2]$. Viewed as points in $\mathbb{R}^2_+$, we can rewrite this as $(1, 0) \succ (1/2, 1/2)$. Any neighborhood of $(1, 0)$ contains lotteries that are not strictly preferred to $(1/2, 1/2)$, and thus $C$ is not satisfied. The preference relation also does not satisfy $I$ ($[z_1] \succ [z_2]$ but $1/2[z_1] \oplus 1/2[z_2] \sim [z_2]$.)
+
+Relembrando a relação de preferência "o pior caso", temos que a relação de preferência é dada por $L \succsim L'$ se o pior prêmio obtenível em $L$ é preferível ao pior prêmio obtenível em $L'$. Ou seja, $L \succsim L'$ se $\min \{v(z) | p(z) > 0 \text{ e } z \in L\} \succsim \min \{v(z') | p(z') > 0 \text{ e } z' \in L'\}$.
+
+- **Verificando Independência:** 👎
+  - A preferência "o pior caso" não satisfaz o axioma de independência, pois se $L_1 \succ L_2$, então consideramos que o pior prêmio de $L_1$ é preferível ao pior prêmio de $L_2$. Porém, se adicionarmos uma loteria $L_3$ a ambas, a relação de preferência pode não se manter, visto que o pior prêmio de $L_3$ pode ser preferível ao pior prêmio de $L_1$ ou $L_2$.
+- **Verificando Continuidade:** 👎
+  - Como para que satisfaça o axioma de continuidade, precisamos que exista uma probabilidade $\alpha$ tal que $z_2 \sim \alpha z_1 \oplus (1 - \alpha) z_3$, entende-se que esta relação de preferência não se mantém, visto que na loteria composta $\alpha z_1 \oplus (1 - \alpha) z_3$ o pior prêmio é $z_3$, e $z_2 \nsim z_3$.
 
 #### 10.2. Increasing the probability of a "good" consequence
 
 ##### Resposta 10.2
 
-## Risk Aversion (11, 12, 13)
+> Increasing the probability of a "good" consequence: Such a preference relation satisfies the two axioms since it can be represented by the expectation of $v$ where $v(z) = 1$ for $z \in G$ and $v(z) = 0$ for $z \in B$.
+
+Relembrando a relação de preferência "aumentar a probabilidade de uma boa consequência", temos os prêmios da loteria $L$ separados em grupos disjuntos $G$ (Good) e $B$ (Bad). De forma tal que $p(G) > p(B)$, ou seja, a probabilidade de obter um prêmio bom é maior do que a probabilidade de obter um prêmio ruim. Considere que $p(G)$ é a soma das probabilidades dos prêmios bons e $p(B)$ é a soma das probabilidades dos prêmios ruins.
+
+- **Verificando Independência:** 👍
+  - A preferência "aumentar a probabilidade de uma boa consequência" satisfaz o axioma de independência, pois se $L_1 \succ L_2$, mesmo se adicionarmos uma loteria $L_3$ a ambas, a relação de preferência se mantém, visto que a probabilidade de obter um prêmio bom em $L_3$ não altera a relação de preferência geral.
+- **Verificando Continuidade:** 👎❓
+  - Apesar de contradizer o que diz o livro, em meu entendimento o axioma de continuidade não é satisfeito, visto que para um caso onde $(z_1, z_2, z_3) \mapsto (G, G, B)$, para que $z_2$ seja indiferente entre $z_1$ e $z_3$, é necessário que exista uma probabilidade $\alpha$ tal que $z_2 \sim \alpha z_1 \oplus (1 - \alpha) z_3$. Essa condição apenas ocorre se $\alpha = 1$, assim resultando em $z_2 \sim z_1$. Porém, pela definição do axioma de continuidade $\alpha \notin \{0, 1\}$.
 
 ---
+
+## Risk Aversion (11, 12, 13)
 
 ### 11. Adam lives in the Garden of Eden and eats only apples. Time in the garden is discrete ($t = 1, 2, \dots$) and apples are eaten only in discrete units. Adam possesses preferences over the set of streams of apple consumption. Assume that
 
