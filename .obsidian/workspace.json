@@ -38,8 +38,33 @@
               "icon": "lucide-file-text",
               "title": "Aula 2 - Preferences"
             }
+          },
+          {
+            "id": "4d41f95cb4b30acd",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Files/Atividades/lista1gt.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "lista1gt"
+            }
+          },
+          {
+            "id": "221e885568371f4d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Files/Slides/aula 5 - expected utility.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "aula 5 - expected utility"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "24d34258ac6950bf",
@@ -212,10 +236,13 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "f9462c6da700b0a4",
+  "active": "221e885568371f4d",
   "lastOpenFiles": [
-    "Files/Slides/Aula 2 - Preferences.pdf",
     "Files/Atividades/Lista 1 - EN - GPT.md",
+    "Files/Slides/aula 5 - expected utility.pdf",
+    "Files/Slides/aula 4 - choice.pdf",
+    "Files/Atividades/lista1gt.pdf",
+    "Files/Slides/Aula 2 - Preferences.pdf",
     "Files/Provas/2019.2 - prova1.zip",
     "Files/Provas/2019.2 - prova2+Gabarito.zip",
     "Files/Provas/2019.2 - prova3.zip",
@@ -223,12 +250,9 @@
     "Files/Atividades/Lista 1 - PTBR - GPT.md",
     "Files/Atividades/lista1_teoria_dos_jogos.md",
     "Files/Slides/Aula 2 - Preferences.md",
-    "Files/Atividades/lista1gt.pdf",
     "Files/Atividades/lista1gt (Rangel Avila).pdf",
     "Files/Atividades/lista2gt.pdf",
-    "Files/Atividades/Questionnaire #1.pdf",
     "README.md",
-    "Files/Provas/2015 - P3.pdf",
     "Files/Teoria dos Jogos.md"
   ]
 }
