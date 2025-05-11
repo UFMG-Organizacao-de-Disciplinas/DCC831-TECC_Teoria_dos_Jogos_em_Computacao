@@ -96,9 +96,9 @@ Concluimos então que, a afirmação não é verdadeira, visto que para que a $f
 
 ---
 
-#### 4. Can a continuous preference relation be represented by a discontinuous utility function?
+### 4. Can a continuous preference relation be represented by a discontinuous utility function?
 
-##### Resposta 4
+#### Resposta 4
 
 Sim. A função de utilidade $U$ apresentada na questão anterior exemplifica exatamente esse fato. Embora ela seja descontínua em $x = 0$, ela ainda representa uma relação de preferência contínua.
 
@@ -274,9 +274,9 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
 
 #### Resposta 11
 
-#### 12. Given the pairs of lotteries in tables 1 and 2, in each case, which one do you prefer? Explain considering the First-Order Stochastic Domination concept
+### 12. Given the pairs of lotteries in tables 1 and 2, in each case, which one do you prefer? Explain considering the First-Order Stochastic Domination concept
 
-##### 12.1 **Table 1:** (a) or (b)?
+#### 12.1 **Table 1:** (a) or (b)?
 
 | chance % | 90  | 6    | 1     | 3     |
 | -------- | --- | ---- | ----- | ----- |
@@ -285,7 +285,7 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
 
 ###### Resposta 12.1
 
-##### 12.2 **Table 2:** (c) or (d)?
+#### 12.2 **Table 2:** (c) or (d)?
 
 | chance % | 40  | 35   | 15   | 10    |
 | -------- | --- | ---- | ---- | ----- |
@@ -294,7 +294,7 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
 
 ###### Resposta 12.2
 
-#### 13. A gambling house charges $15 for the lottery below
+### 13. A gambling house charges $15 for the lottery below
 
 | prize | $0$    | $36$   | $64$   |
 | ----- | ------ | ------ | ------ |
@@ -302,4 +302,4 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
 
 > Will a person, whose utility function over money is $u(x) = \frac{5}{4}\sqrt{x}$, pay to play $p$? Justify your answer.
 
-##### Resposta 13
+#### Resposta 13
