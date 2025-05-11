@@ -309,7 +309,9 @@ Relembrando a relação de preferência "aumentar a probabilidade de uma boa con
 
 ## Risk Aversion (11, 12, 13)
 
-### 11. Adam lives in the Garden of Eden and eats only apples. Time in the garden is discrete ($t = 1, 2, \dots$) and apples are eaten only in discrete units. Adam possesses preferences over the set of streams of apple consumption. Assume that
+### 11. Adam lives in the Garden of Eden and eats only apples. Time in the garden is discrete ($t = 1, 2, \dots$) and apples are eaten only in discrete units. Adam possesses preferences over the set of streams of apple consumption
+
+Assume that:
 
 > 1. Adam likes to eat up to 2 apples a day and cannot bear to eat 3 apples a day.
 > 2. Adam is **impatient**. He would be delighted to increase his consumption on day $t$ from 0 to 1 or from 1 to 2 apples at the expense of an apple he is promised a day later $t+1$.
@@ -325,6 +327,21 @@ Relembrando a relação de preferência "aumentar a probabilidade de uma boa con
 > - evolve it due to Adam’s preferences
 
 #### Resposta 11
+
+1. Consumo por dia = $[0, 1, 2]$.
+2. Troca uma maçã de amanhã por uma maçã hoje (caso não tenha comido menos que 2 maçãs).
+3. 1 maçã hoje $\succ$ 2 maçãs amanhã
+4. Viverá por 120 anos (120\*365 = 43800 dias)
+
+Consideremos o processo decisório do nosso querido Adão 👨🫳🍎 sobre a oferta de duas maçãs por dia a partir do 4º dia:
+
+- **Oferta Atual:** $(0, 0, 0, 2, 2, 2, \dots, 2, 2)$
+  - Durante os dois primeiros dias, Adão não tem maçãs. Porém, no terceiro ele tem a opção de trocar as duas maçãs do dia 4 por uma maçã hoje. Assim tendo a seguinte oferta:
+- **Oferta Atual (1 hoje $\succ$ 2 amanhã):** $(0, 0, 1, 0, 2, 2, \dots, 2, 2)$
+  - Como já não tem mais maçãs no dia seguinte, ele se alimenta com uma maçã e o dia passa. Chegando no dia 4, ele novamente tem a opção de trocar as duas maçãs do dia 5 por uma maçã hoje. Assim tendo a seguinte oferta:
+- **Oferta Atual (1 hoje $\succ$ 2 amanhã):** $(0, 0, 1, 1, 0, 2, \dots, 2, 2)$
+  - Dessa forma, ele seguirá trocando as maçãs do dia seguinte por uma maçã hoje até o final de sua vida. Assim, a oferta final terá sido:
+- **Oferta Final:** $(0, 0, 1, 1, 1, \dots, 1, 1)$
 
 ---
 
