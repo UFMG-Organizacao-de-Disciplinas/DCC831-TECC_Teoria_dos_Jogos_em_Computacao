@@ -347,23 +347,70 @@ Consideremos o processo decisório do nosso querido Adão 👨🫳🍎 sobre a o
 
 ### 12. Given the pairs of lotteries in tables 1 and 2, in each case, which one do you prefer? Explain considering the First-Order Stochastic Domination concept
 
+- Relembrando o conceito de First-Order Stochastic Domination, temos que $L_1$ domina estocasticamente $L_2$ $(L_1 D_1 L_2)$ se:
+  - $\forall z \in Z, F(L_1, z) \geq F(L_2, z)$
+  - Onde:
+    - $z$ é um prêmio
+    - $Z$ é o conjunto de prêmios ordenado em ordem crescente de preferência
+      - Ex.: $z_1 \succ z_2 \succ \dots \succ z_n$
+    - $F(L, z)$ é a função de distribuição acumulada da loteria $L$ para o prêmio $z$
+      - Ex.:
+        - Loteria $L = (0.5z_1, 0.3z_2, 0.2z_3)$
+        - $p(z_1) = 0.5, p(z_2) = 0.3, p(z_3) = 0.2$
+        - $F(L, z_1) = 0.5$
+        - $F(L, z_2) = 0.5 + 0.3 = 0.8$
+        - $F(L, z_3) = 0.5 + 0.3 + 0.2 = 1$
+  - **Intuição:** todos os prêmios, do pior ao melhor, terão uma probabilidade maior ou igual de serem obtidos na loteria $L_1$ do que na loteria $L_2$.
+
 #### 12.1 **Table 1:** (a) or (b)?
 
-| chance % | 90  | 6    | 1     | 3     |
-| -------- | --- | ---- | ----- | ----- |
-| (a)      | $0$ | $45$ | $30$  | $-15$ |
+| chance % |  90 |    6 |     1 |     3 |
+| -------- | --: | ---: | ----: | ----: |
+| (a)      | $0$ | $45$ |  $30$ | $-15$ |
 | (b)      | $0$ | $45$ | $-10$ | $-15$ |
 
 ##### Resposta 12.1
 
+Primeiro, é necessário que convertamos as loterias em suas respectivas tabelas de equivalência:
+
+| Prêmios ($) | $-15$ | $-10$ |  $0$ | $30$ | $45$ |
+| ----------- | ----: | ----: | ---: | ---: | ---: |
+| (a) %       |   $3$ |   $0$ | $90$ |  $1$ |  $6$ |
+| (b) %       |   $3$ |   $1$ | $90$ |  $0$ |  $6$ |
+
+Agora, analisando as frequências acumuladas de cada uma das loterias:
+
+- **Loteria (a):** $\forall z \in Z, F(L_a, z) = \{0.03, 0.03, 0.93, 0.94, 1\}$
+- **Loteria (b):** $\forall z \in Z, F(L_b, z) = \{0.03, 0.04, 0.94, 0.94, 1\}$
+
+Com isso, concluimos que $a D_1 b$, visto que $\forall_{f \in F} \forall_{z \in Z} (L_a, z) \leq F(L_b, z)$ é verdadeiro.
+
 #### 12.2 **Table 2:** (c) or (d)?
 
-| chance % | 40  | 35   | 15   | 10    |
-| -------- | --- | ---- | ---- | ----- |
+| chance % |  40 |   35 |   15 |    10 |
+| -------- | --: | ---: | ---: | ----: |
 | (c)      | $0$ | $10$ | $50$ | $200$ |
 | (d)      | $0$ | $25$ | $40$ | $180$ |
 
 ##### Resposta 12.2
+
+Primeiro, é necessário que convertamos as loterias em suas respectivas tabelas de equivalência:
+
+| Prêmios ($) |  $0$ | $10$ | $25$ | $40$ | $50$ | $180$ | $200$ |
+| ----------- | ---: | ---: | ---: | ---: | ---: | ----: | ----: |
+| (c) %       | $40$ | $35$ |  $0$ |  $0$ | $15$ |   $0$ |  $10$ |
+| (d) %       | $40$ |  $0$ | $35$ | $15$ |  $0$ |  $10$ |   $0$ |
+
+Agora, analisando as frequências acumuladas de cada uma das loterias:
+
+- **Loteria (c):** $\forall z \in Z, F(L_c, z) = \{0.4, 0.75, 0.75, 0.75, 0.9, 0.9, 1\}$
+- **Loteria (d):** $\forall z \in Z, F(L_d, z) = \{0.4, 0.40, 0.75, 0.90, 0.9, 1.0, 1\}$
+
+Nota-se que, nesse caso, a loteria (c) não domina estocasticamente a loteria (d), e o mesmo pode ser dito para a loteria (d) em relação à loteria (c). Isso porque existe momento em que $F(L_c, z) < F(L_d, z)$ e $F(L_d, z) < F(L_c, z)$.
+
+Com isso, conclui-se que não existe relação de dominância estocástica entre as duas loterias, ou seja, $L_c \not\succsim L_d$ e que $L_d \not\succsim L_c$.
+
+Portanto, não é possível afirmar que uma das loterias é preferível à outra considerando o conceito de Dominância Estocástica de Primeira Ordem.
 
 ---
 
