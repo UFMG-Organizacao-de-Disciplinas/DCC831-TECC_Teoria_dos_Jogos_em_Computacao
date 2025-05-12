@@ -68,25 +68,25 @@ Consideramos então que temos $U$ e $V$ como funções de utilidade que represen
 
 Seguindo a sugestão dada, consideremos as funções $U$ e $V$ que têm a mesma relação de preferência $\succsim$:
 
-$U(x) = \begin{cases} x, & \text{se } x \leq 0 \\ x + 1, & \text{se } x > 0 \end{cases}$
+$$U(x) = \begin{cases} x, & \text{se } x \leq 0 \\ x + 1, & \text{se } x > 0 \end{cases}$$
 
 $V(x) = x$
 
 Poderíamos então alterar a função $U$ para representar a função $V$:
 
-$U(x) = \begin{cases} V(x), & \text{se } x \leq 0 \\ V(x) + 1, & \text{se } x > 0 \end{cases}$
+$$U(x) = \begin{cases} V(x), & \text{se } x \leq 0 \\ V(x) + 1, & \text{se } x > 0 \end{cases}$$
 
 Então, os únicos casos em que $U$ se diferencia de $V$ são quando $x > 0$. Para esses casos, podemos definir a função $f$ como:
 
-$f(x) = \begin{cases} x, & \text{se } x \leq 0 \\ x - 1, & \text{se } x > 0 \end{cases}$
+$$f(x) = \begin{cases} x, & \text{se } x \leq 0 \\ x - 1, & \text{se } x > 0 \end{cases}$$
 
 Então, aplicando a função $f$ em $U'$, temos:
 
-$f(U(x)) = \begin{cases} f(V(x)), & \text{se } x \leq 0 \\ f(V(x) + 1), & \text{se } x > 0 \end{cases}$
+$$f(U(x)) = \begin{cases} f(V(x)), & \text{se } x \leq 0 \\ f(V(x) + 1), & \text{se } x > 0 \end{cases}$$
 
-$f(U(x)) = \begin{cases} V(x), & \text{se } x \leq 0 \\ (V(x) + 1) - 1, & \text{se } x > 0 \end{cases}$
+$$f(U(x)) = \begin{cases} V(x), & \text{se } x \leq 0 \\ (V(x) + 1) - 1, & \text{se } x > 0 \end{cases}$$
 
-$f(U(x)) = \begin{cases} V(x), & \text{se } x \leq 0 \\ V(x), & \text{se } x > 0 \end{cases}$
+$$f(U(x)) = \begin{cases} V(x), & \text{se } x \leq 0 \\ V(x), & \text{se } x > 0 \end{cases}$$
 
 $f(U(x)) = V(x)$
 
@@ -222,11 +222,11 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
     - $U(L^{ \sim }) = 0.45 u(z_1) + 0.55 u(z_4)$
     - $U(L'^{ \sim }) = 0.48 u(z_1) + 0.52 u(z_4)$
   - **Resultado:**
-    - $\begin{cases}
+    - $$\begin{cases}
       L^{ \sim } \succ L'^{ \sim } & \text{if } U(L^{ \sim }) > U(L'^{ \sim }) \\
       L'^{ \sim } \succ L^{ \sim } & \text{if } U(L^{ \sim }) < U(L'^{ \sim }) \\
       L^{ \sim } \sim L'^{ \sim } & \text{if } U(L^{ \sim }) = U(L'^{ \sim }) \\
-      \end{cases}$
+      \end{cases}$$
 
 - **Critério:** preferência pelo mais provável: $L \succ L' \rightarrow \max_z L(z) > \max_z L'(z)$
 
