@@ -11,14 +11,10 @@
             "id": "f9462c6da700b0a4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Files/Atividades/Lista 1 - EN - GPT.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Lista 1 - EN - GPT"
+              "title": "New tab"
             }
           }
         ]
@@ -27,18 +23,6 @@
         "id": "884f6a9b5f7bf1bf",
         "type": "tabs",
         "children": [
-          {
-            "id": "720c22ef20e04884",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Files/Slides/Aula 2 - Preferences.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Aula 2 - Preferences"
-            }
-          },
           {
             "id": "4d41f95cb4b30acd",
             "type": "leaf",
@@ -50,21 +34,8 @@
               "icon": "lucide-file-text",
               "title": "lista1gt"
             }
-          },
-          {
-            "id": "221e885568371f4d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Files/Slides/aula 5 - expected utility.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "aula 5 - expected utility"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -236,22 +207,26 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "221e885568371f4d",
+  "active": "4d41f95cb4b30acd",
   "lastOpenFiles": [
-    "Files/Atividades/Lista 1 - EN - GPT.md",
     "Files/Slides/aula 5 - expected utility.pdf",
-    "Files/Slides/aula 4 - choice.pdf",
-    "Files/Atividades/lista1gt.pdf",
+    "Files/Slides/msoC96B.tmp",
+    "Files/Slides/msoBCC8.tmp",
+    "Files/Slides/mso95C6.tmp",
+    "Files/Slides/mso684D.tmp",
+    "Files/Slides/aula 3 - utility.pdf",
+    "Files/Slides/mso3B60.tmp",
+    "Files/Slides/mso2D26.tmp",
     "Files/Slides/Aula 2 - Preferences.pdf",
-    "Files/Provas/2019.2 - prova1.zip",
-    "Files/Provas/2019.2 - prova2+Gabarito.zip",
-    "Files/Provas/2019.2 - prova3.zip",
-    "Files/Provas/prova3.zip",
-    "Files/Atividades/Lista 1 - PTBR - GPT.md",
+    "Files/Slides/mso5F6.tmp",
+    "Files/Slides/msoF02B.tmp",
+    "Files/Atividades/Lista 1 - Limpa.md",
     "Files/Atividades/lista1_teoria_dos_jogos.md",
+    "Files/Atividades/Lista 1 - JVFD.md",
+    "Files/image.png",
+    "Files/Atividades/Lista 1 - EN - GPT.md",
+    "Files/Atividades/Lista 1 - PTBR - GPT.md",
     "Files/Slides/Aula 2 - Preferences.md",
-    "Files/Atividades/lista1gt (Rangel Avila).pdf",
-    "Files/Atividades/lista2gt.pdf",
     "README.md",
     "Files/Teoria dos Jogos.md"
   ]
