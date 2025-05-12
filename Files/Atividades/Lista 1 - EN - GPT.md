@@ -110,7 +110,23 @@ Sim. A função de utilidade $U$ apresentada na questão anterior exemplifica ex
 
 #### Resposta 5
 
-Não consegui entender e dizer com convicção que isso é verdade. Trocando uma ideia com o GPT, entendi que pode ter relação com limites e conjuntos fechados, mas ainda assim as explicações me soaram esquisitas.
+<!-- Não consegui entender e dizer com convicção que isso é verdade. Trocando uma ideia com o GPT, entendi que pode ter relação com limites e conjuntos fechados, mas ainda assim as explicações me soaram esquisitas. -->
+
+Para que uma relação seja contínua, ela deve satisfazer a propriedade de que, se $x \succ y$, então existe uma vizinhança $V_x$ e $V_y$ tal que $\forall_{x' \in V_x} \forall_{y' \in V_y}: x' \succ y'$.
+
+Outra forma de interpretar isso é que, se obtivermos um conjunto das utilidades $U(x')$ e $U(y')$, mesmo a menor das utilidades de $X'$ ainda será maior que a maior das utilidades de $Y'$. Ou seja, $u(\min{(X')}) > u(\max{(Y')})$.
+
+Outro detalhe a se considerar é que a vizinhança $V_x$ e $V_y$ devem incluir mais elementos do que apenas $x$ e $y$, ou seja, $\{x\} \nsubseteq V_x$ e $\{y\} \nsubseteq V_y$.
+
+Sabendo disso, consideremos inicialmente que $x = 10$ e $y = 1$, podemos dizer que há uma vizinhança definida de forma $V_j = (j - 1, j + 1)$, tal que $V_x = (9, 11)$ e $V_y = (0, 2)$. E que $u(\min{(V_x)}) > u(\max{(V_y)})$.
+
+Porém, se na função de vizinhança substituirmos o valor de $1$ por $\epsilon$: $V_j = (j - \epsilon, j + \epsilon)$, deve sempre haver algum valor de $\epsilon > 0$, tal que $u(\min{(V_x)}) > u(\max{(V_y)})$.
+
+E se fizermos com que $x$ se aproxime de $y$, ou seja que $x - y$ se aproxime de $0$, como por exemplo com $x = 2$ e $y = 1$, temos que $V_x = (2 - \epsilon, 2 + \epsilon)$ e $V_y = (1 - \epsilon, 1 + \epsilon)$.
+
+Então, precisamos que $u(\min{(V_x)}) > u(\max{(V_y)})$, ou seja, $floor(2 - \epsilon + \phi) > floor(1 + \epsilon - \phi)$. **Obs.:** $\phi$ é um valor infinitesimal para considerar a abertura do intervalo. Considere também que $\phi < \epsilon$.
+
+Porém, não existe um valor de $\epsilon$ que satisfaça essa condição, visto que $floor(2 - \epsilon + \phi) = 1$ e $floor(1 + \epsilon - \phi) = 1$. Assim, não satisfazendo a definição de continuidade.
 
 ---
 
