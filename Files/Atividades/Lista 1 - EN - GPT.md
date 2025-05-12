@@ -1,8 +1,8 @@
-# Lista 1 - Revisar Q5
-
-Teoria dos Jogos em Computação
+# Lista 1 - Teoria dos Jogos em Computação
 
 **Professor:** Pedro Olmo Stancioli Vaz de Melo
+
+**Aluno:** João Vítor Fernandes Dias; **Matrícula:** $2024711370$
 
 ## Utility (1, 2, 3, 4, 5)
 
