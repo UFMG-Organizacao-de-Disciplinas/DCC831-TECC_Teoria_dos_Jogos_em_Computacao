@@ -120,31 +120,31 @@ Não consegui entender e dizer com convicção que isso é verdade. Trocando uma
 
 Para essa questão, consideremos que $C_{\succsim}(A)$ representa a função que encontra o melhor dos elementos possíveis pertencentes ao conjunto $A = \{u(x) | x \in X\}$.
 
-#### 1. The decision maker chooses an alternative in order to maximize another person’s suffering
+#### 6.1. The decision maker chooses an alternative in order to maximize another person’s suffering
 
 ##### Resposta 6.1
 
 Sim, é compatível. Isso pois sua função de utilidade pode ser representada como $u(x) = -v(x)$, onde $v(x)$ é a função de utilidade do outro indivíduo, ou seja, quanto menor for $v(x)$, maior seria o sofrimento. Assim, o agente racional irá escolher a alternativa que maximiza a função de utilidade negativa do outro indivíduo.
 
-#### 2. The decision maker asks his two children to rank the alternatives and then chooses the alternative that is the best on average (you can use your own definition of "best on average")
+#### 6.2. The decision maker asks his two children to rank the alternatives and then chooses the alternative that is the best on average (you can use your own definition of "best on average")
 
 ##### Resposta 6.2
 
 Sim, é compatível. Isso pois visa maximizar a média das funções de utilidade dos filhos. A função de utilidade do agente racional pode ser representada como $u(x) = \frac{f_1(x) + f_2(x)}{2}$, onde $v_1(x)$ e $v_2(x)$ são as funções de utilidade dos filhos.
 
-#### 3. The decision maker has an ideal point in mind and chooses the alternative that is closest to it
+#### 6.3. The decision maker has an ideal point in mind and chooses the alternative that is closest to it
 
 ##### Resposta 6.3
 
 Sim, é compatível. Isso porque a função de utilidade do agente racional pode ser representada como $u(x) = -d(x, x')$, onde $d(x, x')$ é a distância entre o ponto ideal $x'$ e o ponto $x$. Assim, o agente racional irá escolher a alternativa que minimiza a distância entre o ponto ideal e o ponto escolhido.
 
-#### 4. The decision maker looks for the alternative that appears most often in a list of alternatives
+#### 6.4. The decision maker looks for the alternative that appears most often in a list of alternatives
 
 ##### Resposta 6.4
 
 Não é compatível. Isso porque a função de utilidade do agente depende de outra variável, sendo esse o conjunto de alternativas.
 
-#### 5. The decision maker has an ordering in mind and always chooses the median element
+#### 6.5. The decision maker has an ordering in mind and always chooses the median element
 
 ##### Resposta 6.5
 
