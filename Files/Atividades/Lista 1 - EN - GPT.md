@@ -414,7 +414,7 @@ Portanto, não é possível afirmar que uma das loterias é preferível à outra
 
 ---
 
-### 13. A gambling house charges $15 for the lottery below
+### 13. A gambling house charges \$15 for the lottery below
 
 | prize | $0$    | $36$   | $64$   |
 | ----- | ------ | ------ | ------ |
@@ -423,3 +423,34 @@ Portanto, não é possível afirmar que uma das loterias é preferível à outra
 > Will a person, whose utility function over money is $u(x) = \frac{5}{4}\sqrt{x}$, pay to play $p$? Justify your answer.
 
 #### Resposta 13
+
+Primeiro, calculemos a utilidade esperada da loteria $L$:
+
+- $U(L) = \sum_{i=1}^n p_i u(z_i) | p_i = p(z_i) \text{ e } z_i \in L$
+- $U(L) = 0.50 u(0) + 0.30 u(36) + 0.20 u(64)$
+
+Agora, utilizando a função de utilidade dada, temos:
+
+- $U(L) = 0.50 \cdot (\frac{5}{4}\sqrt{0}) + 0.30 \cdot (\frac{5}{4}\sqrt{36}) + 0.20 \cdot (\frac{5}{4}\sqrt{64})$
+- $U(L) = 0.50 \cdot 0 + 0.30 \cdot (\frac{5}{4} \cdot 6) + 0.20 \cdot (\frac{5}{4} \cdot 8)$
+- $U(L) = 0 + 0.30 \cdot 7.5 + 0.20 \cdot 10$
+- $U(L) = 0 + 2.25 + 2$
+- $U(L) = 4.25$
+
+Consideremos também a utilidade do valor pago para jogar a loteria, que é de $15$:
+
+- $u(15) = \frac{5}{4}\sqrt{15}$
+- $u(15) = \frac{5}{4} \cdot 3.872$
+- $u(15) = 4.84$
+
+Portando, como a utilidade esperada da loteria é inferior à utilidade do valor pago para jogar a loteria, podemos concluir que o jogador **não pagará para jogar a loteria $L$**.
+
+Outra forma de analisarmos a utilidade esperada da loteria é considerarmos em seu cálculo de utilidade esperada o valor pago para jogar a loteria:
+
+- $U(L) - U([15]) = [0.50 u(0) + 0.30 u(36) + 0.20 u(64)] - 1.00 u(15)$
+- $U(L) - U([15]) = 4.25 - 4.84$
+- $U(L) - U([15]) = -0.59$
+
+Sendo assim, a utilidade esperada de se jogar a loteria é negativa, significando que o esperado é que o jogador perca dinheiro, sendo assim, ele não pagará para jogar a loteria $L$.
+
+---
