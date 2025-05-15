@@ -222,11 +222,13 @@ Consideremos que os prêmios $(z_1, z_2, z_3, z_4)$ seguem a seguinte ordem de p
     - $U(L^{ \sim }) = 0.45 u(z_1) + 0.55 u(z_4)$
     - $U(L'^{ \sim }) = 0.48 u(z_1) + 0.52 u(z_4)$
   - **Resultado:**
-    - $$\begin{cases}
+    - $$
+      \begin{cases}
       L^{ \sim } \succ L'^{ \sim } & \text{if } U(L^{ \sim }) > U(L'^{ \sim }) \\
       L'^{ \sim } \succ L^{ \sim } & \text{if } U(L^{ \sim }) < U(L'^{ \sim }) \\
       L^{ \sim } \sim L'^{ \sim } & \text{if } U(L^{ \sim }) = U(L'^{ \sim }) \\
-      \end{cases}$$
+      \end{cases}
+      $$
 
 - **Critério:** preferência pelo mais provável: $L \succ L' \rightarrow \max_z L(z) > \max_z L'(z)$
 
