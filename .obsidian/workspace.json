@@ -11,28 +11,14 @@
             "id": "f9462c6da700b0a4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          }
-        ]
-      },
-      {
-        "id": "884f6a9b5f7bf1bf",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4d41f95cb4b30acd",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Files/Atividades/lista1gt.pdf"
+                "file": "Files/Teoria dos Jogos.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "lista1gt"
+              "icon": "lucide-file",
+              "title": "Teoria dos Jogos"
             }
           }
         ]
@@ -207,8 +193,9 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "4d41f95cb4b30acd",
+  "active": "f9462c6da700b0a4",
   "lastOpenFiles": [
+    "Files/Atividades/lista1gt.pdf",
     "Files/Slides/aula 5 - expected utility.pdf",
     "Files/Slides/msoC96B.tmp",
     "Files/Slides/msoBCC8.tmp",
@@ -219,7 +206,6 @@
     "Files/Slides/mso2D26.tmp",
     "Files/Slides/Aula 2 - Preferences.pdf",
     "Files/Slides/mso5F6.tmp",
-    "Files/Slides/msoF02B.tmp",
     "Files/Atividades/Lista 1 - Limpa.md",
     "Files/Atividades/lista1_teoria_dos_jogos.md",
     "Files/Atividades/Lista 1 - JVFD.md",
