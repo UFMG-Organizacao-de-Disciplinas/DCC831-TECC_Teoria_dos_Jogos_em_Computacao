@@ -1780,19 +1780,21 @@ Nesses casos aqui, se alguém com D mudar pra H, corre o risco de perder valor. 
 - Quem colocou o menor valor terá uma recompensa de R=5; O outro perderá 5. Se forem iguais, os dois recebem a mesma quantidade.
 
 - Escolhas:
-	- R=5
-		- (Luciana, Antônio) = (300, 240); Ganhos: (235, 245)
-	- R=100
-		- (Luciana, Antônio) = (200, 290); Ganhos: (300, 100)
+
+  - R=5
+    - (Luciana, Antônio) = (300, 240); Ganhos: (235, 245)
+  - R=100
+    - (Luciana, Antônio) = (200, 290); Ganhos: (300, 100)
 
 - Ele tem um equilíbrio de Nash?
-	- R:5 
-	- $A_i = \{ 180, \dots, 300\}$
-	- (300, 300), porque um conseguiria melhorar ao reduzir em 1
-	- (180, 180): Seria um equilíbrio porque não há melhoria ao mudar sua ação
+  - R:5
+  - $A_i = \{ 180, \dots, 300\}$
+  - (300, 300), porque um conseguiria melhorar ao reduzir em 1
+  - (180, 180): Seria um equilíbrio porque não há melhoria ao mudar sua ação
 - Se $R=180$, acaba ficando mais evidente que deve-se jogar 180.
 - Quando $R=5$, essa diferença é praticamente irrisória.
 - "Essa escolha de (180, 180) não parece ser uma ação de equilíbrio"
+
 #### Qual o plot do Traveler's Dilemma?
 
 - Um dos jogadores pode querer maximizar a recompensa por falar um valor menor.
@@ -1803,14 +1805,15 @@ Ele aceita uma variação do valor de equilíbrio.
 
 - É um $\epsilon$-Nash Equilibrium se todas as utilidades...
 - Exemplo pro jogo:
-	- $300 \geq 299 + R - \epsilon$
-	- $\epsilon \geq R-1$
+  - $300 \geq 299 + R - \epsilon$
+  - $\epsilon \geq R-1$
 - Serve para multiagentes quando queremos tolerar pequenas variações
 
 | X   | L                           | R        |
 | --- | --------------------------- | -------- |
 | L   | 1, 1                        | 0, 0     |
 | R   | $$1+\frac{\epsilon}{2}, 1$$ | 500, 500 |
+
 Matéria da prova até $\epsilon$-Nash Equilibrium; A lista 2 vai só até aqui tbm
 
 ---
@@ -1820,24 +1823,24 @@ Matéria da prova até $\epsilon$-Nash Equilibrium; A lista 2 vai só até aqui 
 - Buscou-se encontrar equilíbrio em multijogadores de soma geral.
 - Todos são exponenciais no pior caso.
 - Classe mais básica:
-	- NE in two-player, zero sum games
-	- Pode ser resolvido com Programação Linear
-	- Cada vértice das restrições vai gerar uma solução. Queremos encontrar qual dos vértices tem maior valor de função objetivo.
-	- Se formular o problema como Programação Linear, qualquer solver resolve.
-	- Um jogo de soma zero com vários jogadores é tão complexa quando jogos de soma geral.
+  - NE in two-player, zero sum games
+  - Pode ser resolvido com Programação Linear
+  - Cada vértice das restrições vai gerar uma solução. Queremos encontrar qual dos vértices tem maior valor de função objetivo.
+  - Se formular o problema como Programação Linear, qualquer solver resolve.
+  - Um jogo de soma zero com vários jogadores é tão complexa quando jogos de soma geral.
 
-#### Jogo:
+#### Jogo
 
 - $G = (\{1, 2\}, A_1 \times A_2, (u_1, u_2))$
 - Solucionando:
-	- Minimizar: $U^{*}_1$
-	- Subject to:
-		- $\sum_{k \in A_2} u_1 (a^j_1, a^k_2) \cdot \leq U^*_1; \forall j \in A_1$
-			- Pra todas as ações do jogador 2
-			- Essa primeira parte antes do "$\leq$" é o cálculo de uma utilidade esperada.
-		- Basicamente tá falando que $u_1(a^j_1, a^k_2) \cdot \leq U^{*}_{1}; \forall k \in A_2$
-	- As outras variáveis são as ações.
-	- É um minimax do ponto de vista do Jogadpr2
+  - Minimizar: $U^{*}_1$
+  - Subject to:
+    - $\sum_{k \in A_2} u_1 (a^j_1, a^k_2) \cdot \leq U^*_1; \forall j \in A_1$
+      - Pra todas as ações do jogador 2
+      - Essa primeira parte antes do "$\leq$" é o cálculo de uma utilidade esperada.
+    - Basicamente tá falando que $u_1(a^j_1, a^k_2) \cdot \leq U^{*}_{1}; \forall k \in A_2$
+  - As outras variáveis são as ações.
+  - É um minimax do ponto de vista do Jogadpr2
 
 ---
 
@@ -1845,6 +1848,7 @@ Matéria da prova até $\epsilon$-Nash Equilibrium; A lista 2 vai só até aqui 
 | ------------: | ---- | ----- |
 |          Left | .58, |       |
 |         Right |      |       |
+
 Convertendo pra soma zero:
 
 | Kicker/Goalie | Left | Right |
@@ -1853,7 +1857,7 @@ Convertendo pra soma zero:
 |         Right |      |       |
 
 - Minimize $X_3$ (geralmente a última variável)
-	- 0.08 X_1
+  - 0.08 X_1
 
 ---
 
@@ -1869,6 +1873,7 @@ A = -F
 Chama a função do solver.
 
 Se a variável de folga for maior que zero é porque há espaço entre a utilidade esperada da ação e o U_i
+
 ## 15/05/2025 - Aula 18 - The complexity of finding a Nash Equilibrium: $n$ player games, removal of dominated strategies, and correlated equilibria | MAS, chapter 4
 
 - [JV] Cheguei atrasado
@@ -1878,16 +1883,16 @@ Se a variável de folga for maior que zero é porque há espaço entre a utilida
 - Por que é tão complexo?
 - Se fixarmos as ações, os jogadores, e as estratégias puras;
 - Problemas:
-	- Por enquanto falando de estratégias puras
-		- Nem sempre é garantido que há, então no pior caso testam-se todas.
-		- Se fixar a quantidade de ações e aumentar a quantidade de jogadores, aumenta exponencialmente a quantidade de tabelas de ações
-		- Se fixar a quantidade de jogadores e aumentarmos a quantidade de ações
-	- Em estratégias mistas
-		- No meu entendimento, teríamos meio que $\mathbb{R}^{|Ações\ Jogador_1|} \times \mathbb{R}^{|Ações\ Jogador_2|}$
+  - Por enquanto falando de estratégias puras
+    - Nem sempre é garantido que há, então no pior caso testam-se todas.
+    - Se fixar a quantidade de ações e aumentar a quantidade de jogadores, aumenta exponencialmente a quantidade de tabelas de ações
+    - Se fixar a quantidade de jogadores e aumentarmos a quantidade de ações
+  - Em estratégias mistas
+    - No meu entendimento, teríamos meio que $\mathbb{R}^{|Ações\ Jogador_1|} \times \mathbb{R}^{|Ações\ Jogador_2|}$
 - Por que podemos definir que não é NP-Completude?
-	- Podemos resumir a um problema de decisão: Resposta = Sim ou Não.
-	- Equilíbrio de Nash não é decisão, é busca.
-		- "Todo jogo tem pelo menos um equilíbrio de Nash. Já problemas NP-Completo nem sempre tem soluções"
+  - Podemos resumir a um problema de decisão: Resposta = Sim ou Não.
+  - Equilíbrio de Nash não é decisão, é busca.
+    - "Todo jogo tem pelo menos um equilíbrio de Nash. Já problemas NP-Completo nem sempre tem soluções"
 
 ---
 
@@ -1901,23 +1906,23 @@ Se a variável de folga for maior que zero é porque há espaço entre a utilida
 ---
 
 - Theorem (Gilboa and Zemel, 1989)
-	1. NP-Completo
-		1. pelo menos 2 nash?
-		2. X
-		3. X
-		4. X
-		5. X
-		6. X
-	2. PPAD: "Polynomial Parity Arguments on Directed graphs"
-		- G é um grafo com $2^n$ vértices
-		- Duas funções
-			- $P(id)=id|\epsilon$: todo nó indica qual é seu pai (pode ser nenhum) 
-			- $C(id)=id|\epsilon$: todo nó indica qual é seu filho (pode ser nenhum)
-			- Com isso, entende-se que cada nó apenas tem no máximo um filho e um pai.
-		- $\{0\}^n$ não é filho de ninguém: ele é a fonte
-		- A solução sempre estará nas fontes e sumidouros diferentes do $\{0\}^n$
-		- Algoritmo simples: parta de 
-		- Dúvida pendente: por que uma fonte diferente do $\{0\}^n$ pode ser um equilíbrio de Nash?
+  1. NP-Completo
+     1. pelo menos 2 nash?
+     2. X
+     3. X
+     4. X
+     5. X
+     6. X
+  2. PPAD: "Polynomial Parity Arguments on Directed graphs"
+     - G é um grafo com $2^n$ vértices
+     - Duas funções
+       - $P(id)=id|\epsilon$: todo nó indica qual é seu pai (pode ser nenhum)
+       - $C(id)=id|\epsilon$: todo nó indica qual é seu filho (pode ser nenhum)
+       - Com isso, entende-se que cada nó apenas tem no máximo um filho e um pai.
+     - $\{0\}^n$ não é filho de ninguém: ele é a fonte
+     - A solução sempre estará nas fontes e sumidouros diferentes do $\{0\}^n$
+     - Algoritmo simples: parta de
+     - Dúvida pendente: por que uma fonte diferente do $\{0\}^n$ pode ser um equilíbrio de Nash?
 
 ---
 
@@ -1933,13 +1938,14 @@ Se a variável de folga for maior que zero é porque há espaço entre a utilida
 | b   |     |     |
 | c   |     |     |
 |     |     |     |
+
 Possíveis suportes: $\{ \{a,b\}\{d,e\}; \{a,c\}\{d,e\}; \{b,c\}\{d,e\} \}$
+
 - E pq não "$\{a,b,c\}\{d,e\}$"?
 
 ---
 
 Faremos então um cálculo para encontrar uma probabilidade para estratégia mista tal que eu torne a jogada do outro jogador indiferente à minha escolha.
-
 
 ## 20/05/2025 - Aula 19 - The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria | MAS, chapter 4
 
