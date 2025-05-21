@@ -19,4 +19,44 @@
 
 ## Definições
 
-- Estratégia Estritamente Dominante
+### Equilíbrio de Nash
+
+- **O que é Equilíbrio de Nash?**
+
+  - Situação em que nenhum jogador pode melhorar seu resultado ao mudar sua estratégia, dado que os outros jogadores mantêm suas estratégias inalteradas.
+
+- **O que é o Equilíbrio de Nash Puro?**
+
+  - Situação em que os jogadores escolhem estratégias puras, ou seja, não há aleatoriedade nas escolhas.
+
+- **O que é o Equilíbrio de Nash Misto?**
+  - Situação em que os jogadores podem escolher estratégias mistas, ou seja, aleatoriedade nas escolhas.
+
+### Dominância de Estratégias
+
+- **O que é uma estratégia dominante?**
+  - Uma estratégia que sempre resulta em um payoff maior ou igual, independentemente das escolhas dos outros jogadores.
+
+### Pareto Dominância
+
+- **Qual a diferença entre Estratégia Dominante e Pareto Dominante?**
+  - Uma estratégia dominante é aquela que sempre resulta em um payoff maior ou igual, independentemente das escolhas dos outros jogadores. Já a Pareto dominante é uma situação em que não é possível melhorar o resultado de um jogador sem piorar o resultado de outro.
+
+---
+
+Exemplo de matriz de payoffs pro dilema dos prisioneiros
+
+| 1x2 | 2:A    | 2:B    |
+| --- | ------ | ------ |
+| 1:A | -1, -1 | -10, 0 |
+| 1:B | 0, -10 | -5, -5 |
+
+- B: Estratégia dominante
+- BB: é um Equilíbrio de Nash Puro
+- AA $P_\succ$ (Pareto domina) BB
+
+- Pro jogador 1:
+  - Reward: AA
+  - Sucker: AB
+  - Temptation: BA
+  - Punishment: BB
