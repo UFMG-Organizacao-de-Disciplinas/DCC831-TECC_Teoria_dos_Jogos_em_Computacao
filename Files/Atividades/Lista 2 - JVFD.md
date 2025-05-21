@@ -136,7 +136,39 @@ Find all the (pure strategy) Nash equilibria for this game.
 
 ### **(a)** Find all pure-strategy Nash equilibria for this game
 
+Estratégias Puras que são Equilíbrios de Nash: $\{ \{U, L\}, \{D, R\} \}$
+
+**Raciocínio:** olhando como A, se o B jogar L, não há escolha melhor do que U; Olhando como B, se o A jogar U, não há escolha melhor do que L.
+
+---
+
 ### **(b)** This game also has a mixed-strategy Nash equilibrium; find the probabilities the players use in this equilibrium, together with an explanation for your answer
+
+Para encontrar o equilíbrio de estratégia mista, precisamos igualar os payoffs esperados de cada jogador para cada estratégia. Primeiro consideremos a probabilidade dos payoffs esperados para o jogador 1
+
+- $1$:
+  - $Pay_{A:UL} \cdot P_{B:L} + Pay_{A:UR} \cdot P_{B:R} = Pay_{A:DL} \cdot P_{B:L} + Pay_{A:DR} \cdot P_{B:R}$
+    - $Pay_{A:UL} = 1; Pay_{A:UR} = 0; Pay_{A:DL} = 0; Pay_{A:DR} = 4$
+    - $P_{B:L} = x; P_{B:R} = 1-x$
+    - $1 \cdot x + 0 \cdot (1-x) = 0 \cdot x + 4 \cdot (1-x)$
+    - $x = 4(1-x)$
+    - $x = 4 - 4x$
+    - $5x = 4$
+    - $x = \frac{4}{5}$
+    - $x = 0.8$
+- $2$:
+  - $Pay*{B:UL} \cdot P*{B:
+
+$A: x(U) + (1-x)(D)$
+
+$B: y(L) + (1-y)(R)$
+
+| 8b  | L           | R            |
+| --- | ----------- | ------------ |
+| U   | $UL_1,UL_2$ | $UR_1, UR_2$ |
+| D   | $DL_1,DL_2$ | $DR_1, DR_2$ |
+
+---
 
 **(c)** Keeping in mind Schelling's focal point idea from Chapter 6, what equilibrium do you think is the best prediction of how the game will be played? Explain.
 
