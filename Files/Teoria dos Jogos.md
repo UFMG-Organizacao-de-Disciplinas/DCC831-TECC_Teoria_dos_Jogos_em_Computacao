@@ -1949,6 +1949,35 @@ Faremos então um cálculo para encontrar uma probabilidade para estratégia mis
 
 ## 20/05/2025 - Aula 19 - The complexity of finding a Nash Equilibrium: n player games, removal of dominated strategies, and correlated equilibria | MAS, chapter 4
 
+### Aula 17? - Cheguei atrasado
+
+- Finding Supports;
+- Jogos degenerados
+- The LCP Formulation: Usado pra achar o suporte em que há o Equilíbrio de Nash
+	- $U^{*}_{1}$: Utilidade esperada
+	- $r^{j}_{1}$: Slack variable, valor de folga para que seja uma igualdade e não uma inequação.
+	- Dúvida: por que $r^{j}_{1} \cdot s^{j}_{1} = 0$ as duas variáveis não podem ser ambas zero?
+
+#### The Lemke-Howson Algorithm
+
+- O Jogador 1 tem um triângulo cujos vértices são as estratégias puras.
+- O início é o único ponto em que há espaço pra aleatoriedade.
+- O primeiro movimento será ir para uma das estratégias puras.
+- $A_1 \cup A_2$ é o conjunto de todas as ações do jogo.
+- Rótulos têm duas partes:
+	1. Estratégias não jogadas
+	2. Melhores estratégias pro outro jogador dada determinada jogada
+- Obs.: $A_1 \cup A_2$ gerará o conjunto de todas as ações jogadas, e $A_1$ e $A_2$ são disjuntos
+- Consideramos que todas as ações têm nomes diferentes. Preferencialmente que os rótulos indiquem qual é o jogador.
+- $a_{Jogador}^{Ação}$
+	- Subscrito: Jogador
+	- Superscrito: ação
+- Os rótulos, na representação gráfica, é dado pela junção dos rótulos próximos.
+- Na visualização do jogador 1:
+	- As ações do jogador 2 ($a_2$) são as superfícies
+	- As ações do jogador 1 ($a_1$) são as retas
+- Todos os passos sempre adicionam ou removem uma ação
+
 ### 22/05/2025 - Aula 20 - Perfect Information Extensive-form games | MAS, chapter 5
 
 ### 27/05/2025 - Aula 21 - Perfect Information Extensive-form games | MAS, chapter 5
