@@ -41,10 +41,10 @@ Is this statement correct or incorrect? If you think it is correct, give a brief
 
 ## 3. Find all pure strategy Nash equilibria in the game below. In the payoff matrix below the rows correspond to player $A$'s strategies and the columns correspond to player $B$'s strategies. The first entry in each box is player $A$'s payoff and the second entry is player $B$'s payoff
 
-|   3   | $B:L$ | $B:R$ |
-| :---: | :---: | :---: |
-| $A:U$ | 1, 2  | 3, 2  |
-| $A:D$ | 2, 4  | 0, 2  |
+|   3   |    $B:L$     |    $B:R$     |
+| :---: | :----------: | :----------: |
+| $A:U$ |   1, **2**   | **3**, **2** |
+| $A:D$ | **2**, **4** |     0, 2     |
 
 - **Equilíbrio de Nash de Estratégia Pura:** $\{\{D, L\}, \{U, R\}\}$
 
@@ -56,11 +56,11 @@ Is this statement correct or incorrect? If you think it is correct, give a brief
 
 ## 4. Consider the two-player game with players, strategies and payoffs described in the following game matrix
 
-| 4     | $B:L$ | $B:M$ | $B:R$ |
-| :---- | :---: | :---: | :---: |
-| $A:t$ | 0, 3  | 6, 2  | 1, 1  |
-| $A:m$ | 2, 3  | 0, 1  | 7, 0  |
-| $A:b$ | 5, 3  | 4, 2  | 3, 1  |
+| 4     |    $B:L$     |  $B:M$   |  $B:R$   |
+| :---- | :----------: | :------: | :------: |
+| $A:t$ |   0, **3**   | **6**, 2 |   1, 1   |
+| $A:m$ |   2, **3**   |   0, 1   | **7**, 0 |
+| $A:b$ | **5**, **3** |   4, 2   |   3, 1   |
 
 Figure 6.28: Payoff Matrix
 
@@ -74,11 +74,11 @@ Figure 6.28: Payoff Matrix
 
 ## 5. Consider the following two-player game in which each player has three strategies
 
-| 5     |   $B:L$   |  $B:M$   |  $B:R$   |
-| :---- | :-------: | :------: | :------: |
-| $A:U$ |   1, 1    |   2, 3   | 1, **6** |
-| $A:M$ | **3**, 4  | **5**, 5 | **2**, 2 |
-| $A:D$ | 1, **10** | 4, **7** |   0, 4   |
+| 5     |   $B:L$   |    $B:M$     |  $B:R$   |
+| :---- | :-------: | :----------: | :------: |
+| $A:U$ |   1, 1    |     2, 3     | 1, **6** |
+| $A:M$ | **3**, 4  | **5**, **5** | **2**, 2 |
+| $A:D$ | 1, **10** |     4, 7     |   0, 4   |
 
 Find all the (pure strategy) Nash equilibria for this game.
 
@@ -88,24 +88,24 @@ Find all the (pure strategy) Nash equilibria for this game.
 
 **(a)** Find all pure (non-randomized) strategy Nash equilibria for the game described by the payoff matrix below.
 
-|  6a   | $B:L$ | $B:R$ |
-| :---: | :---: | :---: |
-| $A:U$ | 2, 15 | 4, 20 |
-| $A:D$ | 6, 6  | 10, 8 |
+|  6a   |  $B:L$   |     $B:R$     |
+| :---: | :------: | :-----------: |
+| $A:U$ |  2, 15   |   4, **20**   |
+| $A:D$ | **6**, 6 | **10**, **8** |
 
 **(b)** Find all pure (non-randomized) strategy Nash equilibria for the game described by the payoff matrix below.
 
-|  6b   | $B:L$ | $B:R$ |
-| :---: | :---: | :---: |
-| $A:U$ | 3, 5  | 4, 3  |
-| $A:D$ | 2, 1  | 1, 6  |
+|  6b   |    $B:L$     |  $B:R$   |
+| :---: | :----------: | :------: |
+| $A:U$ | **3**, **5** | **4**, 3 |
+| $A:D$ |     2, 1     | 1, **6** |
 
 **(c)** Find _all_ Nash equilibria for the game described by the payoff matrix below.
 
-|  6c   | $B:L$ | $B:R$ |
-| :---: | :---: | :---: |
-| $A:U$ | 1, 1  | 4, 2  |
-| $A:D$ | 3, 3  | 2, 2  |
+|  6c   |    $B:L$     |    $B:R$     |
+| :---: | :----------: | :----------: |
+| $A:U$ |     1, 1     | **4**, **2** |
+| $A:D$ | **3**, **3** |     2, 2     |
 
 > Hint: This game has a both pure strategy equilibria and a mixed strategy equilibrium. To find the mixed strategy equilibrium let the probability that player $A$ uses strategy $U$ be $p$ and the probability that player $B$ uses strategy $L$ be $q$. As we learned in our analysis of matching pennies, if a player uses a mixed strategy (one that is not really just some pure strategy played with probability one) then the player must be indifferent between two pure strategies. That is the strategies must have equal expected payoffs. So, for example, if $p$ is not $0$ or $1$ then it must be the case that $q+4(1-q) = 3q+2(1-q)$ as these are the expected payoffs to player A from U and D when player $B$ uses probability $q$.
 
@@ -113,26 +113,26 @@ Find all the (pure strategy) Nash equilibria for this game.
 
 **(a)** Find all Nash equilibria for the game described by the payoff matrix below,
 
-|  7a   | $B:L$ | $B:R$ |
-| :---: | :---: | :---: |
-| $A:U$ | 1, 1  | 3, 2  |
-| $A:D$ | 0, 3  | 4, 4  |
+|  7a   |  $B:L$   |    $B:R$     |
+| :---: | :------: | :----------: |
+| $A:U$ | **1**, 1 |   3, **2**   |
+| $A:D$ |   0, 3   | **4**, **4** |
 
 **(b)** Find all Nash equilibria for the game described by the payoff matrix below (include an explanation for your answer).
 
-|  7b   | $B:L$ | $B:R$ |
-| :---: | :---: | :---: |
-| $A:U$ | 5, 6  | 0, 10 |
-| $A:D$ | 4, 4  | 2, 2  |
+|  7b   |  $B:L$   |   $B:R$   |
+| :---: | :------: | :-------: |
+| $A:U$ | **5**, 6 | 0, **10** |
+| $A:D$ | 4, **4** | **2**, 2  |
 
 > Hint: This game has a mixed strategy equilibrium. To find the equilibrium let the probability that player $A$ uses strategy $U$ be $p$ and the probability that player $B$ uses strategy $L$ be $q$. As we learned in our analysis of matching pennies, if a player uses a mixed strategy (one that is not really just some pure strategy played with probability one) then the player must be indifferent between two pure strategies. That is, the strategies must have equal expected payoffs. So, for example, if $p$ is not $0$ or $1$ then it must be the case that $5q + 0(1 — q) = 4q + 2(1 — q)$ as these are the expected payoffs to player A from U and D when player $B$ uses probability $q$.
 
 ## 8. Consider the two-player game described by the payoff matrix below
 
-|   8   | $B:L$ | $B:R$ |
-| :---: | :---: | :---: |
-| $A:U$ | 1, 1  | 0, 0  |
-| $A:D$ | 0, 0  | 4, 4  |
+|   8   |    $B:L$     |    $B:R$     |
+| :---: | :----------: | :----------: |
+| $A:U$ | **1**, **1** |     0, 0     |
+| $A:D$ |     0, 0     | **4**, **4** |
 
 ### **(a)** Find all pure-strategy Nash equilibria for this game
 
@@ -174,22 +174,22 @@ $B: y(L) + (1-y)(R)$
 
 ## 9. For each of the following two player games find all Nash equilibria. In each payoff matrix below the rows correspond to player $A$'s strategies and the columns correspond to player $B$'s strategies. The first entry in each box is player $A$'s payoff and the second entry is player $B$'s payoff
 
-|  a)   | $B:L$ | $B:R$ |
-| :---: | :---: | :---: |
-| $A:U$ | 8, 4  | 5, 5  |
-| $A:D$ | 3, 3  | 4, 8  |
+|  a)   |  $B:L$   |    $B:R$     |
+| :---: | :------: | :----------: |
+| $A:U$ | **8**, 4 | **5**, **5** |
+| $A:D$ |   3, 3   |   4, **8**   |
 
-|  b)   | $B:L$ | $B:R$ |
-| :---: | :---: | :---: |
-| $A:U$ | 0, 0  | -1, 1 |
-| $A:D$ | -1, 1 | 2, -2 |
+|  b)   |   $B:L$   |   $B:R$   |
+| :---: | :-------: | :-------: |
+| $A:U$ | **0**, 0  | -1, **1** |
+| $A:D$ | -1, **1** | **2**, -2 |
 
 ## 10. In the payoff matrix below the rows correspond to player $A$'s strategies and the columns correspond to player $B$'s strategies. The first entry in each box is player $A$'s payoff and the second entry is player $B$'s payoff
 
-|  10   | $B:L$ | $B:R$ |
-| :---: | :---: | :---: |
-| $A:U$ | 3, 3  | 1, 2  |
-| $A:D$ | 2, 1  | 3, 0  |
+|  10   |    $B:L$     |  $B:R$   |
+| :---: | :----------: | :------: |
+| $A:U$ | **3**, **3** |   1, 2   |
+| $A:D$ |   2, **1**   | **3**, 0 |
 
 **(a)** Find all pure strategy Nash equilibria of this game.
 
@@ -209,17 +209,17 @@ A strategy $s^{*}_{i}$ is _dominated_ if player $i$ has another strategy $s^{'}_
 
 We do not expect a player to use a strategy that is dominated and this can help in finding Nash equilibria. Here is an example of this idea. In this game, $M$ is a dominated strategy (it is dominated by $R$) and player $B$ will not use it.
 
-|  11   | $B:L$ | $B:M$ | $B:R$ |
-| :---: | :---: | :---: | :---: |
-| $A:U$ | 2, 4  | 2, 1  | 3, 2  |
-| $A:D$ | 1, 2  | 3, 3  | 2, 4  |
+|  11   |    $B:L$     |  $B:M$   |  $B:R$   |
+| :---: | :----------: | :------: | :------: |
+| $A:U$ | **2**, **4** |   2, 1   | **3**, 2 |
+| $A:D$ |     1, 2     | **3**, 3 | 2, **4** |
 
 So in analyzing the game we can delete $M$ and look at the remaining game
 
-|  11   | $B:L$ | $B:R$ |
-| :---: | :---: | :---: |
-| $A:U$ | 2, 4  | 3, 2  |
-| $A:D$ | 1, 2  | 2, 4  |
+|  11   |    $B:L$     |  $B:R$   |
+| :---: | :----------: | :------: |
+| $A:U$ | **2**, **4** | **3**, 2 |
+| $A:D$ |     1, 2     | 2, **4** |
 
 Now player $A$ has a dominant strategy ($U$) and it is easy to see that the Nash equilibrium of the 2-by-2 game is $(U, L)$. You can check the original game to see that $(U, L)$ is a Nash equilibrium. Of course, using this procedure requires that we know that a dominated strategy cannot be used in Nash equilibrium. [[Note]][Note5]
 
@@ -236,10 +236,10 @@ A strategy $s^{*}_{i}$ _weakly dominated_ if player $i$ has another strategy $s^
 
 **(a)** It seems unlikely that a player would use a weakly dominated strategy, but these strategies can occur in a Nash equilibrium. Find all pure (non-randomized) Nash equilibria for the game below. Do any of them use weakly dominated strategies?
 
-|  12a  | $B:L$ | $B:R$ |
-| :---: | :---: | :---: |
-| $A:U$ | 1, 1  | 1, 1  |
-| $A:D$ | 0, 0  | 2, 1  |
+|  12a  |    $B:L$     |    $B:R$     |
+| :---: | :----------: | :----------: |
+| $A:U$ | **1**, **1** |   1, **1**   |
+| $A:D$ |     0, 0     | **2**, **1** |
 
 **(b)** One way to reason about the weakly dominated strategies that you should have found in answering the question above is to consider the following sequential game. Suppose that the players actually move sequentially, but the player to move second does not know what the player moving first chose. Player $A$ moves first, and if he chooses $U$, then player $B$'s choice does not matter. Effectively the game is over if $A$ chooses $U$ as no matter what $B$ does the payoff is (1, 1). If player $A$ chooses $D$, then player $B$'s move matters, and the payoff is (0, 0) if $B$ chooses $L$ or $(2, 1)$ if $B$ chooses $R$.
 
@@ -255,10 +255,10 @@ One way to specify the payoffs would be to write down every possible triple of s
 
 Payoff Matrix $l$:
 
-|  $l$  |  $B:L$  |  $B:R$  |
-| :---: | :-----: | :-----: |
-| $A:U$ | 4, 4, 4 | 0, 0, 1 |
-| $A:D$ | 0, 2, 1 | 2, 1, 0 |
+|  $l$  |        $B:L$        |    $B:R$    |
+| :---: | :-----------------: | :---------: |
+| $A:U$ | **4**, **4**, **4** | 0, 0, **1** |
+| $A:D$ |   0, **2**, **1**   | **2**, 1, 0 |
 
 where the first entry in each cell is the payoff to player 1, the second entry is the payoff to player 2 and the third entry is the payoff to player 3.
 
@@ -266,10 +266,10 @@ If 3 chooses $r$ then the payoff matrix is
 
 Payoff Matrix $r$:
 
-|  $r$  |  $B:L$  |  $B:R$  |
-| :---: | :-----: | :-----: |
-| $A:U$ | 2, 0, 0 | 1, 1, 1 |
-| $A:D$ | 1, 1, 1 | 2, 2, 2 |
+|  $r$  |    $B:L$    |        $B:R$        |
+| :---: | :---------: | :-----------------: |
+| $A:U$ | **2**, 0, 0 |   1, **1**, **1**   |
+| $A:D$ | 1, 1, **1** | **2**, **2**, **2** |
 
 So, for example, if player 1 chooses $U$, player 2 chooses $R$ and player 3 chooses $r$ the payoffs are 1 for each player.
 
@@ -283,10 +283,10 @@ What do you expect player 3 to do and why? What triple of strategies would you e
 
 ## 14. Consider the two-player game with players, strategies and payoffs described in the following game matrix
 
-|  14   | $2:L$ | $2:R$ |
-| :---: | :---: | :---: |
-| $1:U$ | 1, 1  | 4, 0  |
-| $1:D$ | 4, 0  | 3, 3  |
+|  14   |  $2:L$   |  $2:R$   |
+| :---: | :------: | :------: |
+| $1:U$ | 1, **1** | **4**, 0 |
+| $1:D$ | **4**, 0 | 3, **3** |
 
 **(a)** Find all of the Nash equilibria of this game.
 
