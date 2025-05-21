@@ -134,9 +134,9 @@ Find all the (pure strategy) Nash equilibria for this game.
 | $A:U$ | 1, 1  | 0, 0  |
 | $A:D$ | 0, 0  | 4, 4  |
 
-**(a)** Find all pure-strategy Nash equilibria for this game.
+### **(a)** Find all pure-strategy Nash equilibria for this game
 
-**(b)** This game also has a mixed-strategy Nash equilibrium; find the probabilities the players use in this equilibrium, together with an explanation for your answer.
+### **(b)** This game also has a mixed-strategy Nash equilibrium; find the probabilities the players use in this equilibrium, together with an explanation for your answer
 
 **(c)** Keeping in mind Schelling's focal point idea from Chapter 6, what equilibrium do you think is the best prediction of how the game will be played? Explain.
 
@@ -177,7 +177,7 @@ A strategy $s^{*}_{i}$ is _dominated_ if player $i$ has another strategy $s^{'}_
 
 We do not expect a player to use a strategy that is dominated and this can help in finding Nash equilibria. Here is an example of this idea. In this game, $M$ is a dominated strategy (it is dominated by $R$) and player $B$ will not use it.
 
-|  11   | $B:L$ | B:$M$ | $B:R$ |
+|  11   | $B:L$ | $B:M$ | $B:R$ |
 | :---: | :---: | :---: | :---: |
 | $A:U$ | 2, 4  | 2, 1  | 3, 2  |
 | $A:D$ | 1, 2  | 3, 3  | 2, 4  |
@@ -189,7 +189,7 @@ So in analyzing the game we can delete $M$ and look at the remaining game
 | $A:U$ | 2, 4  | 3, 2  |
 | $A:D$ | 1, 2  | 2, 4  |
 
-Now player A has a dominant strategy ($U$) and it is easy to see that the Nash equilibrium of the 2-by-2 game is $(U, L)$. You can check the original game to see that $(U, L)$ is a Nash equilibrium. Of course, using this procedure requires that we know that a dominated strategy cannot be used in Nash equilibrium. [[Note]][Note5]
+Now player $A$ has a dominant strategy ($U$) and it is easy to see that the Nash equilibrium of the 2-by-2 game is $(U, L)$. You can check the original game to see that $(U, L)$ is a Nash equilibrium. Of course, using this procedure requires that we know that a dominated strategy cannot be used in Nash equilibrium. [[Note]][Note5]
 
 [Note5]: <> "This is actually true for any number of players. It would also help to know that if we iteratively remove dominated strategies (in any order) and analyze the reduced games we still find the Nash equilibria of the original game. This is also true, but it is a bit more complicated."
 
