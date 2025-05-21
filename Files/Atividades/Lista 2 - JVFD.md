@@ -19,13 +19,25 @@
 
 ## 1. Say whether the following claim is true or false, and provide a brief (1-3 sentence) explanation for your answer
 
-**Claim:** If player A in a two-person game has a dominant strategy $s_A$, then there is a pure strategy Nash equilibrium in which player A plays $s_A$ and player $B$ plays a best response to $S_A$.
+**Claim:** If player $A$ in a two-person game has a dominant strategy $s_A$, then there is a pure strategy Nash equilibrium in which player $A$ plays $s_A$ and player $B$ plays a best response to $S_A$.
+
+**Resposta:** Se considerarmos que a estratégia $S_A$ é estritamente dominante para o jogador $A$, logo, não haverá outra estratégia para o jogador $A$ que resulte em maior Payoff, isso, independente da escolha do jogador $B$. Sendo assim, o jogador $B$ deve escolher a melhor resposta para a estratégia $S_A$. Com isso, há um Equilíbrio de Nash de Estratégia Pura.
+
+---
 
 ## 2. Consider the following statement
 
 > In a Nash equilibrium of a two-player game each player is playing an optimal strategy, so the two player's strategies are social-welfare maximizing.
 
 Is this statement correct or incorrect? If you think it is correct, give a brief (1-3 sentence) explanation for why. If you think it is incorrect, give an example of a game discussed in Chapter 6 that shows it to be incorrect (you do not need to spell out all the details of the game, provided you make it clear what you are referring to), together with a brief (1-3 sentence) explanation.
+
+- **Resposta:** A afirmação é incorreta. Um exemplo disso é o Dilema do Prisioneiro, onde ambos os jogadores têm uma estratégia dominante de trair o outro, resultando em um equilíbrio de Nash. No entanto, essa escolha não maximiza o bem-estar social, pois ambos os jogadores teriam um resultado melhor se cooperassem. Portanto, a estratégia ótima para cada jogador não leva ao resultado socialmente ótimo.
+
+- **Dúvidas:**
+  - O que seria "social-welfare maximizing"? É o mesmo que "Pareto Dominante"?
+  - A estratégia ótima é a que maximiza o payoff de cada jogador?
+
+---
 
 ## 3. Find all pure strategy Nash equilibria in the game below. In the payoff matrix below the rows correspond to player $A$'s strategies and the columns correspond to player $B$'s strategies. The first entry in each box is player $A$'s payoff and the second entry is player $B$'s payoff
 
@@ -34,28 +46,43 @@ Is this statement correct or incorrect? If you think it is correct, give a brief
 | $A:U$ | 1, 2  | 3, 2  |
 | $A:D$ | 2, 4  | 0, 2  |
 
+- **Equilíbrio de Nash de Estratégia Pura:** $\{\{D, L\}, \{U, R\}\}$
+
+- **Justificativa:**
+  - $L$ Domina fracamente $R$ pois os payoffs de $L$ são pelo menos tão bons quanto os resultados de $R$; sendo assim, o jogador $B$ jogará $L$; Sabendo disso, o jogador $A$ escolherá a opção que lhe render maior payoff, dada a escolha de $L$, sendo essa a estratégia $D$.
+  - E no caso do $U, R$, caso o $A$ jogue $U$, pro $B$ tanto faz se ele jogar $L$ ou $R$. E se $B$ jogar $R$, a melhor estratégia de $A$ é jogar $U$.
+
+---
+
 ## 4. Consider the two-player game with players, strategies and payoffs described in the following game matrix
 
-|   4   | $B:L$ | B:$M$ | $B:R$ |
-| :---: | :---: | :---: | :---: |
-| A:$t$ | 0, 3  | 6, 2  | 1, 1  |
-| A:$m$ | 2, 3  | 0, 1  | 7, 0  |
-| A:$b$ | 5, 3  | 4, 2  | 3, 1  |
+| 4     | $B:L$ | $B:M$ | $B:R$ |
+| :---- | :---: | :---: | :---: |
+| $A:t$ | 0, 3  | 6, 2  | 1, 1  |
+| $A:m$ | 2, 3  | 0, 1  | 7, 0  |
+| $A:b$ | 5, 3  | 4, 2  | 3, 1  |
 
 Figure 6.28: Payoff Matrix
 
-**(a)** Does either player have a dominant strategy? Explain briefly (1-3 sentences).
-**(b)** Find all pure strategy Nash equilibria for this game.
+### **(a)** Does either player have a dominant strategy? Explain briefly (1-3 sentences)
+
+- **Resposta:** O jogador $A$ não tem uma estratégia dominante. Já o jogador $B$ tem uma estratégia dominante, que é $L$, pois essa estratégia domina estritamente as outras duas, $M$ e $R$, visto que seus payoffs são sempre maiores que as alternativas. Como então o jogador $B$ tenderá a jogar $L$, o jogador $A$ escolherá a melhor resposta para essa estratégia, que é $b$, mesmo que isso não seja uma estratégia dominante para si.
+
+### **(b)** Find all pure strategy Nash equilibria for this game
+
+- **Resposta:** O equilíbrio de Nash de estratégia pura é $\{\{b, L\}\}$.
 
 ## 5. Consider the following two-player game in which each player has three strategies
 
-|   5   | $B:L$ | B:$M$ | $B:R$ |
-| :---: | :---: | :---: | :---: |
-| $A:U$ | 1, 1  | 2, 3  | 1, 6  |
-| A:$M$ | 3, 4  | 5, 5  | 2, 2  |
-| $A:D$ | 1, 10 | 4, 7  | 0, 4  |
+| 5     |   $B:L$   |  $B:M$   |  $B:R$   |
+| :---- | :-------: | :------: | :------: |
+| $A:U$ |   1, 1    |   2, 3   | 1, **6** |
+| $A:M$ | **3**, 4  | **5**, 5 | **2**, 2 |
+| $A:D$ | 1, **10** | 4, **7** |   0, 4   |
 
 Find all the (pure strategy) Nash equilibria for this game.
+
+- **Resposta:** O equilíbrio de Nash de estratégia pura é $\{\{M, M\}\}$.
 
 ## 6. In this question we will consider several two-player games. In cach payoff matrix below the rows correspond to player $A$'s strategies and the columns correspond to player $B$'s strategies. The first entry in each box is player $A$'s payoff and the second entry is player $B$'s payoff
 
