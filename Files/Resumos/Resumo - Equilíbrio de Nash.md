@@ -60,3 +60,18 @@ Exemplo de matriz de payoffs pro dilema dos prisioneiros
   - Sucker: AB
   - Temptation: BA
   - Punishment: BB
+
+## O resto
+
+- Maxmin and minmax strategies
+  - **Maxmin:** Maximizar o mínimo payoff próprio possível
+  - **Minmax:** Minimizar o máximo payoff possível do oponente
+    - Em jogo de soma zero, minimizar o payoff do oponente tende a aumentar o próprio payoff
+- Minimax regret
+  - **Regret:** Diferença entre o payoff obtido e o payoff que poderia ter sido obtido se o jogador tivesse escolhido a melhor estratégia possível, dado o que os outros jogadores escolheram.
+  - **Max Regret:** A máxima diferença entre o payoff obtido e o payoff que poderia ter sido obtido. (Basicamente a diferença entre o maior payoff e o menor payoff de toda a matriz? Dentre as escolhas dos outros jogadores?)
+  - **Minimax Regret:** Minimizar o máximo arrependimento possível
+- **Removal of dominated strategies:** Sempre remover estratégias estritamente dominadas
+- Correlated Equilibrium
+- Trembling-hand perfect equilibrium
+- ξ-Nash equilibrium
