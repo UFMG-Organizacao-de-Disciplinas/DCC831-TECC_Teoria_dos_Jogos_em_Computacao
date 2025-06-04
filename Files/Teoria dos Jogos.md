@@ -1719,10 +1719,10 @@ Uma coisa interessante a se observar é que para estratégia pura, o equilibrio 
 
 Outro caso:
 
-| X   | H    | D      |
-| --- | ---- | ------ |
-| H   | 3, 3 | 1, 5   |
-| D   | 5, 1 | -2, -2 |
+| $J_1/J_2$ | $J_2:H$ | $J_2:D$  |
+| :-------- | :-----: | :------: |
+| $J_1:H$   | $3, 3$  |  $1, 5$  |
+| $J_1:D$   | $5, 1$  | $-2, -2$ |
 
 Existiam 3 cartas: DD, DH e HD
 
@@ -1868,8 +1868,8 @@ Convertendo pra soma zero:
 
 E pro jogador 1?
 Iremos maximizar.
-F = -F
-A = -F
+$F = -F$
+$A = -F$
 Chama a função do solver.
 
 Se a variável de folga for maior que zero é porque há espaço entre a utilidade esperada da ação e o U_i
@@ -1954,9 +1954,9 @@ Faremos então um cálculo para encontrar uma probabilidade para estratégia mis
 - Finding Supports;
 - Jogos degenerados
 - The LCP Formulation: Usado pra achar o suporte em que há o Equilíbrio de Nash
-	- $U^{*}_{1}$: Utilidade esperada
-	- $r^{j}_{1}$: Slack variable, valor de folga para que seja uma igualdade e não uma inequação.
-	- Dúvida: por que $r^{j}_{1} \cdot s^{j}_{1} = 0$ as duas variáveis não podem ser ambas zero?
+  - $U^{*}_{1}$: Utilidade esperada
+  - $r^{j}_{1}$: Slack variable, valor de folga para que seja uma igualdade e não uma inequação.
+  - Dúvida: por que $r^{j}_{1} \cdot s^{j}_{1} = 0$ as duas variáveis não podem ser ambas zero?
 
 #### The Lemke-Howson Algorithm
 
@@ -1965,24 +1965,226 @@ Faremos então um cálculo para encontrar uma probabilidade para estratégia mis
 - O primeiro movimento será ir para uma das estratégias puras.
 - $A_1 \cup A_2$ é o conjunto de todas as ações do jogo.
 - Rótulos têm duas partes:
-	1. Estratégias não jogadas
-	2. Melhores estratégias pro outro jogador dada determinada jogada
+  1.  Estratégias não jogadas
+  2.  Melhores estratégias pro outro jogador dada determinada jogada
 - Obs.: $A_1 \cup A_2$ gerará o conjunto de todas as ações jogadas, e $A_1$ e $A_2$ são disjuntos
 - Consideramos que todas as ações têm nomes diferentes. Preferencialmente que os rótulos indiquem qual é o jogador.
 - $a_{Jogador}^{Ação}$
-	- Subscrito: Jogador
-	- Superscrito: ação
+  - Subscrito: Jogador
+  - Superscrito: ação
 - Os rótulos, na representação gráfica, é dado pela junção dos rótulos próximos.
 - Na visualização do jogador 1:
-	- As ações do jogador 2 ($a_2$) são as superfícies
-	- As ações do jogador 1 ($a_1$) são as retas
+  - As ações do jogador 2 ($a_2$) são as superfícies
+  - As ações do jogador 1 ($a_1$) são as retas
 - Todos os passos sempre adicionam ou removem uma ação
 
 ### 22/05/2025 - Aula 20 - Perfect Information Extensive-form games | MAS, chapter 5
 
-### 27/05/2025 - Aula 21 - Perfect Information Extensive-form games | MAS, chapter 5
+Aula 19?
+
+- The LCP Formulation
+  - $U_1^{*}$ e $U_2^{*}$ são inicializados como um valor fixo, geralmente trivialmente sendo 1.
+  - $r_1^j$ variável de folga
+  - $u_1$ utilidade esperada
+  - $s_1^j$ as probabilidades das estratégias somam 1
+
+### The Lemke-Howson Algorithm
+
+- E como descobrimos os valores dos nós do grafo?
+- The entering variable:
+- The leaving variable:
+- Minimum Ratio Test:
+
+| X      | Y^4:s4 | Y^5:s5 |
+| ------ | ------ | ------ |
+| X_1:r1 | 0,1    | 6,0    |
+| X_2:r2 | 2,0    | 5,2    |
+| X_3:r3 | 3,4    | 3,3    |
+
+$$
+\begin{cases}
+	r_1 = 1 - 0 y'_4 - 6 y'_5\\
+	r_2 = 1 - 2 y'_4 - 5 y'_5\\
+	r_3 = 1 - 3 y'_4 - 3 y'_5\\
+\end{cases}
+$$
+
+- "Sair da base" significa sair do lado esquerdo da igualdade e tornar ela a variável "principal"
+- Clashing variable: variáveis possíveis de sair
+- Minimum ratio rest: $v = c + qu + t$
+  - Isso daqui apenas descreve qual é o formato da equação que será usada, mas só serão usados em si o $q/c$ e escolhe-se o menor valor.
+  - $v$: clashing variable
+  - $c$: constante
+  - $q$: coeficiente constante
+  - $u$: variável entrante
+  - $t$: combinação linear
+- Geralmente ele cobra o Lemke-Howson na prova. E manda fazer 2 iterações
+
+---
+
+- No finalzão:
+  - zera todas as variáveis da direita;
+  - remove as linhas que não tem x e y na base
+  - e converte os valores das estratégias em distribuições de probabilidade: o valor divido pela soma dos valores.
+
+---
+
+O algoritmo serve para encontrar o equilíbrio de Nash de estratégias mistas
+
+É garantido encontrar um equilíbrio de Nash
+
+Exercício de prova: Começar com um equilíbrio de nash e fazer ele encontrar outro.
+
+### 27/05/2025 - Aula 21 - Perfect Information Extensive-form games | MAS, chapter 5 - Aula 19?
+
+#### Nash Equilibrium in n-player, general-sum games
+
+- Nem pode ser representado pra LCP
+  - Impraticável para resolver exatamente
+- Lemke-Howson: dois jogadores de soma geral.
+- Existe um caminho com algum sucesso usando Sequence of Linear Complementarity Problems (SLCP)
+- O LCP são aquelas equações matemáticas.
+
+---
+
+- Tentar analisar modelar como um problema de minimização
+- para cada jogador i e ação pura j, calcular o c(s); Sendo
+- esse c i j, é para poder analisar se há alguma ação que melhora a utilidade.
+- Usando o max entre o c e o 0 serve para não ter valor negativo.
+- Se o d i j for zero pra todos os jogadores, é equilíbrio de nash.
+- bota um "elevado ao quadrado" pra função ser diferenciável.
+
+##### Problema sem restrições
+
+Bota tudo na função objetivo
+
+- Vários algoritmos alternativos:
+  - Scarf's
+  - Govindan
+  - SEM
+
+#### Identifying dominated strategies
+
+- Remoção iterada de dominações estritas
+- A ordem de remoções fracamente dominadas importa.
+  - Arrisca matar equilíbrio de Nash
+  - Não cria equilíbrios artificiais
+  - Pode acabar removendo um equilíbrio de Nash melhor
+- Algoritmo
+  - Fixa S_i: roda o código
+- Estratégia fracamente dominada
+
+---
+
+Complexidade: $O(|A|)$.
+Qual a implicação...
+
+Não funcionam para
 
 ### 29/05/2025 - Aula 22 - Imperfect Information Extensive-form games | MAS, chapter 5
+
+#### Aula 20?
+
+##### Computing Correlated Equilibria
+
+- Social Welfare: a soma das utilidade ganhas pelos jogadores em determinado perfil de ação.
+- Maximize: $\sum_{a \in A} p(a) \sum_{i \in N} u_i(a)$
+- Quais seriam os equilíbrios correlacionados em um jogo de soma zero?
+  - Provavelmente apenas existiriam os equilíbrios de Nash.
+- Subject to:
+  - Para cada jogador
+    - Para cada uma de suas ações
+      - Para cada uma de suas outras ações:
+        - $\sum_{}$
+
+---
+
+Game of Chicken
+
+- Equações de comparações de utilidades entre manter a ação ou mudar a ação
+- Cria inequações para calcular as probabilidades.
+
+---
+
+Considerando o Equilíbrio correlacionado, são da classe P os seguintes problemas:
+
+- Uniqueness,
+- Pareto Optimality,
+- ...
+
+---
+
+- **Interpersonal utility**
+  - No caso do game of chicken, se considerarmos um caso em que o jogador 2 tem um ponto a mais que os outros, é nesse conjunto de ações que maximiza-se o social welfare.
+
+---
+
+- Por que dá pra encontrar equilíbrio correlacionado com equações lineares mas não para encontrar equilíbrio de Nash?
+- Porque no equilíbrio correlacionado equilibramos
+
+##### Software
+
+- Gambit
+- GAMUT
+- NASHPY
+
+#### Extensive Game
+
+##### JOGO: 5 JOGADORES
+
+- Jogo dos 5 piratas
+- 10 pontos
+- Decidiriam jogar um jogo
+- Propor uma maneira de dividir as moedas
+- Se a proposta for aceita pela maioria, o jogo é aceito
+- Se não for aceita, o pirata que fez a proposta, morre.
+- Seu objetivo: maximizar o número de moedas que você recebe.
+- Ganha um bônus pra cada pirata morto. (0.2 gamepoints)
+- Pontos: 1 ponto de participação + 1 ponto pra quem estiver vivo + 10 pontos distribuídos pros que restaram.
+
+| Jogadores |   Rafael | Laila | Luciana | Lucca | Antônio |
+| :-------: | -------: | :---: | :-----: | :---: | :-----: |
+|  Rafael   | 200 (OK) |       |         |       |         |
+|   Laila   | 400 (OK) |       |         |       |         |
+|  Luciana  |   0 (XX) |       |         |       |         |
+|   Lucca   |   0 (XX) |       |         |       |         |
+|  Antônio  | 400 (OK) |       |         |       |         |
+
+| Jogadores | Henrique | Gomide | Thiago | Farnese | Rangel |
+| :-------: | -------: | :----: | :----: | :-----: | :----: |
+| Henrique  |      100 |        |        |         |        |
+|  Gomide   |      400 |        |        |         |        |
+|  Thiago   |      500 |        |        |         |        |
+|  Farnese  |          |        |        |         |        |
+|  Rangel   |          |        |        |         |        |
+
+- 0.5 viver
+- 1.0 matar (dividido)
+- 10.0 distribuídos
+
+|  Jogadores   | T. Rodrigues | M. Freitas |  Rodrigo | João Vítor |   Mariana   |
+| :----------: | -----------: | ---------: | -------: | ---------: | :---------: |
+| T. Rodrigues |     100 (OK) |     0 (--) |   0 (--) |     0 (--) |   0 (--)    |
+|  M. Freitas  |     400 (XX) |   200 (OK) |   0 (--) |     0 (--) |   0 (--)    |
+|   Rodrigo    |     500 (OK) |   300 (--) | 700 (OK) |     0 (--) |   0 (--)    |
+|  João Vítor  |       0 (XX) |     0 (XX) | 300 (XX) |     0 (OK) |   0 (--)    |
+|   Mariana    |       0 (XX) |   500 (XX) |   0 (XX) |  1000 (XX) | GANHOU TUDO |
+
+Na proposta do Rodrigo eu deveria ter aceitado. Eu teria ganho 3\*(1/3) + 0,5 + 3 = 4,5. Dei mole.
+
+Conversão gamepoint para ponto: distribui entre participação e ponto extra
+
+###### Explicação do jogo
+
+- Explicação:
+
+| Jogadores | T. Rodrigues | M. Freitas | Rodrigo | João Vítor | Mariana |
+| :-------: | -----------: | ---------: | ------: | ---------: | :-----: |
+| Pirata 1  |              |            |         |            |         |
+| Pirata 2  |              |            |         |            |         |
+| Pirata 3  |              |            |         |            |         |
+| Pirata 4  |              |            |         |            |         |
+| Pirata 5  |              |            |         |            |         |
 
 ### 31/05/2025 - Aula 23 - Imperfect Information Extensive-form games | MAS, chapter 5
 
