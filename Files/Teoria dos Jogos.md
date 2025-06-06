@@ -1965,8 +1965,8 @@ Faremos então um cálculo para encontrar uma probabilidade para estratégia mis
 - O primeiro movimento será ir para uma das estratégias puras.
 - $A_1 \cup A_2$ é o conjunto de todas as ações do jogo.
 - Rótulos têm duas partes:
-  1.  Estratégias não jogadas
-  2.  Melhores estratégias pro outro jogador dada determinada jogada
+  1. Estratégias não jogadas
+  2. Melhores estratégias pro outro jogador dada determinada jogada
 - Obs.: $A_1 \cup A_2$ gerará o conjunto de todas as ações jogadas, e $A_1$ e $A_2$ são disjuntos
 - Consideramos que todas as ações têm nomes diferentes. Preferencialmente que os rótulos indiquem qual é o jogador.
 - $a_{Jogador}^{Ação}$
@@ -1988,7 +1988,7 @@ Aula 19?
   - $u_1$ utilidade esperada
   - $s_1^j$ as probabilidades das estratégias somam 1
 
-### The Lemke-Howson Algorithm
+### The Lemke-Howson Algorithm (2)
 
 - E como descobrimos os valores dos nós do grafo?
 - The entering variable:
@@ -2003,9 +2003,9 @@ Aula 19?
 
 $$
 \begin{cases}
-	r_1 = 1 - 0 y'_4 - 6 y'_5\\
-	r_2 = 1 - 2 y'_4 - 5 y'_5\\
-	r_3 = 1 - 3 y'_4 - 3 y'_5\\
+  r_1 = 1 - 0 y'_4 - 6 y'_5\\
+  r_2 = 1 - 2 y'_4 - 5 y'_5\\
+  r_3 = 1 - 3 y'_4 - 3 y'_5\\
 \end{cases}
 $$
 
@@ -2186,7 +2186,90 @@ Conversão gamepoint para ponto: distribui entre participação e ponto extra
 | Pirata 4  |              |            |         |            |         |
 | Pirata 5  |              |            |         |            |         |
 
-### 31/05/2025 - Aula 23 - Imperfect Information Extensive-form games | MAS, chapter 5
+### 31/05/2025 - Aula 23 - Imperfect Information Extensive-form games | MAS, chapter 5 - Aula 21
+
+#### Extensive Form Games
+
+- Duas variantes:
+  - Informação perfeita
+  - Informação imperfeita
+
+##### Perfect-Information Games in Extensive form
+
+- $G(N, A, H, Z, \chi, \rho, \sigma, u)$
+  - $N$: conjunto de $n$ jogadores
+  - $A$: conjunto de ações
+  - $H$: conjunto de escolhas não terminais
+  - $Z$: conjunto de nós terminais, disjunto de $H$
+  - $\chi: H \to 2^A$ função de ação...
+  - $\rho: H \to N$ função de jogador...
+  - $\sigma: H \times A \to H \cup Z$ função de sucessor...
+  - $u = (u_1, \dots, u_n)$ basicamente a função de utilidade
+
+---
+
+- $\chi$ indica as possibilidades de determinado jogador.
+- $\sigma$ indica qual é o estado resultante após uma ação partindo de um nó.
+
+- The sharing game (jogo do ultimato)
+  - É o jogo dos piratas com 2 jogadores.
+
+---
+
+- Conjunto de estratégias puras:
+  - Toda ação determinística do conjunto de resultados das ações de um jogador $i$.
+  - Explicação: conjunto de todas respostas para cada possibilidade de escolha do jogador. Então se ele pode tomar decisões em A, B e C, com respostas Y e N, então ele teria (Y, Y, Y) como um exemplo, onde ele diria Y para cada uma das 3 possibilidades de tomada de decisão.
+
+###### Convertendo em um jogo na forma normal
+
+- Dá pra converter e então usar os conceitos que já tínhamos.
+
+Porém, perdemos a questão temoral do jogo extensivo.
+
+5 resultados vs 16 resultados. Então acaba gerando uma explosão exponencial.
+
+Nem sempre dá pra converter um jogo normal na forma extensiva. Isso por causa da simultaneidade de ações da forma normal.
+
+###### Teorema
+
+##### Sub-game perfect equilibrium
+
+- [((AG)(CF)), ((AG)(CF)), ((BH)(CE))]
+  - O equilíbrio ((BH)(CE)) acaba sendo um caso de passar uma mensagem de aviso ao outro jogador, mas, nesse caso, perde-se um pouco a questão da temporalidade do jogo extensivo.
+
+| X      | (C, E) | (C, F) | (D, E) | (D, F) |
+| ------ | ------ | ------ | ------ | ------ |
+| (A, G) | 3, 8   | 3, 8   | 8, 3   | 8, 3   |
+| (A, H) | 3, 8   | 3, 8   | 8, 3   | 8, 3   |
+| (B, G) | 5, 5   | 2, 10  | 5, 5   | 2, 10  |
+| (B, H) | 5, 5   | 1, 0   | 5, 5   | 1, 0   |
+
+Essa conversão acaba gerando "Equilíbrios de Nash não-críveis". Principalmente por considerarmos que o agente racional quer sempre maximizar a sua própria utilidade.
+
+###### Gerando subgames
+
+- Cada nó não terminal gera um sub-jogo
+
+###### Sub-game perfect Equilibrium
+
+- Subgame-perfect Equilibrium (SPE)
+  - São os equilíbrios de nash que se mantém em todos os subjogos. Geralmente são os equilíbrios de nash, removidos os não críveis.
+
+###### Computing Equilibria: backward induction
+
+- Cada jogador vai escolhendo as folhas que melhorem seu próprio payoff, o que gera um único equilíbrio de nash estrito. E se houver indiferença, até pode ter mais do que um equilíbrio.
+
+Calculando isso pro jogo de sharing, teríamos casos em que a escolha da indiferença de um jogador, fortemente impacta na escolha do outro jogador.
+
+Estratégias comportamentais: ao invés de randomizar tudo logo de cara, vai escolhendo à medida em que chega em cada nó.
+
+No algoritmo, aparentemente no caso de empate ele apenas escolhe a melhor e não considera em que que isso implica.
+
+###### Ultimatum Game
+
+- Estratificou por pais os experimentos.
+
+- Muito legal a tabela
 
 ### 03/06/2025 - Aula 24 - Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games | MAS, chapter 6.1
 
