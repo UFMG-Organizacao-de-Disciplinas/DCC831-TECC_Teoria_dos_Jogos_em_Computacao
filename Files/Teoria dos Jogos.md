@@ -2352,6 +2352,7 @@ Alguns payoffs dos jogadores não podem ser mapeados diretamente com relação a
 - Signaling alguma coisa
 
 - Dúvida: se é perfect recall, o jogador sabe em que nível tá.
+
 ##### Behavioral Strategies
 
 - Joga-se uma moeda toda vez que um information set for encontrado.
@@ -2369,7 +2370,7 @@ Perfil de estratégia mista:
 
 - Teorema: uma estratégia
 
-#### Strategies and Equilibria
+#### Strategies and Equilibria (2)
 
 - Agente 2: g
 - Agente 1: R domina.
@@ -2384,11 +2385,11 @@ Perfil de estratégia mista:
 
 - Sequence-form representation of $G$
 - $G = (N, \Sigma, g, C)$
-	- $N$ conjunto de agentes
-	- $\Sigma = (\Sigma_1, \Sigma_2, \dots, \Sigma_n)$, onde $\Sigma_i$ é o conjunto de sequências pro agente $i$
-	- $g = (g_1, \dots, g_n)$, onde $g_i: \Sigma \to \mathbb{R}$ é a função de payoff do agente $i$
-		- Pode ser representado usando um sparse encoding
-	- $C \dots$ restrições (constraints)
+  - $N$ conjunto de agentes
+  - $\Sigma = (\Sigma_1, \Sigma_2, \dots, \Sigma_n)$, onde $\Sigma_i$ é o conjunto de sequências pro agente $i$
+  - $g = (g_1, \dots, g_n)$, onde $g_i: \Sigma \to \mathbb{R}$ é a função de payoff do agente $i$
+    - Pode ser representado usando um sparse encoding
+  - $C \dots$ restrições (constraints)
 - Nos não gerados artificialmente ela função de payoff são os nós folhas.
 - Tem que fazer algo pra incentivar o jogador a cair no nó folha.
 
@@ -2397,16 +2398,15 @@ Perfil de estratégia mista:
 - S: Strong
 - W: Weak
 - A: Acquiesce
-	- consentir, concordar
+  - consentir, concordar
 - F: Fight
 
 - A firma 1 deve entrar no mercado?
 - Quantas sub árvores há? Uma.
 - Equilíbrios de Nash
-	1. $1==S$ ou $1==W$
-		- (N, F): Só é equilíbrio porque o F serve como ameaça.
-	2. $1==$...
-
+  1. $1==S$ ou $1==W$
+     - (N, F): Só é equilíbrio porque o F serve como ameaça.
+  1. $1==$...
 
 ### 10/06/2025 - Aula 26 - Bayesian games | MAS, chapter 6.3
 
