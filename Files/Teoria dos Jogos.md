@@ -2254,6 +2254,7 @@ Essa conversão acaba gerando "Equilíbrios de Nash não-críveis". Principalmen
 
 - Subgame-perfect Equilibrium (SPE)
   - São os equilíbrios de nash que se mantém em todos os subjogos. Geralmente são os equilíbrios de nash, removidos os não críveis.
+  - Cada nó não terminal gera um sub-jogo
 
 ###### Computing Equilibria: backward induction
 
@@ -2271,9 +2272,141 @@ No algoritmo, aparentemente no caso de empate ele apenas escolhe a melhor e não
 
 - Muito legal a tabela
 
-### 03/06/2025 - Aula 24 - Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games | MAS, chapter 6.1
+Alguns payoffs dos jogadores não podem ser mapeados diretamente com relação ao valor do dinheiro
+
+### 03/06/2025 - Aula 24 - Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games | MAS, chapter 6.1 - Aula 22
+
+#### Computing equilibria: backward induction
+
+---
+
+- $O(b^m)$
+  - $b$: average branching factor
+  - $m$: maximum depth of the tree
+
+#### Two-player, zero-sum games: minimax and alpha-beta pruning
+
+- Backward induction no caso do 2p, 0+: minimax algorithm
+- Como é soma zero, só precisamos considerar um dos payoffs.
+- O jogador 1 maximiza, o jogador 2 minimiza.
+- A ideia é que, a cada caminho, o jogador 1 vai escolher a ação que maximiza o seu payoff, e o jogador 2 vai escolher a ação que minimiza o payoff do jogador 1.
+
+  - Porém, no momento em que um jogador perceber que o outro terá uma ação melhor para si do que a anterior, o algoritmo acaba retornando o melhor anterior.
+  - O $\rho(h)$ retorna qual é o jogador que está jogando naquele nó.
+
+- Boa questão de prova: "Rodar o minimax alpha-beta pruning para o jogo de soma zero, e mostrar o resultado final"
+
+  - O que ele pede são os "X" que marcam os galhos podados
+
+- Há a poda sempre que se encontra uma ação que é melhor do que a da ação anterior.
+
+---
+
+- No pior caso, o jogador 1 considera os nós em ordem crescente, assim nenhum nó será cortado.
+- No melho caso é o oposto. Gerando complexidade: $O(b^{m/2})$.
+
+#### Jogo - Centipede game
+
+- Jogo na forma extensiva. Sem explicações. Sem papel. "Olho no olho, aço no aço"
+- O social welfare sempre aumenta
+
+- Jogador 1:
+  - D: (1, 0)
+  - A: Jogador 2:
+    - D: (0, 2)
+    - A: Jogador 1:
+      - D: (3, 1)
+      - A: Jogador 2:
+        - D: (2, 4)
+        - A: Jogador 1:
+          - D: (4, 3)
+          - A: Jogador 2:
+            - D: (3, 5)
+            - ...
+
+#### Saí pra poder tirar fotos da LBB
+
+#### Acabou a aula
 
 ### 05/06/2025 - Aula 25 - Repeated games: repeated prisoner dilemma, finite and infinite repeated games, Folk's theorem, stochastic games | MAS, chapter 6.1
+
+12/06/2025
+
+#### Strategies and Equilibria
+
+- Information sets (?): O jogador está em um de seus nós de ação, porém não consegue identificar qual.
+- Nessa situação, considera-se um potencial esquecimento do jogador.
+
+##### Perfect Recall
+
+- Os jogadores lembram de tudo o que fizeram até então. Eles lembram sobre suas próprias ações.
+
+###### Perfect Recall #1
+
+- Jogo de informação imperfeita.
+- Todos os jogos de informação perfeita são de perfect recall
+- Nesse contexto, numa mesma classe de equivalência/information set, o jogador toma a mesma decisão em todos os nós não terminais.
+
+###### Perfect Recall #2
+
+- Signaling alguma coisa
+
+- Dúvida: se é perfect recall, o jogador sabe em que nível tá.
+##### Behavioral Strategies
+
+- Joga-se uma moeda toda vez que um information set for encontrado.
+- Há um vetor de distribuição de probabilidades sobre os information sets.
+
+---
+
+Perfil de estratégia mista:
+
+- $A_1 = \{ac, ad, bc, bd\}$
+- $p(A_1) = \{1/2, 0, 0, 1/2\}$
+- Se ele escolhe d no segundo para maximizar seu payoff, sabemos que é perfect recall porque ele lembra qual foi a escolha anterior.
+
+#### Perfect Recall (2)
+
+- Teorema: uma estratégia
+
+#### Strategies and Equilibria
+
+- Agente 2: g
+- Agente 1: R domina.
+- Dúvida: pode haver information sets em níveis diferentes da árvore?
+
+#### Behavioral Strategies (2)
+
+- Para randomizar, daremos $p$ à escolha R e $(1-p)$ à escolha L
+- O Behavioral Strategies é tipo um Mixed Strategies, mas sem considerar dominância
+
+#### Computing Equilibria: the sequence form
+
+- Sequence-form representation of $G$
+- $G = (N, \Sigma, g, C)$
+	- $N$ conjunto de agentes
+	- $\Sigma = (\Sigma_1, \Sigma_2, \dots, \Sigma_n)$, onde $\Sigma_i$ é o conjunto de sequências pro agente $i$
+	- $g = (g_1, \dots, g_n)$, onde $g_i: \Sigma \to \mathbb{R}$ é a função de payoff do agente $i$
+		- Pode ser representado usando um sparse encoding
+	- $C \dots$ restrições (constraints)
+- Nos não gerados artificialmente ela função de payoff são os nós folhas.
+- Tem que fazer algo pra incentivar o jogador a cair no nó folha.
+
+#### Sequential Equilibrium
+
+- S: Strong
+- W: Weak
+- A: Acquiesce
+	- consentir, concordar
+- F: Fight
+
+- A firma 1 deve entrar no mercado?
+- Quantas sub árvores há? Uma.
+- Equilíbrios de Nash
+	1. $1==S$ ou $1==W$
+		- (N, F): Só é equilíbrio porque o F serve como ameaça.
+	2. $1==$...
+
 
 ### 10/06/2025 - Aula 26 - Bayesian games | MAS, chapter 6.3
 
