@@ -2410,7 +2410,137 @@ Perfil de estratégia mista:
 
 ### 10/06/2025 - Aula 26 - Bayesian games | MAS, chapter 6.3
 
-### 12/06/2025 - Aula 27 - Bayesian games | MAS, chapter 6.3
+19/06/2025 - Não teve. Ele teve virose
+
+### 12/06/2025 - Aula 27 - Bayesian games | MAS, chapter 6.3 - 24/06/2025
+
+#### Sequential Equilibrium (2)
+
+```mermaid
+graph LR
+  inicio((N))
+  1.1((1))
+  1.2((1))
+  2.1((2))
+  2.2((2))
+  FSN((0, 2))
+  FSEF((-1, -1))
+  FSEA((1, 1))
+  FWN((0, 2))
+  FWEF((-2, 0))
+  FWEA((-1, 1))
+
+
+```
+
+- Assume perfis de ação diferentes para cada jogador
+
+---
+
+O jogador 2 sabe onde ele está, porque para o jogador 1 R domina fortemente C, e domina fracamente L. Então o jogador 2 estima que o 1 jogará R, assim sabendo que deve jogar D ao invés de U.
+
+O equilíbrio então é (3,1).
+
+---
+
+Teorema: todo jogo finito de perfect recall tem um equilíbrio sequencial.
+
+Teorema: ...
+
+---
+
+- Para jogos de soma geral é exponencial pra resolver na árvore extensiva. Porém ainda exponencialmente mais rápido que converter pra forma normal.
+- Para jogos de soma zero, é polinomial, e expoencialmente mais rápido que o modelo LP
+  - Solução em programação linear.
+
+#### Richer Representations
+
+- Infinite games cannot be represented in normal or extensive form.
+- O mais usual são os jogos de congestionamento. Sabe-se a noção do fluxo, mas não a quantidade exata.
+- "Compartilhamento de recurso"
+- Baes paradox:
+
+```mermaid
+graph LR
+  A(())
+  B1(())
+  B2(())
+  C(())
+
+  A -->|X| B1
+  A -->|1| B2
+  B1 -->|1| C
+  B2 -->|X| C
+  B1 -.> B2
+```
+
+- Os jogadores naturalmente migrarão para uma rota pior.
+- 2/(3/2) é o preço da anarquia: é o valor pago por não ter um ditador que defina o melhor para a população.
+
+---
+
+- Jogadores podem ter informações privadas que afetam o próprio payoff.
+- Potencialmente só têm informações probabilísticas.
+- Jogos grandes podem ser junções de jogos pequenos
+
+##### Repeated Games
+
+- Imagem: preço do barril do petróleo ao longo do tempo
+
+---
+
+- A maior parte das interações ocorrem mais de uma vez
+  - Firmas, alianças políticas, amigos "trocas de favores", trabalhadores (produção do time)
+- Muitos são parecidos com o Dilema dos Prisioneiros.
+- Solução? Observar as ações e punir ações negativas.
+
+---
+
+- Dilema dos prisioneiros de duas etapas. Cálculo pode ser usar média ou soma.
+  - O problema é que acaba sendo que nem o jogo da centopeia: pode-se sempre trair no último, por isso, trairia-se no penúltimo, e assim por diante.
+
+#### Infinitely repeated games
+
+- Se o jogo vai acontecer de novo, prefere-se evitar problemas.
+- Nesse caso, precisaríamos de uma árvore infinita.
+- Ao invés de atribuir payoffs, passaríamos a considerar uma recompensa média.
+
+$$
+\lim_{k \to \infty} \frac{\sum_{j=1}{k}}{\dots}
+$$
+
+---
+
+- Competição de corrida. Gamificação de atividade física.
+- Todo sábado verificam quem correu mais.
+- Ambos preferem não correr.
+- Planejam quanto pretendem correr na semana
+- O modelo de recompensa média é apropriada?
+  - "O Pedro de amanhã que se vire"
+  - "Nós humanos acabamos valorizando mais o presente"
+  - "Quem não abrir o pirulito ganha outro"
+
+---
+
+- Future Discounted Rewards: valoriza mais os payoffs mais recentes em comparação com os futuros.
+  - $\beta$: $0 \leq \beta \leq 1$
+  - $\sum_{j=1}^{\infty} \beta^j r_i^{(j)}$
+  - $\beta$ pode ser analisado como a chance do jogo acabar.
+    - Os agentes se importam mais com seu bem-estar próximo e não o longo.
+    - O agente considera que o jogo pode acabar com uma probabilidade $1-\beta$
+
+---
+
+- The globalizability of temporal discounting
+
+---
+
+- Qual seria uma estratégia pura em um jogo repetitivo infinito?
+  - É determinística.
+  - É uma instrução completa de como uma pessoa terceira deve jogar no meu lugar.
+  - Estratégias famosas:
+    - Tit-for-tat: repete a ação do jogador anterior.
+    - Grim trigger: Start out cooperating. If the opponent ever defects, defect forever
 
 ### 14/06/2025 - Aula 28 - Congestion games | MAS, chapter 6.4
 
@@ -2418,4 +2548,135 @@ Perfil de estratégia mista:
 
 ### 24/06/2025 - Aula 29 - Congestion games | MAS, chapter 6.4
 
-### 26/06/2025 - Aula 30 - Prova 2
+### 26/06/2025 - Aula 30 - Prova 2 - Adiada para dia 01/07/2025
+
+#### Infinitely Repeated Games
+
+- Equilíbrio de Nash
+  - Não induzimos uma forma normal
+    - Só se aplica aos jogos finitos
+  - Com infinitas estratégias, podem existir infinitos equilívrios de estratégia pura
+- Dá para encontrarmos payoffs com equilíbrio.
+
+#### reminderR: maxmin e minmax
+
+- Maxmin value $v_1^'$ e minmax value $v_1$?
+
+| X   | L    | R    |
+| --- | ---- | ---- |
+| T   | 0, a | 3, b |
+| M   | 2, c | 1, d |
+| B   | 4, e | 0, f |
+
+- "O minmax do jogador 1, na verdade é o conjunto de todas as respostas dos outros jogadores para o jogador 1 que resulte em minimizar seu payoff máximo"
+- > O maxmin pode ser no máximo igual ao minmax
+
+#### Infinitely Repeated Games (2)
+
+- $G = (N, A, u)$
+- $v_i$: minmax
+- ...
+
+---
+
+- Definitions
+- **Enforceable:** Se $\exists r_i < v_i$, significa que o jogador poderia melhorar sua resposta.
+
+---
+
+- **Feasible:** dá para dar uma distribuição de ações que podem resultar em...?
+
+---
+
+| X   | L    | R    |
+| --- | ---- | ---- |
+| U   | 4, 0 | 1, 1 |
+| D   | 0, 0 | 0, 4 |
+
+- (-1, 1): não é enforceable porque dá pro P1 ganhar mais que -1; não é feasible pq o P1 não consegue ganhar -1
+- (10, 10): enforceable, not feasible:
+- (0, 0): enforceable; feasible
+- (1, 1): enforceable; feasible
+- (2, 2): enforceable; feasible
+
+#### Folk Theorem
+
+- Se há uma célula de payoffs que é feasible e enforceable, então esse vetor $r$ é um payoff de um equilíbriod e nash
+
+#### Folk Theorem (Part 1)
+
+#### Folk Theorem (Part 2)
+
+- $\beta_a$: a quantidade de vezes que paramos no perfil de ação $a$
+- $Y$: quantas vezes o jogo foi jogado.
+- Só funciona no average rewards
+- Tal jogador n tem benefício pra desviar
+- Um problema do minmix é que tu até tá tentando reduzir
+
+### Discounted Repeated Games
+
+- Fórmula
+
+---
+
+#### Subgame Perfection
+
+...
+
+---
+
+| X   | C    | D    |
+| --- | ---- | ---- |
+| C   | 3, 3 | 0, 5 |
+| D   | 5, 0 | 1, 1 |
+
+- Grim Trigger é equilíbrio de Nash? Sim.
+
+#### Reminder (2)
+
+...
+
+### Discounted Repeated Games (2)
+
+Dependendo do $\beta$, posso estar perto do fim, me permitindo trair mais
+
+- Sempre tem uma questão de prova dessas:
+  - **Cooperate:** $3 +...$
+  - **Defect:** $5 +...$
+- Qual a matriz de payoffs de grim trigger para que CooperateXCooperate funcione?
+- Quando que $3/19 <= 5 + \beta \frac1-\beta$
+
+---
+
+Precisa se preocupar com o hoje pelo menos metade do que se preocupa com o futuro.
+
+---
+
+- Lógica:
+  - joga algo com payoff alto
+  - ...
+
+#### Folk Theorem (Part 3)
+
+Alguma coisa sobre conseguir payoffs no infinito melhores do que no equilíbrio de Nash do jogo não repetido.
+
+---
+
+- Maximum gain from deviating: $M$
+- Minimum per-period loss from future punishment: $m$
+- If deviate, the maximum possible net gain:
+
+Se cair na prova, ele dá a forma do $\beta_i$
+
+---
+
+More complicated play:
+
+| X   | C     | D     |
+| --- | ----- | ----- |
+| C   | 3, 3  | 0, 10 |
+| D   | 10, 0 | 1, 1  |
+
+Maxmin era só pro average reward
+
+### 01/07/2025 - Prova 2
