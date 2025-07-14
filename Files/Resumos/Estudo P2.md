@@ -4,7 +4,17 @@
 - Forma extensiva
 - questão com Beta(?)
 
-## Lemke Howson: algoritmo - [Áudio P1][P1]
+## LCP (linear complementarity problem): Lemke Howson
+
+- Soma das utilidades esperadas somadas a uma variável de folga (r) é igual a U^{\*}
+  - Faz isso pro P1 e P2
+- Soma das probabilidades das estratégias de P1 e P2 é igual a 1
+- As folgas e as probabilidades são maiores ou iguais a zero
+- folga vezes probabilidade são iguais a zero
+
+## Áudios Rangel
+
+### Lemke Howson: algoritmo - [Áudio P1][P1]
 
 - Calcula utilidades esperadas
 - Jogador linha, pega todas as utilidades esperadas
@@ -32,10 +42,10 @@
 - Um caso clássico é o da competição de empresas.
   - A empresa A ameaça a empresa B de entrar no mercado, mas na verdade não entraria, pois não é lucrativo.
 - Essa definição não é muito razoável, pois o jogador não toma a ação que maximiza sua utilidade.
-- Temos então a definição de sub-perfect equilibrium:
-  - Analisamos cada sub-game fazendo o backward induction, e verificamos cada subgame do mais profundo para o mais raso.
+- Temos então a definição de _sub-perfect equilibrium_:
+  - Analisamos cada sub-game fazendo o _backward induction_, e verificamos cada subgame do mais profundo para o mais raso.
   - Basicamente fazendo com que cada jogador escolha sua melhor resposta.
-  - O sub-perfect equilibrium é um equilíbrio de Nash mas nem todo equilíbrio de Nash é sub-perfect equilibrium.
+  - O _sub-perfect equilibrium_ é um equilíbrio de Nash mas nem todo equilíbrio de Nash é _sub-perfect equilibrium_.
 
 ### Jogos na Forma Extensiva: _imperfect information_ e _information set_ [Áudio P5][P5]
 
